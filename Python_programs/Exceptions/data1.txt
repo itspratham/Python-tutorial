@@ -1,0 +1,3 @@
+One of the many benifits of unittest, that youll use when your tests
+get bigger than the toy examples Im showing on this blog, is the use of
+setUp and tearDown functions to get your system ready for the tests.

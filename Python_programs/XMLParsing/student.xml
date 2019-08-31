@@ -1,0 +1,34 @@
+<Students shelf="New Joinees">
+    <studnet name="Adolf">
+        <age>13</age>
+        <std>10</std>
+        <science>134</science>
+        <socical>12</socical>
+        <maths>100</maths>
+    </studnet>
+
+    <studnet name="Bill">
+        <age>13</age>
+        <std>10</std>
+        <science>13</science>
+        <socical>12</socical>
+        <maths>98</maths>
+    </studnet>
+
+    <studnet name="Cherry">
+        <age>13</age>
+        <std>10</std>
+        <science>15</science>
+        <socical>13</socical>
+        <maths>78</maths>
+    </studnet>
+
+    <studnet name="Dough">
+        <age>13</age>
+        <std>10</std>
+        <science>45</science>
+        <socical>15</socical>
+        <maths>100</maths>
+    </studnet>
+
+</Students>

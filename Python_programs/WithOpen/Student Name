@@ -1,0 +1,19 @@
+The Convention of 1833, a political gathering of settlers in Mexican Texas,
+ was one in a series of unsuccessful attempts at political negotiation that
+ eventually led to the Texas Revolution. It followed the Convention of 1832,
+ whose resolutions had not been addressed by the Mexican government.
+ Delegates met in San Felipe de Austin to draft a series of petitions,
+ with the volatile William H. Wharton presiding. Although the convention's
+ agenda largely mirrored that of the Convention of 1832, delegates also agreed
+ to pursue independent statehood for the province, which was at the time part of
+  the state of Coahuila y Tejas. Under the guidance of Sam Houston, former governor
+  of the US state of Tennessee, a committee drafted a state constitution to submit
+  to the Mexican Congress. Stephen F. Austin (pictured) journeyed to Mexico
+  City to present the petitions to the government. Frustrated with the
+  lack of progress, in October Austin wrote a letter encouraging Texans to form
+   their own state government. This letter was forwarded to the Mexican government,
+   and Austin
+   Let's go over what we have. Like any class, there's an __init__()
+method that sets up the object (in our case, setting the file name to open 
+and the mode to open it in). __enter__() opens and returns the file 
+(also creating an attribute
