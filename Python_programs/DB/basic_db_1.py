@@ -1,7 +1,7 @@
 import MySQLdb
 
 # Open the db connection
-db  = MySQLdb.connect("localhost","root", "p892550878","mysql")
+db  = MySQLdb.connect("localhost","root", "password","mysql")
 # Open a cursor
 cursor = db.cursor()
 cursor.execute("SHOW databases;")
