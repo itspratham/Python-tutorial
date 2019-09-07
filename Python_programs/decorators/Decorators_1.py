@@ -42,7 +42,7 @@ def fun2():
 fun1()
 fun2()
 '''
-'''
+
 def my_decorator(func):
     def wrapper():
         print("Something is happening before the function is called.")
@@ -55,4 +55,3 @@ def func1():
     print("Whee!")
 
 func1()
-'''

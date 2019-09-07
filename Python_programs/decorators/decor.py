@@ -15,7 +15,7 @@ def parent():
 
 
 
-from decorators.Decorators_1 import my_decorator
+from decorator.Decorators_1 import my_decorator
 
 
 @my_decorator
