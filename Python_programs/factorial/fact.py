@@ -2,7 +2,7 @@ def factorial(number):
 
     # Error handling
     if not isinstance(number, int):
-        raise TypeError("Sorry. 'number' must be an integer.")
+        raise TypeError("Sorry {0} must be an integer.".format(number))
     if not number >= 0:
         raise ValueError("Sorry. 'number' must be zero or positive.")
 
@@ -13,4 +13,4 @@ def factorial(number):
     return inner_factorial(number)
 
 # Call the outer function.
-print(factorial(4))
+print(factorial(4.0))

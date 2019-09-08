@@ -1,5 +1,4 @@
 import pandas as pd
-from dataframe import DataFrame
 
 dict = {"country": ["Brazil", "Russia", "India", "China", "South Africa"],
        "capital": ["Brasilia", "Moscow", "New Dehli", "Beijing", "Pretoria"],
