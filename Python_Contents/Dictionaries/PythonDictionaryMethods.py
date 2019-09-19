@@ -17,10 +17,11 @@ print(dt1)
 print(id(dt))
 print(id(dt1))
 
-#### fromkeys
+### fromkeys
 k = ["a","b","c","d"]
 w = dt.fromkeys(k,10)
 print(w)
+print(dt)
 
 # has_key present in Python 2.x but not in 3.x
 #print(dt.has_key("z"))
