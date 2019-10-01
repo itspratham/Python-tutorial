@@ -22,5 +22,4 @@ from decorator.Decorators_1 import my_decorator
 def fun1():
     print("hi")
 
-
 fun1()

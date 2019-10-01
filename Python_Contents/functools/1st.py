@@ -1,22 +1,13 @@
 from functools import partial
 
-
-
 def add(x, y):
-
-
-
-    return x + y
+   return x + y
 
 def multiply(x, y):
-      return x * y
-
-
+   return x * y
 
 def run(func):
-
-
-        print(func())
+      print(func())
 
 
 def main():
@@ -29,4 +20,4 @@ def main():
    run(m1)
 
 if __name__ == "__main__":
-        main()
+    main()

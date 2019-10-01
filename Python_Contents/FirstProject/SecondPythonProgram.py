@@ -18,7 +18,7 @@ d=100
 
 #In Python
 a=b=c=d=100
-print ("a={},b={},c={},d{}".format(a,b,c,d))
+print ("a={},b={},c={},d{}".format(a, b, c, d))
 
 # One more way, packing and unpacking
 a,b,c,d = 10,20,30,"Hello"

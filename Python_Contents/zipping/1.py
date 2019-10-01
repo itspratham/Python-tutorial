@@ -4,7 +4,7 @@ from zipfile import ZipFile
 file_name = "my_python_files.zip"
 
 # opening the zip file in READ mode
-with ZipFile("hello.zip", 'r') as zip:
+with ZipFile("hello.zip", 'w') as zip:
     # printing all the contents of the zip file
     zip.printdir()
 

@@ -16,10 +16,13 @@ class MyNaturalNo(object):
             self.n+=1
             return self.n
 
-
-
 mn= MyNaturalNo(5)
-print(next(mn))
+x=next(mn)
+print(x)
+y=x+10
+print(y)
+
+
 print("---------")
 for i in mn:
     print(i)

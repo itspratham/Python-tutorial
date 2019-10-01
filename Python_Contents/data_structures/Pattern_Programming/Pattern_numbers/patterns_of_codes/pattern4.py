@@ -6,27 +6,11 @@
 5 9 12 14 15
 '''
 n = 7
-for i in range(1, 8) :
-    l = 6
+for i in range(1, n) :
+    l = n-2
     j = i
     for k in range(i) :
         print(j, end=' ')
         j = l + j
         l = l -1
     print()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

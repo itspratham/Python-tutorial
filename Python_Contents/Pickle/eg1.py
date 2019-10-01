@@ -1,5 +1,3 @@
-'''
-
 import pickle
 
 data1 = {'a': [1, 2.0, 3, 4+6j],
@@ -19,12 +17,12 @@ pickle.dump(selfref_list, output, -1)
 
 output.close()
 
+
+
+
+
+
 '''
-
-
-
-
-#'''
 
 import pprint, pickle
 
@@ -39,4 +37,4 @@ pprint.pprint(data2)
 pkl_file.close()
 
 
-#'''
+'''

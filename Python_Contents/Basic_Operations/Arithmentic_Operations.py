@@ -14,7 +14,7 @@ c = a*b
 print ("a={}, b={}, c={}".format(a,b,c))
 
 c = a/b
-print c
+print (c)
 print ("a={}, b={}, c={}".format(a,b,c))
 
 c = a//b

@@ -22,10 +22,11 @@ class LinkedList:
             print(current.data, end = ' ')
             current = current.next
 
+
 a_llist = LinkedList()
 n = int(input('How many elements would you like to add? '))
 for i in range(n):
     data = int(input('Enter data item: '))
     a_llist.append(data)
-print('The linked list: ', end = '')
+print('The linked list: ', end='')
 a_llist.display()

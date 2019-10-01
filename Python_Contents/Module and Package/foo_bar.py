@@ -18,12 +18,14 @@ class MyClass(object):
 
 s = MyClass()
 r = MyClass()
-s+r
-s-r
-s*r
-print(10+10)
-print("Hello"+"World")
-print([1,2,3]+[4,5,6])
-print([1,2,3]*4)
-print("Hello"*4)
+# s+r
+# s-r
+# s*r
+s
+r
+# print(10+10)
+# print("Hello"+"World")
+# print([1,2,3]+[4,5,6])
+# print([1,2,3]*4)
+# print("Hello"*4)
 

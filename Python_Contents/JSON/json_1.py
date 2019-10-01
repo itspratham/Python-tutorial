@@ -6,11 +6,9 @@ student = {101:{"class":'V', "Name":'Rohit',  "Roll_no":7},
 
 print(student)
 print(type(student))
-
+print("=====================")
 j = json.dumps((student),sort_keys=True)
 print(type(j))
-
-
 
 st= json.loads(j)
 print(st)
