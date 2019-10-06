@@ -7,12 +7,18 @@
 # /*****
 
 
-integer= input("Enter the numbers without space")
+integer= input("Enter the numbers without space: ")
 intb= list(map(int,integer.strip()))
-k=1
-for i in range(len(intb)):
-    j=1
-    while j<=i:
-        print("/",end=" ")
-    print(" ")
+i=1
+intc=0
+while i<=len(intb):
+    h = 1
+    print("/",end=" ")
+    while h<=intb[intc]:
+        print("*",end=" ")
+        h=h+1
+    print("")
+    intc= intc+1
+    i=i+1
+
 
