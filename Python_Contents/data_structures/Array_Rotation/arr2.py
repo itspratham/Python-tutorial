@@ -90,11 +90,8 @@ def matrixx(matrix,r,clockwise):
 
             return matrix
 
-        elif clockwise == 3:
-            print_matrix(matrix)
-            break
         else:
-            print("Enter the correct option")
+            print("Enter the correct option and, Try Again!")
 
 
 m=3
