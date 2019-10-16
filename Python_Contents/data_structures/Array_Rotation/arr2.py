@@ -2,7 +2,7 @@ def print_matrix(matt):
     for i in matt:
         print(i)
 
-def matrixx(matrix,r,clockwise):
+def matrixx(matrix,clockwise):
     mat=matrix
     if len(mat)<=1:
         return "Matrix is empty"
@@ -60,16 +60,13 @@ def matrixx(matrix,r,clockwise):
             bottom = len(mat) - 1
             right = len(mat) - 1
             while left<right and top<bottom:
-                import ipdb;
-                #ipdb.set_trace()
                 prev = matrix[top][right-1]
-
                 for i in range(top,bottom+1):
                     curr = matrix[i][left]
                     matrix[i][left] = prev
                     prev=curr
                 left = left + 1
-                #import pdb; pdb.set_trace()
+
                 for i in range(left,right+1):
                     curr = matrix[bottom][i]
                     matrix[bottom][i]=prev
@@ -91,8 +88,10 @@ def matrixx(matrix,r,clockwise):
             return matrix
 
         else:
-            print("Enter the correct option and, Try Again!")
-
+            try:
+                matrixx(matrix,clockwise)
+            except:
+                break
 
 m=3
 print("Enter the matrix: ")
@@ -100,12 +99,11 @@ matrix = []
 
 for _ in range(m):
     matrix.append(list(map(int, input().rstrip().split())))
-#rotation = int(input("Enter the no of elements it has to be rotated by: "))
 while True:
         rotation = int(input("Enter the no of elements it has to be rotated by: "))
-        clockwise = int(input("Enter the direction 1:Clockwise 2:Anti-Clockwise: 3: Print the matrix"))
+        clockwise = int(input("Enter the direction 1:Clockwise 2:Anti-Clockwise: "))
         i = 1
         while i <= rotation:
-            matt=matrixx(matrix=matrix, r=rotation, clockwise=clockwise)
+            matt=matrixx(matrix=matrix, clockwise=clockwise)
             i = i + 1
         print_matrix(matt)
