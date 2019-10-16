@@ -1,33 +1,33 @@
-# #Insertion Sort
-#
-# t = int(input("enter the test"))
-# def main(t):
-#     # Write code here
-#     for i in range(t):
-#         n = int(input("enter the number"))
-#         if n == 0:
-#             print("0")
-#         elif n == 1:
-#             print("1")
-#         else:
-#             listt = [1, 1]
-#             h = 1
-#             #import pdb; pdb.set_trace()
-#             for j in range(n):
-#                 if len(listt)>=n:
-#                     break
-#                 pattern = listt[2*j+1] + listt[2*j]
-#                 listt.append(pattern)
-#                 if len(listt)>=n:
-#                     break
-#                 pattern1 = pattern // listt[2*j+1]
-#                 listt.append(pattern1)
-#                 if len(listt)>=n:
-#                     break
-#             str1 = ' '.join(str(e) for e in listt)
-#             print(str1+' ')
-#
-# main(t)
+#Insertion Sort
+
+t = int(input("enter the test"))
+def main(t):
+    # Write code here
+    for i in range(t):
+        n = int(input("enter the number"))
+        if n == 0:
+            print("0")
+        elif n == 1:
+            print("1")
+        else:
+            listt = [1, 1]
+            h = 1
+            #import pdb; pdb.set_trace()
+            for j in range(n):
+                if len(listt)>=n:
+                    break
+                pattern = listt[2*j+1] + listt[2*j]
+                listt.append(pattern)
+                if len(listt)>=n:
+                    break
+                pattern1 = pattern // listt[2*j+1]
+                listt.append(pattern1)
+                if len(listt)>=n:
+                    break
+            str1 = ' '.join(str(e) for e in listt)
+            print(str1+' ')
+
+main(t)
 
 
 

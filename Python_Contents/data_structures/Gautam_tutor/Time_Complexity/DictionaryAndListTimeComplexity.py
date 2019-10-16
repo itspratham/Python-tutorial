@@ -3,7 +3,7 @@ d ={
     'b' : (324, 234, 123),
     'c': 6
 }
-print( d.items() )
+print(d.items())
 print(type(d.items()))
 for i, j in d.items():
-    print( i ,j)
+    print(i ,j)

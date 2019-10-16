@@ -1,32 +1,58 @@
-class Stack(object):
+class Stack:
     def __init__(self):
-        self.elements=[]
-        self.x = len(self.elements)
+        self.list=[]
+        self.limit=int(input("Enter the limit of the stack: "))
 
-    def create_a_list_of_your_choice_size(self):
-        self.size=int(input("enter the list size"))
-        self.size=self.x
-
-    def append(self,x):
-        if len(self.elements)>self.size:
-            self.elements.append(x)
-            print("{} is appended to the list".format(x))
+    def push(self):
+        if (len(self.list)< self.limit):
+           x= input("Enter the element to be entered into the Stack: ")
+           self.list.append(x)
+           return f"{x} inserted into stack"
         else:
-            print("Stack is overloaded")
+            return "Stack Overflow"
 
     def pop(self):
-        if self.size:
-            print("Cannot pop")
-        self.c=self.elements.pop()
-        print("{} has popped off".format(self.c))
+        if len(self.list)>0:
+           return f"{self.list.pop()} is popped"
+        else:
+            return "Stack Underflow"
 
-    def display(self):
-        print("Your list is {}".format(self.elements) )
+    def disp(self):
+        return self.list
 
+    def Search_Element_in_the_Stack(self):
+        if len(self.list)==0:
+            return "Stack is empty, Cannot find the element"
+        else:
+            print(self.list)
+            search_element= input("Enter the element to be searched: ")
+            for i in range(len(self.list)):
+                if search_element in self.list:
+                    return f"Found the element at {i+1}th position"
+                else:
+                    return "Couldn't find the element in the stack"
 
-x= Stack()
-x.create_a_list_of_your_choice_size()
-x.append(6)
-x.append(7)
-x.pop()
-x.display()
+    def Delete_All_The_Elements_In_The_Stack(self):
+        if len(self.list)==0:
+            return "Already Empty"
+        else:
+            self.list.clear()
+            return "The stack is empty now"
+
+stack = Stack()
+
+while (True):
+    print("1:Push into the Stack 2:Pop from the Stack 3:Display 4:Enter the element you want to search in the Stack 5:Empty the stack 6:Exit")
+    op = int(input("Enter the option: "))
+    if op==1:
+        print(stack.push())
+    elif op == 2:
+        print(stack.pop())
+    elif op==3:
+        print(stack.disp())
+    elif op==4:
+        print(stack.Search_Element_in_the_Stack())
+    elif op ==5:
+        print(stack.Delete_All_The_Elements_In_The_Stack())
+    else:
+        break
