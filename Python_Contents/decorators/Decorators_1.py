@@ -1,24 +1,24 @@
 def check(func):
-    def wrapper(*args,**kwargs):
+    def _wrapper(*args,**kwargs):
         try:
             return func(*args,**kwargs)
         except:
             pass
-    return wrapper
+    return _wrapper
 
 # def init(x, y):
 #     pass
 
 @check
 def add(x, y):
-    print( x + y)
+    return x + y
 
-add(2,3)
+print(add(2,3))
 
 
-@check
-def mult(x, y):
-    return x * y
+# @check
+# def mult(x, y):
+#     return x * y
 #
 # @check
 # def divide(x, y):
@@ -29,6 +29,7 @@ def mult(x, y):
 #     print(x - y)
 
 #check(init)
+
 '''
 def my_decorator(function):
     print("Something is happening before the function is called.")
@@ -47,6 +48,7 @@ def fun2():
 fun1()
 fun2()
 '''
+
 
 # def my_decorator(func):
 #     def wrapper():

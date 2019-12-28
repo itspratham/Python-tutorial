@@ -17,7 +17,6 @@ def parent():
 
 from decorator.Decorators_1 import my_decorator
 
-
 @my_decorator
 def fun1():
     print("hi")

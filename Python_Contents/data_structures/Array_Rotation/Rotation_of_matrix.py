@@ -3,11 +3,11 @@ def print_matrix(matt):
         print(i)
 
 def matrixx(matrix,clockwise):
-    mat=matrix
-    if len(mat)<=1:
+    mat = matrix
+    if len(mat) <= 1:
         return "Matrix is empty"
-    while (True):
-        if clockwise==1:
+    while True:
+        if clockwise == 1:
             top = 0
             left = 0
             bottom = len(mat) - 1
@@ -54,32 +54,32 @@ def matrixx(matrix,clockwise):
 
             return mat
 
-        elif clockwise==2:
+        elif clockwise == 2:
             top = 0
             left = 0
             bottom = len(mat) - 1
             right = len(mat) - 1
-            while left<right and top<bottom:
+            while left < right and top < bottom:
                 prev = matrix[top][right-1]
-                for i in range(top,bottom+1):
+                for i in range(top, bottom+1):
                     curr = matrix[i][left]
                     matrix[i][left] = prev
-                    prev=curr
+                    prev = curr
                 left = left + 1
 
-                for i in range(left,right+1):
+                for i in range(left, right+1):
                     curr = matrix[bottom][i]
                     matrix[bottom][i]=prev
                     prev = curr
                 bottom = bottom - 1
 
-                for i in range(bottom,top-1,-1):
+                for i in range(bottom, top-1,-1):
                     curr = matrix[i][right]
                     matrix[i][right]= prev
-                    prev =curr
-                right = right -1
+                    prev = curr
+                right = right - 1
 
-                for i in range(right,left-1,-1):
+                for i in range(right, left-1,-1):
                     curr = matrix[top][i]
                     matrix[top][i] = prev
                     prev = curr
@@ -89,7 +89,7 @@ def matrixx(matrix,clockwise):
 
         else:
             try:
-                matrixx(matrix,clockwise)
+                matrixx(matrix,clockwise=1)
             except:
                 break
 
@@ -104,6 +104,6 @@ while True:
         clockwise = int(input("Enter the direction 1:Clockwise 2:Anti-Clockwise: "))
         i = 1
         while i <= rotation:
-            matt=matrixx(matrix=matrix, clockwise=clockwise)
+            matt = matrixx(matrix=matrix, clockwise=clockwise)
             i = i + 1
         print_matrix(matt)

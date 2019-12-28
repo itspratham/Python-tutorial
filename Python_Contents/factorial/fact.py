@@ -13,5 +13,6 @@ def factorial(number):
     return inner_factorial(number)
 
 # Call the outer function.
-x="the factorial is: " + str(factorial(4))+ " "
+x = "the factorial is: " + str(factorial(4))+ " "
+
 print(x)
