@@ -110,38 +110,16 @@ for i in range(1, lastNumber):
         print(format(2**j, "4d"), end=' ')
     print("")
 '''
-'''
+
+
 inc=1
 ch = 65
 for i in range(0,8):
     for j in range(0,inc):
         x = chr(ch)
+        if 91<=ch<=97:
+            continue
         print(x, end=" ")
-        ch=ch+1
-    inc=inc+1
+        ch = ch + 1
+    inc = inc + 1
     print()
-'''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

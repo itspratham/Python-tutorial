@@ -1,7 +1,7 @@
 # how to spawn a thread and start
 import threading
 
-def worker(num,):
+def worker(num):
     print("Worker", num)
     return
 
@@ -11,3 +11,5 @@ for i in range(10):
     th = threading.Thread(target=worker, args=(i,))
     t.append(th)
     th.start()
+
+print(t)

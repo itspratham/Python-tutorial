@@ -8,7 +8,7 @@ b = 101
 c= a == b
 print ("a={}, b={}, c={}".format(a,b,c))
 
-c= a <> b
+c= a < b
 print ("a={}, b={}, c={}".format(a,b,c))
 
 a = 100

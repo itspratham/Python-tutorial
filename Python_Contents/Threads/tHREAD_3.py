@@ -12,3 +12,6 @@ for i in range(10):
     th = threading.Thread(target=worker)
     t.append(th)
     th.start()
+
+
+import logging

@@ -14,7 +14,6 @@ movies = collection.getElementsByTagName("movie")
 #print(movies)
 
 for movie in movies:
-    print
     "*****Movie*****"
     if movie.hasAttribute("title"):
         print("Title: %s" % movie.getAttribute("title"))

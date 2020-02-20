@@ -1,11 +1,13 @@
-def prime(n):
-	for i in range(2,n):
-		if (n%i==0):
-		   print(n ,"is not prime number")
-		   break
+num = int(input("Enter a number: "))
+
+if num > 1:
+	for i in range(2, num//2):
+		if (num % i) == 0:
+			print(num, "is not a prime number")
+			print(i, "times", num // i, "is", num)
+			break
 	else:
-			print(n," is prime number")
+		print(num, "is a prime number")
 
-
-
-prime(7)
+else:
+	print(num, "is not a prime number")

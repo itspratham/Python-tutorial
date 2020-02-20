@@ -24,23 +24,12 @@ def employee(x):
 def employee1():
     print("the salary is 20k")
 
-#employee1()
+employee1()
 
 
 
-@employee
-def employee2():
-    print("the salary is 40k")
-
-employee2()
-
-
-
-
-
-
-
-
-
-
-
+# @employee
+# def employee2():
+#     print("the salary is 40k")
+#
+# employee2()

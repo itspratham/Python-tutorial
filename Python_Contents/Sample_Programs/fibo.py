@@ -12,23 +12,25 @@ print(fib(4))
 
 
 '''
-'''
+
 def prime(n):
     for i in range(2,(n)):
         if n%i==0:
-            print("it is not  a prime number")
+            print(f"{n} is not a prime number")
+            print(i, "times", n // i, "is", n)
+            break
     else:
         print("it is prime number")
 
 
-prime(2)
-'''
-def fact(n):
-    if n==0:
-        return 1
-    elif n==1:
-        return 1
-    else:
-        return n*fact(n-1)
-print(fact(0))
+prime(689)
+
+# def fact(n):
+#     if n==0:
+#         return 1
+#     elif n==1:
+#         return 1
+#     else:
+#         return n*fact(n-1)
+# print(fact(0))
 

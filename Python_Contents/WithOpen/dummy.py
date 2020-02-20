@@ -6,7 +6,7 @@ class Professor(object):
         self.desi = Y
 
     def details(self):
-        self.details() = name
+        self.details = name
 
     def cal_avg(self):
         self.avg = self.total / 3

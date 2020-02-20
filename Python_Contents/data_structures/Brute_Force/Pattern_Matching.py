@@ -1,5 +1,5 @@
 String = "fun-uncle"
-Sub_String ="un-"
+Sub_String ="unc"
 def Pattern_Matching(String,Sub_String):
     n= len(String)
     m = len(Sub_String)
@@ -11,4 +11,4 @@ def Pattern_Matching(String,Sub_String):
             print("Substring is found at {}".format(i + 1))
             return i
     #print("Substring is found at {}".format(i+1))
-print(Pattern_Matching(String,Sub_String))
+Pattern_Matching(String,Sub_String)

@@ -10,7 +10,7 @@ def parent():
     print(first_child())
     print(second_child())
 
-    return first_child()
+    return first_child
 
 
 parent()

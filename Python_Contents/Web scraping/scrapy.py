@@ -9,13 +9,13 @@
 # print(soup.prettify())
 
 
+from bs4 import BeautifulSoup
+import requests
 
-def closest(list, Number):
-    aux = []
-    for valor in list:
-        aux.append(abs(Number-valor))
+page = requests.get("https://www.ndtv.com/topic/top-stories").text
+soup = BeautifulSoup(page, 'html.parser')
 
-    return aux.index(min(aux))
-
-
-closest()
+s= soup.find(id="news_list")
+for i in s.findAll(class_ = "header fbld"):
+    for j in i:
+        print(j.get_text())

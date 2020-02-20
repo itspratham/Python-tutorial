@@ -77,19 +77,19 @@
 
 
 #Element uniqueness problem
-# l= [4,6,7,78,3,3,2,7,6]
-# l1= [4,6,78,3,2,7]
-# def Element_uniqueness_problem(l):
-#     for i in range(0,len(l)-2):
-#         for j in range(i+1,len(l)-1):
-#             if l[i]==l[j]:
-#                 print( f"{l[i]} is  present both at {i} and {j} position ")
-#
-#     return f"The list is distinct"
-#
-#
-# print(Element_uniqueness_problem(l))
-# #Element_uniqueness_problem(l1)
+l= [4,6,7,78,3,3,2,7,6]
+l1= [4,6,78,3,2,7]
+def Element_uniqueness_problem(l):
+    for i in range(0,len(l)-2):
+        for j in range(i+1,len(l)-1):
+            if l[i]==l[j]:
+                print( f"{l[i]} is  present both at {i} and {j} position ")
+
+    return f"The list is distinct"
+
+
+print(Element_uniqueness_problem(l))
+#Element_uniqueness_problem(l1)
 
 #Factorial Problem
 # def factorial(n):
@@ -127,15 +127,15 @@
 
 
 #Fibonacci Numbers
-def fibonacci(n):
-    if n == 0:
-        return 0
-    elif n==1:
-        return 1
-    else:
-        return fibonacci(n-1) + fibonacci(n-2)
-
-print(fibonacci(5))
+# def fibonacci(n):
+#     if n == 0:
+#         return 0
+#     elif n==1:
+#         return 1
+#     else:
+#         return fibonacci(n-1) + fibonacci(n-2)
+#
+# print(fibonacci(5))
 
 
 

@@ -25,13 +25,15 @@ def Rotate_no_of_times(array,position,Rotate_no_of_times):
     rotation_type = int(input("Enter the rotation type 1:Left 2:Right "))
     if rotation_type==2:
         for i in range(Rotate_no_of_times):
-            arr = RightRotate(array,position)
+            arr = print(RightRotate(array,position))
     elif rotation_type ==1:
         for i in range(Rotate_no_of_times):
-            arr = LeftRotate(array,position)
+            arr = print(LeftRotate(array,position))
     else:
         print("Enter the correct option")
     return arr
+
+# Rotate_no_of_times([6,4,9,76,8],2,3)
 
 
 #Find maximum value of Sum(i*arr[i]) with only rotations on given array allowed
@@ -64,8 +66,8 @@ def Rotate():
     elif rotation_orientation == 3:
         print( array)
     elif rotation_orientation == 4:
-        sum1 = Rotate_no_of_times(array,position,Rotate_no_of_times=Rotate_no_of_time)
-        print(MaxSum(sum1))
+        #sum1 = Rotate_no_of_times(array,position,Rotate_no_of_times=Rotate_no_of_time)
+        print(MaxSum(array))
     else:
         print("Enter the right option")
 
