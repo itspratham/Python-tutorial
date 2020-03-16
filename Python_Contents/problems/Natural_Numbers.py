@@ -129,13 +129,13 @@
 # print(last+first)
 
 #Prime number program
-# def prime(n):
-#     for i in range(1,n+1):
-#        if n%(i)==0:
-#          print("{} is a prime number".format(n))
-#          break
-#        else:
-#            print("{} is not a prime number".format(n))
-#            break
-#
-# prime(9)
+def prime(n):
+    for i in range(1,n):
+       if n%(i)==0:
+         print("{} is a prime number".format(n))
+         break
+       else:
+           print("{} is not a prime number".format(n))
+           break
+
+prime(9)

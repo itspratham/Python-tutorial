@@ -3,11 +3,9 @@ import time
 sort = input("Enter the numbers: ").split()
 def selection_sort(sort):
     timee = time.time()
-    #print(timee)
     sorted_list = list(map(int, sort))
     for i in range(len(sorted_list)):
         min_index = i
-        flag = 0
         for j in range(i+1, len(sorted_list)):
             if sorted_list[min_index] > sorted_list[j]:
                 min_index = j
@@ -15,6 +13,6 @@ def selection_sort(sort):
     x = list(sorted_list)
     timees = time.time()
     print("the time is {}".format(timees-timee))
-    print(x)
+    print(sorted_list)
 
 selection_sort(sort)

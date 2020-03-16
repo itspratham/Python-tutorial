@@ -11,8 +11,7 @@ if collection.hasAttribute("shelf"):
    print("Root element : %s" % collection.getAttribute("shelf"))
 
 movies = collection.getElementsByTagName("movie")
-
-
+#print(movies)
 
 for movie in movies:
     "*****Movie*****"
