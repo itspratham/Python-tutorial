@@ -68,19 +68,29 @@ class LinkedList:
             return
         if self.head and position==1:
             return
+
         headd = self.head
         curr_node = self.head
         prev = None
-        count = 1
-        while count!=position:
+        count = 0
+        while curr_node and count<position:
             prev = curr_node
+            headd = headd.next
             curr_node = curr_node.next
             count = count + 1
+        curr_node = prev
 
-        while curr_node:
-            curr_node =curr_node.next
+        while headd:
+            prev =headd
+            headd = headd.next
 
-        curr_node.next = headd
+        headd = prev
+        headd.next = self.head
+        self.head = curr_node.next
+        curr_node.next = None
+
+
+
 
 
 l = LinkedList()
@@ -91,3 +101,41 @@ l.append("D")
 l.append("E")
 l.rotate_left(3)
 l.print_list()
+
+
+# # !/bin/python3
+#
+# import math
+# import os
+# import random
+# import re
+# import sys
+#
+#
+# def func(arr, k):
+#     l = []
+#     for i in range(len(arr)):
+#         l.append(arr[i][k])
+#     l = l.sort()
+#     print(l)
+#     for i in range(len(arr)):
+#         arr[i].insert(k, l[i])
+#
+#     for i in range(len(arr)):
+#         print(arr[i])
+#
+#
+# if __name__ == '__main__':
+#     nm = input().split()
+#
+#     n = int(nm[0])
+#
+#     m = int(nm[1])
+#
+#     arr = []
+#
+#     for _ in range(n):
+#         arr.append(list(map(int, input().rstrip().split())))
+#
+#     k = int(input())
+#     func(arr, k)
