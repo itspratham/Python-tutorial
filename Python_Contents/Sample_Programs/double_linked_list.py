@@ -72,7 +72,7 @@ class DoublyLinkedList:
         prev = None
         p = self.head
         q = self.head
-        count = 1
+        count = 0
         while p and count<position:
             prev = p
             p.prev = prev
@@ -92,6 +92,41 @@ class DoublyLinkedList:
         self.head.prev = q
         p.next = None
 
+    def delete_node(self,node_to_deleted):
+        if self.head is None:
+            return
+        prev= None
+        curr_node = self.head
+        if self.head.next is None and self.head.data==node_to_deleted:
+            self.head = self.head.next
+            self.head = None
+            return
+
+        while curr_node and curr_node.data !=node_to_deleted:
+            prev = curr_node
+            curr_node.prev = prev
+            curr_node = curr_node.next
+        prev.next = curr_node.next
+        curr_node.next =prev
+
+    def delete_at_an_index(self,index):
+        if self.head is None:
+            return
+        prev= None
+        curr_node = self.head
+        if self.head.next is None and index==1:
+            self.head = self.head.next
+            self.head = None
+            return
+        count = 1
+        while curr_node and count < index:
+            prev = curr_node
+            curr_node.prev = prev
+            curr_node = curr_node.next
+            count +=1
+        prev.next = curr_node.next
+        curr_node.next =prev
+        curr_node = None
 
 
 
@@ -104,9 +139,6 @@ l.append("B")
 l.append("C")
 l.append("D")
 l.append("E")
+# l.print_list()
+l.delete_at_an_index(3)
 l.print_list()
-l.rotate_left(3)
-print(" ")
-l.print_list()
-
-

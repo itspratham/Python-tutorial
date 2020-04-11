@@ -502,10 +502,12 @@ class LinkedList:
     def delete_node(self,key):
         if self.head.data is None:
             print("No scope to delete the node")
+            return
         curr_node = self.head
         if curr_node and curr_node.data==key:
             self.head = curr_node.next
             curr_node = None
+            return
 
         prev = None
         while curr_node.data and curr_node.data !=key:
