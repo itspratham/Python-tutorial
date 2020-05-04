@@ -3,41 +3,44 @@
 # def fib(n):
 #     if n==0:
 #         return 0
-#     elif n==1:
+#     if n==1:
 #         return 1
-#     else:
-#         return int(fib(n-1)+fib(n-2))
+#     return fib(n-1)+fib(n-2)
 #
-#
-# print(fib(4))
-
+# print(fib(3))
 
 # 2. A prime number
 
+# def prime(n):
+#     if n>1:
+#         for i in range(2,n):
+#             if n%i == 0:
+#                 print(f"{n} is not a prime number")
+#                 break
+#         else:
+#             print(f"{n} is a prime number")
+#     else:
+#         print(f"{n} is not a prime no")
+#
+# prime(5)
 
-# num = int(input("Enter a number: "))
-#
-# if num > 1:
-# 	for i in range(2, num):
-# 		if (num % i) == 0:
-# 			print(num, "is not a prime number")
-# 			print(i, "times", num // i, "is", num)
-# 			break
-# 	else:
-# 		print(num, "is a prime number")
-#
-# else:
-# 	print(num, "is not a prime number")
+
+
 
 
 # 3. String Palindrome
 
 def palindrome(n):
+    l=[]
     for i in range(len(n)):
-        if n[i] != n[len(n)-i-1]:
-            return False
-    return True
-print(palindrome("racecar"))
+        l.append(n[len(n)-i-1])
+    if n ==''.join(l):
+        print("It is a palindrome")
+    else:
+        print("It is not")
+
+palindrome("racecar")
+
 
 # 4. Integer Palindrome
 
@@ -111,7 +114,7 @@ print(palindrome("racecar"))
 # 	# If condition satisfies
 # 	return (sum1 == x)
 #
-#0
+#
 # # Driver Program
 # x = 153
 # print(isArmstrong(x))
@@ -294,7 +297,9 @@ print(palindrome("racecar"))
 #
 # 29. Print all leaves of a binary tree
 #
-# 30. Sort array using quicksort
+#30. Sort array using quicksort
+
+
 # def qsort(inlist):
 #     if inlist==[]:
 #         return []
@@ -302,9 +307,12 @@ print(palindrome("racecar"))
 #         pivot = inlist[0]
 #         lesser = qsort([x for x in inlist[1:] if x < pivot])
 #         greater = qsort([x for x in inlist[1:] if x >= pivot])
+#         print(lesser,"lesser")
+#         print(pivot,"pivot")
+#         print(greater,"greater")
 #         return (lesser + [pivot] + greater)
 #
-# print(qsort([5,3,3,2,2,4,6,3]))
+# (qsort([3,2,8,5,7,9]))
 
 
 # 31. Insertion sort

@@ -108,6 +108,7 @@ class DoublyLinkedList:
             curr_node = curr_node.next
         prev.next = curr_node.next
         curr_node.next =prev
+        curr_node=None
 
     def delete_at_an_index(self,index):
         if self.head is None:
@@ -128,17 +129,28 @@ class DoublyLinkedList:
         curr_node.next =prev
         curr_node = None
 
-
-
-
+    def remove_duplicates(self):
+        cur_node = self.head
+        l = dict()
+        while cur_node:
+            if cur_node not  in l:
+                l[cur_node.data]=1
+                cur_node = cur_node.next
+            else:
+                nxt = cur_node.next
+                self.delete_node(cur_node)
+                cur_node = nxt
 
 
 l = DoublyLinkedList()
 l.append("A")
+l.append("A")
+l.append("B")
 l.append("B")
 l.append("C")
 l.append("D")
+l.append("D")
 l.append("E")
-# l.print_list()
-l.delete_at_an_index(3)
+l.append("A")
+l.remove_duplicates()
 l.print_list()
