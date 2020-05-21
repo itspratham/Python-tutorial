@@ -152,17 +152,6 @@ class LinkedList:
             curnode = curnode.next
         return count
 
-    def sort_the_linked_list(self):
-        if self.head is None:
-            return
-        if self.head.next is None:
-            return self.head
-        cur_node = self.head
-
-
-        while True:
-            pass
-
     def middle_ele(self):
         count = self.length()
         position = count//2
