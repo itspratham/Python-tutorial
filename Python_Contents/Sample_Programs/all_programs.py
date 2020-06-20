@@ -1,16 +1,18 @@
 # 1. Fibonacci series
 
-# def fib(n):
-#     if n==0:
-#         return 0
+# def Fibonacci(n):
+#     if n<0:
+#         print("Incorrect input")
+#     # First Fibonacci number is 0
 #     elif n==1:
+#         return 0
+#     # Second Fibonacci number is 1
+#     elif n==2:
 #         return 1
 #     else:
-#         return int(fib(n-1)+fib(n-2))
+#         return Fibonacci(n-1)+Fibonacci(n-2)
 #
-#
-# print(fib(4))
-
+# print(Fibonacci(9))
 
 # 2. A prime number
 
@@ -32,12 +34,12 @@
 
 # 3. String Palindrome
 
-def palindrome(n):
-    for i in range(len(n)):
-        if n[i] != n[len(n)-i-1]:
-            return False
-    return True
-print(palindrome("racecar"))
+# def palindrome(n):
+#     for i in range(len(n)):
+#         if n[i] != n[len(n)-i-1]:
+#             return False
+#     return True
+# print(palindrome("racecar"))
 
 # 4. Integer Palindrome
 
@@ -151,26 +153,25 @@ print(palindrome("racecar"))
 #
 # 11. Print repeated characters of String?
 
-# string = "Great responsibility";
+# string = "Great responsibility"
 #
-# print("Duplicate characters in a given string: ");
+# print("Duplicate characters in a given string: ")
 # for i in range(0, len(string)):
-#     count = 1;
+#     count = 1
 #     for j in range(i + 1, len(string)):
 #         if (string[i] == string[j] and string[i] != ' '):
-#             count = count + 1;
+#             count = count + 1
 #
-#             string = string[:j] + '0' + string[j + 1:];
-#
+#             string = string[:j] + '0' + string[j + 1:]
 #
 #     if (count > 1 and string[i] != '0'):
 #         print(string[i])
-
+# print(string)
 
 # 12. GCD of two numbers
 #
 # Python Program to find GCD of Two Numbers
-
+#
 # num1 = float(input(" Please Enter the First Value  Num1 : "))
 # num2 = float(input(" Please Enter the Second Value Num2 : "))
 #
@@ -217,6 +218,7 @@ print(palindrome("racecar"))
 #     return array
 #
 # print(reverse_array([323,24,2,32,42,3,23,24,4,2]))
+
 
 
 # 15. Reverse words of a sentence
@@ -269,7 +271,7 @@ print(palindrome("racecar"))
 #             word2.remove(letter)
 #
 # if len(word2)==0:
-#     print( "anagram")
+#     print("anagram")
 # else:
 #     print ("not anagram")
 # 19. Design a Vending Machine
@@ -414,7 +416,7 @@ print(palindrome("racecar"))
 # else:
 #     print("Strings are not rotations of each other")
 
-# This code is contributed by Bhavya Jain
+
 
 
 # 50. Merge sort
@@ -441,16 +443,15 @@ print(palindrome("racecar"))
 #     return result
 #
 # print(merge_sort([4,32,4,5,6,4,334,43]))
-''']'
-def pattern_match(string1,string2):
-    for i in range(len(string1)):
-        for j in range(len(string2)):
-            if string2[:] == string1[j:i+1]:
-                print(f"it is at {j+1}th position")
 
-    return
-pattern_match("funcuncle","funcun")
-'''
+# def pattern_match(string1,string2):
+#     for i in range(len(string1)):
+#         for j in range(len(string2)):
+#             if string2[:] == string1[j:i+1]:
+#                 print(f"it is at {j+1}th position")
+#
+#     return
+# pattern_match("funcuncle","ncun")
 
 
 # class Node:
@@ -575,3 +576,28 @@ pattern_match("funcuncle","funcun")
 # l.reverse_string()
 # l.print_list()
 # print(l.length())
+
+
+#Find the max element in the array
+# def max_array(arr):
+#     max = arr[0]
+#     for i in range(len(arr)):
+#         if arr[i]>max:
+#             max = arr[i]
+#
+#     return max
+# print(max_array([4,76,2,4,6,7]))
+
+
+
+
+#Find the closest number
+# def closest(arr,number):
+#     some =[]
+#     for i in range(len(arr)):
+#         some.append(abs(number -arr[i]))
+#     minimum = some.index(min(some))
+#     return arr[minimum]
+#
+# print(closest([3,5,1,3,4,333,5,6],333))
+

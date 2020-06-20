@@ -26,3 +26,21 @@
 #             low = mid + 1
 #
 # print(BinarySearch([3,2,4,6,3,2,1,4],1))
+
+
+
+
+# def BinarySearch(n,item):
+#     n = sorted(n)
+#     print(n)
+#     low = 0
+#     high = len(n)-1
+#     while low<high:
+#         mid = (low + high)//2
+#         if n[mid] == item:
+#             return mid+1
+#         if n[mid] > item:
+#             high = mid -1
+#         low  = mid +1
+#
+# print(BinarySearch([3,2,6,7,9,4],4))
