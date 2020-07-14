@@ -9,6 +9,6 @@ def Pattern_Matching(String,Sub_String):
             j = j+1
         if j == m :
             print("Substring is found at {}".format(i + 1))
-            return i
+            return i+1
     #print("Substring is found at {}".format(i+1))
 Pattern_Matching(String,Sub_String)

@@ -7,8 +7,7 @@ json_string  = '{"drink":["coffee","tea","cold drinks"]}'
 print(json_string[0])
 obj = json.loads(json_string)
 
-for drink in obj['drink']:
-    print(drink)
+print(obj)
 
 
 print(type(obj))

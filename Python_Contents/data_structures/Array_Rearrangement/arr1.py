@@ -9,17 +9,15 @@
 #          11, 12, 13, 14, 15, 16, 17, 18, 19]
 
 def array_re(arr):
-    l1=arr.copy()
-    x=-1
-    while len(arr) > 0:
-        for i in range(len(arr)):
-            if i in arr:
-                l1[i] = i
-                del arr[i]
-            else:
-                    l1[i] = -1
-                    arr.clear()
-    return l1
+    n = len(arr)
+    l = [-1]*n
+    for i in range(n):
+        if -1 in arr:
+            arr.remove(-1)
+    for i in range(len(arr)):
+        l[arr[i]] = arr[i]
+    print(l)
 
 
-print(array_re([-1, -1, 6, 1, 9, 3, 2, -1, 4, -1]))
+array_re([-1, -1, 6, 1, 9, 3, 2, -1, 4, -1])
+array_re([19, 7, 0, 3, 18, 15, 12, 6, 1, 8, 11, 10, 9, 5, 13, 16, 2, 14, 17, 4])

@@ -22,36 +22,46 @@
 #     g=g+1
 
 
-m=1
-while m<=4:
-    k = 1
-    while k <= 3:
-        i = 1
-        a = 1
-        while i <= 5:
-            print(a,end=" ")
-            i = i + 1
-
-        c = 1
-        d = 2
-        while c <= 5:
-            print(d,end=" ")
-            c = c + 1
-
-        e = 1
-        f = 3
-        while e <= 5:
-            print(f,end=" ")
-            e = e + 1
-
-        g = 1
-        h = 4
-        while g <= 5:
-            print(h,end=" ")
-            g = g + 1
-
-        k = k + 1
-        print()
-
-    m=m+1
-
+# m=1
+# while m<=4:
+#     k = 1
+#     while k <= 3:
+#         i = 1
+#         a = 1
+#         while i <= 5:
+#             print(a,end=" ")
+#             i = i + 1
+#
+#         c = 1
+#         d = 2
+#         while c <= 5:
+#             print(d,end=" ")
+#             c = c + 1
+#
+#         e = 1
+#         f = 3
+#         while e <= 5:
+#             print(f,end=" ")
+#             e = e + 1
+#
+#         g = 1
+#         h = 4
+#         while g <= 5:
+#             print(h,end=" ")
+#             g = g + 1
+#
+#         k = k + 1
+#         print()
+#
+#     m=m+1
+#
+#
+# i = 0
+# n =4
+# while i<n:
+#     j = 0
+#     while j<i+1:
+#         print(j+1,end=" ")
+#         j = j+1
+#     print()
+#     i = i+1

@@ -13,13 +13,3 @@ def mysort(sort):
     return sort1
 
 print(mysort(sort))
-
-
-sort = input("Enter the numbers").split()
-sort = list(map(int, sort))
-
-def mysort1(sort):
-    
-    return sort
-
-print(mysort1(sort))

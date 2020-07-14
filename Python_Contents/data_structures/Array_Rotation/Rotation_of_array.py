@@ -87,7 +87,7 @@ Rotate()
 # def ReverseArray(array):
 #     n = len(array)
 #     outer=[]
-#     for i in range(n):
+#     for i in range(n):4
 #        outer.append(array[n-i-1])
 #     return outer
 #

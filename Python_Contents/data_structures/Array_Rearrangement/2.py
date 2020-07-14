@@ -9,10 +9,12 @@
 def arrae(arr):
     l1=[]
     n= len(arr)
-    i=0
-    while i<n:
-        l1.append(arr[n-i-1])
-        n = n-1
+    # i=0
+    # while i<n:
+    #     l1.append(arr[n-i-1])
+    #     n = n-1
+    for i in range(n):
+        l1.append(arr[~i])
     return l1
 
 arr = [1,4,7,8,6,4,5,6]

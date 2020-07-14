@@ -32,13 +32,3 @@
 # a_llist.display()
 
 
-def pairs(l1,l2,n):
-    pairs=[]
-    i=0
-    while i<=n:
-        if l1[i] + l2[i] == n:
-            pairs.append([l1[i],l2[i]])
-            i = i + 1
-    return pairs
-
-print (pairs([6, 8, 10, 2, 3, 9, 6],[11, 1, 4, 3, 7],10))

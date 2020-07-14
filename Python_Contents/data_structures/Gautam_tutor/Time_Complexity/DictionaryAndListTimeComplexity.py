@@ -6,4 +6,4 @@ d ={
 print(d.items())
 print(type(d.items()))
 for i, j in d.items():
-    print(i ,j)
+    print(i,j)

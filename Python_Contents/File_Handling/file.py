@@ -33,5 +33,10 @@
 
 
 
+f = open("hen.txt","r")
+filee = f.read()
 
+fdf = filee.replace("'",'""')
 
+g = open("hen.txt","w")
+g.write(fdf)

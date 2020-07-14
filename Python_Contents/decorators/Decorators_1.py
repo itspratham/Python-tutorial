@@ -1,19 +1,19 @@
-def check(func):
-    def _wrapper(*args,**kwargs):
-        try:
-            return func(*args,**kwargs)
-        except:
-            pass
-    return _wrapper
-
-# def init(x, y):
-#     pass
-
-@check
-def add(x, y):
-    return x + y
-
-print(add(2,3))
+# def check(func):
+#     def _wrapper(*args,**kwargs):
+#         try:
+#             return func(*args,**kwargs)
+#         except:
+#             pass
+#     return _wrapper
+#
+# # def init(x, y):
+# #     pass
+#
+# @check
+# def add(x, y):
+#     return x + y
+#
+# print(add(2,3))
 
 
 # @check
@@ -50,18 +50,18 @@ fun2()
 '''
 
 
-# def my_decorator(func):
-#     def wrapper():
-#         print("Something is happening before the function is called.")
-#         func()
-#         print("Something is happening after the function is called.")
-#     return wrapper
-#
-# @my_decorator
-# def func1():
-#     print("Whee!")
-#
-# func1()
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def func1():
+    print("Whee!")
+
+func1()
 
 
 

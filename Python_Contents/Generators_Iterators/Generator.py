@@ -9,9 +9,11 @@ def simple_generator():
 s = simple_generator()
 #print(next(s))
 
-for i in s:
-    print(i)
-print(next((i)))
+# for i in s:
+#     print(i)
+# print(next((i)))
+print(next(s))
+print(next(s))
 print(next(s))
 print(next(s))
 print(next(s))

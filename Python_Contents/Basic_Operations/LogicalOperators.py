@@ -35,6 +35,3 @@ if a > 200 and b > 2:
     print ("'a' is greater than 200")
 else:
     print ("'a' is less than 200")
-
-
-
