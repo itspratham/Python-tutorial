@@ -25,9 +25,6 @@
 # prime(5)
 
 
-
-
-
 # 3. String Palindrome
 
 def palindrome(n):
