@@ -34,7 +34,7 @@ class Student(object):
 
 
 
-with open("student") as fo:
+with open("student.csv") as fo:
     for line in fo.readlines():
         lst = line.split(",")
         stu = Student(lst[0],[int(x) for x in lst[1:4]])

@@ -1,6 +1,6 @@
 # Context managers
 """
-with open("Student Name" ,"r") as fo:
+with open("Student Name.txt" ,"r") as fo:
     for line in fo.readlines():
         print(line)
 """
@@ -13,11 +13,11 @@ and the mode to open it in). __enter__() opens and returns the file
 
 
 
-with open("poem" ,"w") as fo:
+with open("poem.txt", "w") as fo:
     fo.write(s)
 
 
-with open("poem" ,"r") as fo:
+with open("poem.txt", "r") as fo:
     print(fo.readlines())
 
 
