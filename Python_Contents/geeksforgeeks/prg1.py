@@ -54,7 +54,9 @@
 
 
 
-# Given an array arr[] and a number K where K is smaller than size of array, the task is to find the Kth smallest element in the given array. It is given that all array elements are distinct.
+# Given an array arr[] and a number K where K is smaller than size of array,
+# the task is to find the Kth smallest element in the given array.
+# It is given that all array elements are distinct.
 #
 # Input:
 # The first line of input contains an integer T, denoting the number of testcases. Then T test cases follow. Each test case consists of three lines. First line of each testcase contains an integer N denoting size of the array. Second line contains N space separated integer denoting elements of the array. Third line of the test case contains an integer K.
@@ -516,11 +518,11 @@ import operator
 # Explanation:
 # Testcase 1: Array elements after sorting it in wave form are 2 1 4 3 5.
 
-def wave(arr):
-    for i in range(0,len(arr)-1,2):
-            arr[i], arr[i+1] = arr[i+1],arr[i]
-    return arr
-print(wave([1,2,3,4,5]))
+# def wave(arr):
+#     for i in range(0,len(arr)-1,2):
+#             arr[i], arr[i+1] = arr[i+1],arr[i]
+#     return arr
+# print(wave([1,2,3,4,5]))
 
 
 # Python function to sort the array arr[0..n-1] in wave form,
@@ -544,6 +546,438 @@ print(wave([1,2,3,4,5]))
 # sortInWave(arr, len(arr))
 # for i in range(0, len(arr)):
 #     print(arr[i],)
+
+#Kth smallest element
+# Input:
+# 2
+# 6
+# 7 10 4 3 20 15
+# 3
+# 5
+# 7 10 4 20 15
+# 4
+# Output:
+# 7
+# 15
+#
+# Explanation:
+# Testcase 1: 3rd smallest element in the given array is 7.
+# Testcase 2: 4th smallest elemets in the given array is 15.
+
+# def smallest(arr,k):
+#     arr.sort()
+#     return arr[k-1]
+#
+# print(smallest([1,2,3,4,5,6],6))
+
+
+#Sum of array elements
+# Example:
+# Input:
+# 2
+# 3
+# 3 2 1
+# 4
+# 1 2 3 4
+# Output:
+# 6
+# 10
+
+# def summ(arr):
+#     g = 0
+#     for i in range(len(arr)):
+#         g = g+ arr[i]
+#     return g
+#
+# print(summ([1,2,3,4]))
+
+
+#Sum of f(a[i], a[j]) over all pairs in an array of n integers
+
+# def sum_of_All_pairs(arr):
+#     g = 0
+#     for i in range(len(arr)):
+#         for j in range(i+1, len(arr)):
+#             if arr[j]-arr[i]:
+#                 g = g + (arr[j] - arr[i])
+#     return g
+#
+# print(sum_of_All_pairs([6,6,4,4]))
+
+
+# Sherlock a Detective
+# def sherlock(a,k):
+#     l = range(0,k+ 1)
+#     gh =[]
+#     for i in l:
+#         if i not in a:
+#             gh.append(i)
+#     return gh
+#
+# print(sherlock([0,1,1,2,2,3],6))
+
+
+
+#Ishaan Loves Chocolates
+# As we know, Ishaan has a love for chocolates.
+# He has bought a huge chocolate bar which contains N chocolate squares.
+# Each of the square has a tastiness level which is denoted by an array A[].
+# Ishaan can eat the first or the last square of the chocolate at once.
+# Ishaan has a sister who loves chocolates too and she demands the last chocolate square.
+# Now, Ishaan being greedy eats the more tasty square first.
+# Determine the tastiness level of the square which his sister gets.
+#
+# Input :
+# First line of input contains a single integer T denoting the number of test cases.
+# The first line of each test case contains an integer N.
+# The second line contains N space-separated integers denoting the array A.
+#
+# Output :
+# For each test case, print the required answer in a new line.
+#
+# Constraints :
+# 1 <= T <= 100
+# 1 <= N <= 250
+# 1 <= A[i] <= 1000
+#
+# Example :
+# Input :
+# 3
+# 5
+# 5 3 1 6 9
+# 6
+# 2 6 4 8 1 6
+# 4
+# 2 2 2 2
+# Output :
+# 1
+# 1
+# 2
+#
+# Explaination :
+# Case 1 :
+# Initially : 5 3 1 6 9
+# 5 3 1 6
+# 5 3 1
+# 3 1
+# 1
+#
+# Case 2 :
+# Initially : 2 6 4 8 1 6
+# 2 6 4 8 1
+# 6 4 8 1
+# 4 8 1
+# 8 1
+# 1
+#
+# Case 3 :
+# Initially : 2 2 2 2
+# 2 2 2
+# 2 2
+# 2
+
+# def chocolate(arr):
+#     i = 0
+#     while len(arr)!=1:
+#         if arr[0] >= arr[-1]:
+#             arr.pop(0)
+#         else:
+#             arr.pop(-1)
+#         i = i+1
+#     return arr[0]
+
+# print(chocolate([2 ,6, 4 ,8, 1, 6]))
+
+# Distinct absolute array elements
+# Input:
+# 3
+# 4
+# -35 73 73 73
+# 9
+# -44 -31 -6 6 46 52 52 55 93
+# 6
+# -3 -2 0 3 4 5
+#
+#
+# Output:
+# 2
+# 7
+# 5
+
+# def distinct(arr):
+#     d = {}
+#     for i in range(len(arr)):
+#         d[abs(arr[i])] = 1
+#     return sum(d.values())
+#
+# print(distinct([-44 ,-31, -6 ,6 ,46 ,52, 52, 55, 93]))
+# print(distinct([-3 ,-2, 0, 3, 4 ,5]))
+
+
+
+
+# Inverse Permutation
+# Example:
+# Input:
+# 3
+# 4
+# 1 4 3 2
+# 5
+# 2 3 4 5 1
+# 5
+# 2 3 1 5 4
+#
+# Output:
+# 1 4 3 2
+# 5 1 2 3 4
+# 3 1 2 5 4
+
+
+# def inversePermutation(arr, size):
+#     # Loop to select Elements one by one
+#     for i in range(0, size):
+#         for j in range(0, size):
+#             if (arr[j] == i + 1):
+#                 # print position of element where
+#                 # element is in inverse permutation
+#                 print(j + 1, end=" ")
+#                 break
+#
+# inversePermutation([2, 3, 4, 5, 1],5)
+
+
+# Testing for the internet
+
+# import urllib.request
+#
+# def connect(host='http://google.com'):
+#     try:
+#         urllib.request.urlopen(host) #Python 3.x
+#         return True
+#     except:
+#         return False
+#
+# print( "connected" if connect() else 'no internet!' )
+
+# Multiply Array
+
+# def multiply(arr):
+#     d =1
+#     for i in range(len(arr)):
+#         d = d * arr[i]
+#     return d
+#
+# print(multiply([5,5,5,5,5,5,5,5,5,5]))
+
+
+#Count Pairs in an Array
+# Example:
+#
+# Input: arr[] = {5, 0, 10, 2, 4, 1, 6}
+#
+# Output: 5
+#
+# Explanation:
+# Pairs which hold condition i*arr[i] > j*arr[j] are
+# (10, 2) (10, 4) (10, 1) (2, 1) (4, 1)
+
+# def count_pairs(arr):
+#     count = 0
+#     for i in range(len(arr)):
+#         for j in range(i+1,len(arr)):
+#             if arr[i] * i >j * arr[j]:
+#                 print(arr[i],arr[j])
+#                 count = count +1
+#     print(count)
+#
+# count_pairs([5, 0, 10, 2, 4, 1, 6])
+
+
+
+
+# Convert array into Zig-Zag fashion
+
+# def zigzag(arr):
+#     i = 0
+#     flag = 0
+#     while i < len(arr)-1:
+#         if flag == 0:
+#             if arr[i] > arr[i+1]:
+#                 arr[i], arr[i+1] = arr[i+1],arr[i]
+#         elif flag == 1:
+#             if arr[i] < arr[i+1]:
+#                 arr[i], arr[i+1] = arr[i+1],arr[i]
+#         i = i +1
+#
+#         flag = not(flag)
+#     return arr
+# # print(zigzag([4 ,3 ,7, 8 ,6 ,2 ,1]))
+# print(zigzag([1,4,3,2]))
+
+
+# Find the fine
+# def fine():
+#     month_day = list(map(int,input("Enter the day and month: ").split()))
+#     gaari_no = list(map(int,input("Enter the vehicle numbers: ").split()))
+#     fines = list(map(int,input("Enter the fines for the vehicles: ").split()))
+#     temp = 0
+#     if month_day[1] % 2 == 0:
+#         for i in range(len(gaari_no)):
+#             if gaari_no[i] % 2 == 1:
+#                 temp = temp + fines[i]
+#     elif month_day[1] % 2 == 1:
+#         for i in range(len(gaari_no)):
+#             if gaari_no[i] % 2 == 0:
+#                 temp = temp + fines[i]
+#
+#     return temp
+# print(fine())
+
+
+# Max sum in the configuration
+
+# Input
+# 1
+# 4
+# 8 3 1 2
+# Output
+# 29
+
+# def maxsum(arr):
+#     l = []
+#     for _ in range(len(arr)):
+#         f = arr.pop(0)
+#         arr.append(f)
+#         g = 0
+#         for j in range(len(arr)):
+#             g = g + arr[j]*j
+#         l.append(g)
+#     return max(l)
+#
+# print(maxsum([8, 3 ,1 ,2]))
+
+
+# Merge Without Extra Space
+# Input:
+# 2
+# 4 5
+# 1 3 5 7
+# 0 2 6 8 9
+# 2 3
+# 10 12
+# 5 18 20
+#
+# Output:
+# 0 1 2 3 5 6 7 8 9
+# 5 10 12 18 20
+
+# def merger(arr1,arr2):
+#     arr3 = arr1+ arr2
+#     arr3.sort()
+#     return arr3
+#
+# print(merger([1, 3 ,5 ,7],[0 ,2 ,6, 8 ,9]))
+#
+
+
+# Count the subarrays having product less than k
+# def subarray_mul(arr,k):
+#     l = []
+#     h = 1
+#     for i in range(len(arr)):
+#         h = h * arr[i]
+#         l.append(h)
+#     l1 = []
+#     count = 0
+#     for i in range(len(l)):
+#         for j in range(i+1, len(l)):
+#             if l[i] // l[j] < k:
+#                 l1.append(arr[i:j])
+#                 count = count + 1
+#     return l1, count
+#
+# print(subarray_mul([1,2,3,4],10))
+
+
+# Python3 program to count subarrays
+# having product less than k.
+
+# def countsubarray(array, n, k):
+#     count = 0
+#     for i in range(0, n):
+#         if array[i] <= k:
+#             count += 1
+#         mul = array[i]
+#
+#         for j in range(i + 1, n):
+#             mul = mul * array[j]
+#             if mul <= k:
+#                 count += 1
+#     return count
+#
+# array = [1, 2, 3, 4]
+# k = 10
+# size = len(array)
+# count = countsubarray(array, size, k);
+# print(count, end=" ")
+
+
+
+
+# Minimum number to make median X
+
+# Max Circular Subarray Sum
+
+# def ciruclar_sum(arr):
+#     d = {}
+#     for i in range(len(arr)):
+#         summ = 0
+#         for j in range(len(arr)-1):
+#             summ = summ + arr[j]
+#         d[tuple(arr)] = summ
+#         p = arr.pop(0)
+#         arr.append(p)
+#     d = [(values, keys) for keys, values in d.items()]
+#
+#     return max(d)[0], max(d)[1]
+#     #return d
+#
+# print([ciruclar_sum([-1 ,40, -14, 7 ,6 ,5, -4, -1])])
+#
+# print([ciruclar_sum([10 ,-3, -4, 7, 6 ,5 ,-4, -1])])
+
+
+
+# Ugly Numbers
+
+# def maxDivide( a, b ):
+# 	while a % b == 0:
+# 		a = a / b
+# 	return a
+#
+# def isUgly( no ):
+# 	no = maxDivide(no, 2)
+# 	no = maxDivide(no, 3)
+# 	no = maxDivide(no, 5)
+# 	return 1 if no == 1 else 0
+#
+# # Function to get the nth ugly number
+# def getNthUglyNo( n ):
+# 	i = 1
+# 	count = 1 # ugly number count
+# 	while n > count:
+# 		i += 1
+# 		if isUgly(i):
+# 			count += 1
+# 	return i
+#
+#
+# no = getNthUglyNo(int(input("Enter the no: ")))
+# print("150th ugly no. is ", no)
+
+
+
+
 
 
 
