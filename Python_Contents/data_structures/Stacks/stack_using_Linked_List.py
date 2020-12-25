@@ -14,4 +14,5 @@ class Stack:
             print("Inserted at the head")
             return self.head
         while self.head.next is not None:
+            pass
 
