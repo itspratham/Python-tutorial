@@ -49,11 +49,6 @@
 # main()
 
 
-
-
-
-
-
 # Given an array arr[] and a number K where K is smaller than size of array,
 # the task is to find the Kth smallest element in the given array.
 # It is given that all array elements are distinct.
@@ -95,7 +90,7 @@
 #     arr = sorted(arr)
 #     return arr[k-1]
 #
-# print(smallest([1,2,3,4,5,6],2))
+# print(smallest([2,3,4,5,6],2))
 
 
 #Nth number made of prime digits
@@ -454,21 +449,21 @@ import operator
 #
 # print(buyandsell([100, 180, 260 ,310, 40, 535, 695]))
 
-# def subarraySum(nums, k):
-#     l = [0]
-#     g =0
-#     for num in nums:
-#         g = g + num
-#         l.append(g)
-#     count = 0
-#     l1 = []
-#     for i in range(len(l)):
-#         for j in range(i+1,len(l)):
-#             if abs(l[i] - l[j]) == k:
-#                 l1.append(nums[i:j])
-#                 count = count +1
-#     print(l1)
-#     return l
+def subarraySum(nums, k):
+    l = [0]
+    g =0
+    for num in nums:
+        g = g + num
+        l.append(g)
+    count = 0
+    l1 = []
+    for i in range(len(l)):
+        for j in range(i+1,len(l)):
+            if abs(l[i] - l[j]) == k:
+                l1.append(nums[i:j])
+                count = count +1
+    print(l1)
+    return l
 #
 #
 # print(subarraySum(nums=[1,2,3,4,2,6,2,4,2], k=8))
@@ -978,6 +973,57 @@ import operator
 
 
 
+# Linked List
+# class Node:
+#     def __init__(self,data):
+#         self.data =data
+#         self.next = None
+#
+# class LinkedList:
+#     def __init__(self):
+#         self.head = None
+#
+#     def append(self,data):
+#         node_data = Node(data)
+#         node = self.head
+#         if self.head is None:
+#             self.head = node_data
+#         else:
+#             while node.next is not None:
+#                 node = node.next
+#             node.next = node_data
+#
+#     def delete_a_node(self,data):
+#         node = self.head
+#         if self.head.data == data:
+#             self.head.next = self.head
+#             node.next = None
+#
+#
+#     def print_linkedlist(self):
+#         while self.head is not None:
+#             print(self.head.data)
+#             self.head = self.head.next
+#
+# f = LinkedList()
+# f.append(9)
+# f.append(8)
+# f.append(7)
+# f.append(6)
+# f.delete_a_node(9)
+# f.print_linkedlist()
 
 
+import re
 
+
+def longestSubstring(str):
+    letter = max(re.findall(r'\D+', str), key=len)
+    digit = max(re.findall(r'\d+', str), key=len)
+
+    return letter, digit
+
+
+# Driver Code
+str = 'geeks23geeksforgeeks1'
+print(longestSubstring(str))

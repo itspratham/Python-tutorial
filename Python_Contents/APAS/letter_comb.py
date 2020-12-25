@@ -1,3 +1,4 @@
+
 def permute(data, i, length):
     if i==length:
         print(''.join(data))
@@ -8,8 +9,7 @@ def permute(data, i, length):
             permute(data, i+1, length)
             data[i], data[j] = data[j], data[i]
 
-
-string = "ABC"
+string = "ABCD"
 n = len(string)
 data = list(string)
 permute(data, 0, n)
