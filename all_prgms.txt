@@ -1,0 +1,103 @@
+1. Fibonacci series 
+
+2. A prime number 
+
+3. String Palindrome 
+
+4. Integer Palindrome 
+
+5. Armstrong number 
+
+6. Avoiding deadlock in Java 
+
+7. Factorial 
+
+8. Reverse a String 
+
+9. Remove duplicates from an array 
+
+10. Printing patterns (solutions)
+
+11. Print repeated characters of String? 
+
+12. GCD of two numbers 
+
+13. The square root of a number 
+
+14. Reverse array in place 
+
+15. Reverse words of a sentence 
+
+16. Leap year 
+
+17. Binary search 
+
+18. String Anagram 
+
+19. Design a Vending Machine 
+
+20. Reverse a number 
+
+21. The first non-repeated character of String 
+
+22. Finding Middle element of linked list in one pass 
+
+23. Pre-order traversal 
+
+24. Pre-order traversal without recursion 
+
+25. In order traversal 
+
+26. In order traversal without recursion 
+
+27. Post-order traversal 
+
+28. Postorder traversal without recursion 
+
+29. Print all leaves of a binary tree 
+
+30. Sort array using quicksort 
+
+31. Insertion sort 
+
+32. Bubble sort 
+
+33. Transpose a matrix 
+
+34. Print all permutations of String 
+
+35. Reverse a String in place 
+
+36. Adding two matrices in Java 
+
+37. Matrix multiplication 
+
+38. Removal all white space from String 
+
+39. Reverse a linked list 
+
+40. Find the length of the linked list 
+
+41. Check if a linked list has a loop 
+
+42. Find the start of loop in a linked list 
+
+43. Find the middle element of a linked list 
+
+44. Find the 3rd element from the tail linked list 
+
+44. Convert a linked list to a binary tree 
+
+45. Sort a linked list 
+
+46. Iterative Quicksort 
+
+46. Bucket sort 
+
+47. Counting sort 
+
+48. Check if two string rotation of each other
+
+49. LRU cache in Java 
+
+50. Merge sort

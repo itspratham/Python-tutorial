@@ -14,17 +14,17 @@
 # say_whe()
 
 
-def employee(x):
-    print("employee name is radha")
-    x()
-    print("her age is 19")
-    return str
-
-@employee
-def employee1():
-    print("the salary is 20k")
-
-employee1()
+# def employee(x):
+#     print("employee name is radha")
+#     x()
+#     print("her age is 19")
+#     return str
+#
+# @employee
+# def employee1():
+#     print("the salary is 20k")
+#
+# employee1()
 
 
 
@@ -33,3 +33,16 @@ employee1()
 #     print("the salary is 40k")
 #
 # employee2()
+
+
+def func(afun):
+    def wrapper(*args, **kwargs):
+        afun()
+        print(args, kwargs)
+    return wrapper
+
+@func
+def bbb(*args, **kwargs):
+    print("inside bbbb")
+
+bbb([3,3,2,],goo ="grf",jnf="vfm")

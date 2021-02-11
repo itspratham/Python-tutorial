@@ -9,7 +9,7 @@ def rota(arr):
         l.append(k)
         f = arr.pop()
         arr.insert(0,f)
-    return max(l)
+    return arr1
 
 print(rota([4,3,2,6]))
 

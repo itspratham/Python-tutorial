@@ -5,4 +5,7 @@ def search_a_two_d(l,target):
                 return True
     return False
 
-print(search_a_two_d([ [1,3,4,6],[12,45,65,32],[54,76,32,56], [44,90,92,99]], 99))
+
+print(search_a_two_d([[1, 3, 4, 6], [12, 45, 65, 32], [54, 76, 32, 56], [44, 90, 92, 99]], 50))
+
+

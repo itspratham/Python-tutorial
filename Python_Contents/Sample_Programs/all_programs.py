@@ -16,7 +16,7 @@
 
 # 2. A prime number
 
-
+#
 # num = int(input("Enter a number: "))
 #
 # if num > 1:
@@ -600,4 +600,68 @@
 #     return arr[minimum]
 #
 # print(closest([3,5,1,3,4,333,5,6],333))
+
+# def afunc(arr):
+#     if len(arr)<3:
+#         return "input toh sahi se de"
+#     first = arr[0]
+#     second = -333333333
+#     third = -5555555555555
+#     for i in range(1, len(arr)):
+#         if arr[i] < first:
+#             third =second
+#             second = first
+#             first = arr[i]
+#         elif arr[i] <second:
+#             third = second
+#             second = arr[i]
+#         elif arr[i] < third:
+#             third = arr[i]
+#     print("The third element is {}".format(third))
+#
+# afunc([12, 12.5, 1, 10, 11, 34, 16])
+
+
+
+# def afunc(arr):
+#     for i in range(len(arr)):
+#         for j in range(i, len(arr)):
+#             if arr[i] > arr[j]:
+#                 temp = arr[i]
+#                 arr[i] = arr[j]
+#                 arr[j] = temp
+#     print(arr)
+# afunc([12, 13, 1, 10, 34, 16])
+
+# def cfunc(arr):
+#     def wrapper(*args, **kwargs):
+#         arr(*args, **kwargs)
+#     return wrapper
+#
+# @cfunc
+# def assign(arr,):
+#     print(arr+1)
+#
+# assign(4)
+
+# def my_gen():
+#     n = 1
+#     print('This is printed first')
+#     # Generator function contains yield statements
+#     yield n
+#
+#     n += 1
+#     print('This is printed second')
+#     yield n
+#
+#     n += 1
+#     print('This is printed at last')
+#     yield n
+#
+# c = my_gen()
+# print(next(c))
+# print(next(c))
+# print(next(c))
+# print(next(c))
+
 
