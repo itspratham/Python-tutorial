@@ -12,7 +12,7 @@ if form.getvalue("name"):
     name = form.getvalue("name")
     print("<h1>Hello" + name + "! Thanks for using my script!</h1><br />")
 if form.getvalue("happy"):
-    print("<p> Yayy! I'm happy too! </p>")
+    print("<p> Yay! I'm happy too! </p>")
 if form.getvalue("sad"):
     print("<p> Oh no! Why are you sad? </p>")
 
