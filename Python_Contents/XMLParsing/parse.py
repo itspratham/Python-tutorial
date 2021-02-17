@@ -21,7 +21,7 @@ class MovieHandler(xml.sax.ContentHandler):
             print("Title:", title)
 
     # Call when an elements ends
-    def endElement(self, tag):
+    def endElement(self):
         if self.CurrentData == "type":
             print("Type:", self.type)
 
@@ -38,7 +38,7 @@ class MovieHandler(xml.sax.ContentHandler):
             print("Stars:", self.stars)
 
         elif self.CurrentData == "description":
-            print ("Stars:", self.stars)
+            print("Stars:", self.stars)
             "Description:", self.description
         self.CurrentData = ""
 
@@ -58,12 +58,11 @@ class MovieHandler(xml.sax.ContentHandler):
             self.description = content
 
 
-if (__name__ == "__main__"):
+if __name__ == "__main__":
     # create an XMLReader
     parser = xml.sax.make_parser()
     # turn off namepsaces
     parser.setFeature(xml.sax.handler.feature_namespaces, 0)
-
 
     # override the default ContextHandler
     Handler = MovieHandler()

@@ -12,6 +12,3 @@ with ZipFile("hello.zip", 'w') as zip:
     print('Extracting all the files now...')
     zip.extractall()
     print('Done!')
-
-
-
