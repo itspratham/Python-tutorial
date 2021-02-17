@@ -5,6 +5,5 @@ phone = "2004-959-559 # This is Phone Number3"
 num = re.sub(r'#.*$', "hello", phone)
 print("Phone Num : ", num)
 
-
-num = re.sub(r'\d$', "helo", phone)
+num = re.sub(r'\d$', "hello", phone)
 print("Phone Num : ", num)

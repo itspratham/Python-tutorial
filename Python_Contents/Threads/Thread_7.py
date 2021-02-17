@@ -2,11 +2,13 @@ import threading
 import time
 import logging
 
-logging.basicConfig(level=logging.DEBUG,format='(%(threadName)-10s) %(message)s',)
+logging.basicConfig(level=logging.DEBUG, format='(%(threadName)-10s) %(message)s', )
+
 
 def delayed():
     logging.debug('worker running')
     return
+
 
 t1 = threading.Timer(3, delayed)
 t1.setName('Timer1')

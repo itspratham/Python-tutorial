@@ -3,7 +3,8 @@ import threading
 import time
 
 logging.basicConfig(level=logging.INFO,
-                    format='[%(levelname)s] (%(threadName)-10s) %(message)s',)
+                    format='[%(levelname)s] (%(threadName)-10s) %(message)s', )
+
 
 class MyThread(threading.Thread):
 
@@ -11,6 +12,7 @@ class MyThread(threading.Thread):
         logging.info("Running")
         return
 
-for i in  range(5):
+
+for i in range(5):
     t = MyThread()
     t.start()

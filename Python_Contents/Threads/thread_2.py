@@ -1,9 +1,11 @@
 # how to spawn a thread and start
 import threading
 
+
 def worker(num):
     print("Worker", num)
     return
+
 
 t = []
 

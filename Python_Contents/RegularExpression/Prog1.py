@@ -1,8 +1,7 @@
 import re
 
-
 line = "Cats dffd smarter than are dogs hello\n"
-matchObj = re.match(r'(.*) are (.*)',line, re.I)
+matchObj = re.match(r'(.*) are (.*)', line, re.I)
 print(matchObj)
 
 if matchObj:
@@ -12,6 +11,3 @@ if matchObj:
 
 else:
     print("No match")
-
-
-

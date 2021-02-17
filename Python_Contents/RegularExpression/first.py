@@ -5,4 +5,3 @@ if line:
     print("Search --> searchObj.group() : ", line.group())
 else:
     print("No match!!")
-

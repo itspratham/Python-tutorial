@@ -3,18 +3,19 @@ import threading
 import time
 
 logging.basicConfig(level=logging.DEBUG,
-                    format='[%(levelname)s] (%(threadName)-10s) %(message)s',)
+                    format='[%(levelname)s] (%(threadName)-10s) %(message)s', )
+
 
 def worker():
     logging.debug("Start")
     time.sleep(2)
     logging.debug("Exit")
 
+
 def service():
     logging.debug("Start")
     time.sleep(4)
     logging.debug("Exit")
-
 
 
 s = threading.Thread(name="My Service", target=service)

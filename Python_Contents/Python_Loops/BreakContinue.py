@@ -3,7 +3,7 @@ user_input = True
 while user_input:
     user_input = str(input("Enter the valid input:"))
     if user_input == "quit":
-        print ("You have entered break")
+        print("You have entered break")
         break
 
     if user_input == "continue":

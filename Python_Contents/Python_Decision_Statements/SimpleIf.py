@@ -23,12 +23,11 @@ sdasdasds
 """
 
 number1 = 100
-number2= 13
+number2 = 13
 
 if number1 % 2 == 0 and number2 % 2 == 0:
-    #print("{} is a even number".format(number1))
+    # print("{} is a even number".format(number1))
     print("{} and {} is a even number".format(number1, number2))
     print("")
 else:
     print("{} and {} is a odd number".format(number1, number2))
-
