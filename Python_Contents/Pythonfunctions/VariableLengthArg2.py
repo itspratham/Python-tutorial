@@ -18,13 +18,13 @@ def sum_of_nat_no(*kwargs, **args):
     print(kwargs)
     print(args)
 
-    for k,v in args.items():
-        print("{}-dffdf{}".format(k,v))
+    for k, v in args.items():
+        print("{}-dffdf{}".format(k, v))
     return sum
 
 
-print(sum_of_nat_no(1,2,a=10,b=20,c=30))
-print(sum_of_nat_no(1,2,3,4,5,6,7,8,9,10,a=10,b=20,c=30))
-#print(sum_of_nat_no(100,200,300,400,500))
+print(sum_of_nat_no(1, 2, a=10, b=20, c=30))
+print(sum_of_nat_no(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, a=10, b=20, c=30))
+# print(sum_of_nat_no(100,200,300,400,500))
 
 print(sum_of_nat_no.__doc__)

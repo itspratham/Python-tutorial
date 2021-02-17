@@ -1,5 +1,6 @@
 # import library
-import math, random
+import math
+import random
 
 
 # function to generate OTP

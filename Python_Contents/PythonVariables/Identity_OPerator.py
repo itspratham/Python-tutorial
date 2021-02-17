@@ -5,12 +5,10 @@ a = 10
 b = 10
 
 c = a is b
-print (c)
-
+print(c)
 
 c = a is not b
 print(c)
-
 
 print(int() is 10)
 print(int)
