@@ -28,9 +28,9 @@
 # def sub(x, y):
 #     print(x - y)
 
-#check(init)
+# check(init)
 
-'''
+"""
 def my_decorator(function):
     print("Something is happening before the function is called.")
     function()
@@ -47,7 +47,7 @@ def fun2():
 
 fun1()
 fun2()
-'''
+"""
 
 
 def my_decorator(func):
@@ -55,13 +55,13 @@ def my_decorator(func):
         print("Something is happening before the function is called.")
         func()
         print("Something is happening after the function is called.")
+
     return wrapper
+
 
 @my_decorator
 def func1():
     print("Whee!")
 
+
 func1()
-
-
-

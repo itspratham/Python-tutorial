@@ -1,4 +1,4 @@
-'''
+"""
 
 def parent():
     print("Printing from the parent() function.")
@@ -11,7 +11,7 @@ def parent():
 
     print(first_child())
     print(second_child())
-'''
+"""
 
 
 

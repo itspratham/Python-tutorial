@@ -1,6 +1,5 @@
 def qsort(inlist):
-
-    if inlist==[]:
+    if not inlist:
         return []
     else:
         pivot = inlist[0]
@@ -9,4 +8,4 @@ def qsort(inlist):
         return lesser + [pivot] + greater
 
 
-print(qsort([5,3,3,2,2,4,6,3]))
+print(qsort([5, 3, 3, 2, 2, 4, 6, 3]))

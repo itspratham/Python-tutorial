@@ -20,7 +20,7 @@ class Student(object):
         total is  more than 150
         :return:
         """
-        if self.m1 > 35 and self.m2 > 35 and self.m3 >35 and self.total > 150:
+        if self.m1 > 35 and self.m2 > 35 and self.m3 > 35 and self.total > 150:
             return "Pass"
         else:
             return "Fail"
@@ -29,26 +29,21 @@ class Student(object):
         self.cal_total()
         self.cal_avg()
 
-        print("{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(self.name,self.m1,self.m2,self.m3,self.total,self.avg,self.result()))
+        print("{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(self.name, self.m1, self.m2, self.m3, self.total, self.avg,
+                                                    self.result()))
 
 
 # Read the data from the database
 import MySQLdb
 
 # Open the db connection
-db  = MySQLdb.connect("localhost","root", "root","stu")
+db = MySQLdb.connect("localhost", "root", "root", "stu")
 # Open a cursor
 cursor = db.cursor()
 cursor.execute("SELECT * FROM student_info")
-st= cursor.fetchall()
+st = cursor.fetchall()
 for i in st:
-    l = [int(i[1]),int(i[2]),int(i[1])]
-    stu = Student(i[0],l)
+    l = [int(i[1]), int(i[2]), int(i[1])]
+    stu = Student(i[0], l)
     stu.display()
 cursor.close()
-
-
-
-
-
-

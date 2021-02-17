@@ -27,7 +27,6 @@
 # employee1()
 
 
-
 # @employee
 # def employee2():
 #     print("the salary is 40k")
@@ -39,10 +38,13 @@ def func(afun):
     def wrapper(*args, **kwargs):
         afun()
         print(args, kwargs)
+
     return wrapper
 
-@func
-def bbb(*args, **kwargs):
-    print("inside bbbb")
 
-bbb([3,3,2,],goo ="grf",jnf="vfm")
+@func
+def bbb():
+    print("inside bobby")
+
+
+bbb()

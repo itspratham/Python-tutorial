@@ -7,4 +7,5 @@ def parent():
     def second_child():
         return "Printing from the second_child() function."
 
+
 parent()

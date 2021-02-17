@@ -1,4 +1,4 @@
-#Count zeros in a sorted matrix
+# Count zeros in a sorted matrix
 
 # def countzero(arr):
 #     count = 0
@@ -9,7 +9,3 @@
 #     return count
 #
 # print(countzero([[0,0,0],[0,0,1],[0,1,1]]))
-
-
-
-

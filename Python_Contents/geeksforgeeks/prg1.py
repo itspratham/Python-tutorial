@@ -93,9 +93,9 @@
 # print(smallest([2,3,4,5,6],2))
 
 
-#Nth number made of prime digits
+# Nth number made of prime digits
 
-#Rotate a 2D array without using extra space
+# Rotate a 2D array without using extra space
 
 # def rotate(l):
 #     new_l = []
@@ -121,7 +121,7 @@
 #     print()
 
 
-#Greater on right side
+# Greater on right side
 # Input:
 # 2
 # 6
@@ -158,7 +158,7 @@
 
 # main()
 
-#Replace all 0's with 5
+# Replace all 0's with 5
 # Example:
 # Sample Input:
 # 2
@@ -186,7 +186,7 @@
 # print(reaplce("1201000"))
 
 
-#Game with nos
+# Game with nos
 # Constraints:
 #
 # 1<=t<=100
@@ -214,7 +214,7 @@
 # print(game([10,11, 1, 2, 3]))
 
 
-#Reverse array in groups
+# Reverse array in groups
 # Input
 # 4
 # 5 3
@@ -245,7 +245,7 @@
 #     arr1 = []
 #     n = len(arr) - k
 
-#Count pairs with given sum
+# Count pairs with given sum
 # Example:
 # Input
 # 2
@@ -268,9 +268,10 @@
 # print(function([1,5,7,1],6))
 
 
-
 import operator
-#Find Missing And Repeating
+
+
+# Find Missing And Repeating
 # def misising(arr):
 #     d = dict()
 #     l = []
@@ -291,7 +292,7 @@ import operator
 # print(misising([3,4,6,3,4,4,1,5,5,5,5,5,5,2,1]))
 
 
-#Non-Repeating Element
+# Non-Repeating Element
 
 
 # def nonrepeat(arr):
@@ -307,7 +308,6 @@ import operator
 #     return min(inverse)[1]
 #
 # print(nonrepeat([9 ,4, 9, 6 ,7 ,4]))
-
 
 
 # Find the smallest and second smallest element in an array
@@ -345,8 +345,7 @@ import operator
 # print(smallest([-1,2,3, 12, 13, 1, 10, 34, 1]))
 
 
-
-#ugly numbers
+# ugly numbers
 
 # def maxDivide( a, b ):
 # 	while a % b == 0:
@@ -422,7 +421,7 @@ import operator
 #
 # v.print_queue()
 
-#Stock buy and sell
+# Stock buy and sell
 # Example
 # Input:
 # 3
@@ -451,26 +450,28 @@ import operator
 
 def subarraySum(nums, k):
     l = [0]
-    g =0
+    g = 0
     for num in nums:
         g = g + num
         l.append(g)
     count = 0
     l1 = []
     for i in range(len(l)):
-        for j in range(i+1,len(l)):
+        for j in range(i + 1, len(l)):
             if abs(l[i] - l[j]) == k:
                 l1.append(nums[i:j])
-                count = count +1
+                count = count + 1
     print(l1)
     return l
+
+
 #
 #
 # print(subarraySum(nums=[1,2,3,4,2,6,2,4,2], k=8))
 #
 
 
-#Smallest subarray with sum greater than x
+# Smallest subarray with sum greater than x
 # Examples:
 # A[] = {1, 4, 45, 6, 0, 19}
 #    x  =  51
@@ -542,7 +543,7 @@ def subarraySum(nums, k):
 # for i in range(0, len(arr)):
 #     print(arr[i],)
 
-#Kth smallest element
+# Kth smallest element
 # Input:
 # 2
 # 6
@@ -566,7 +567,7 @@ def subarraySum(nums, k):
 # print(smallest([1,2,3,4,5,6],6))
 
 
-#Sum of array elements
+# Sum of array elements
 # Example:
 # Input:
 # 2
@@ -587,7 +588,7 @@ def subarraySum(nums, k):
 # print(summ([1,2,3,4]))
 
 
-#Sum of f(a[i], a[j]) over all pairs in an array of n integers
+# Sum of f(a[i], a[j]) over all pairs in an array of n integers
 
 # def sum_of_All_pairs(arr):
 #     g = 0
@@ -612,8 +613,7 @@ def subarraySum(nums, k):
 # print(sherlock([0,1,1,2,2,3],6))
 
 
-
-#Ishaan Loves Chocolates
+# Ishaan Loves Chocolates
 # As we know, Ishaan has a love for chocolates.
 # He has bought a huge chocolate bar which contains N chocolate squares.
 # Each of the square has a tastiness level which is denoted by an array A[].
@@ -709,8 +709,6 @@ def subarraySum(nums, k):
 # print(distinct([-3 ,-2, 0, 3, 4 ,5]))
 
 
-
-
 # Inverse Permutation
 # Example:
 # Input:
@@ -765,7 +763,7 @@ def subarraySum(nums, k):
 # print(multiply([5,5,5,5,5,5,5,5,5,5]))
 
 
-#Count Pairs in an Array
+# Count Pairs in an Array
 # Example:
 #
 # Input: arr[] = {5, 0, 10, 2, 4, 1, 6}
@@ -786,8 +784,6 @@ def subarraySum(nums, k):
 #     print(count)
 #
 # count_pairs([5, 0, 10, 2, 4, 1, 6])
-
-
 
 
 # Convert array into Zig-Zag fashion
@@ -917,8 +913,6 @@ def subarraySum(nums, k):
 # print(count, end=" ")
 
 
-
-
 # Minimum number to make median X
 
 # Max Circular Subarray Sum
@@ -940,7 +934,6 @@ def subarraySum(nums, k):
 # print([ciruclar_sum([-1 ,40, -14, 7 ,6 ,5, -4, -1])])
 #
 # print([ciruclar_sum([10 ,-3, -4, 7, 6 ,5 ,-4, -1])])
-
 
 
 # Ugly Numbers
@@ -969,8 +962,6 @@ def subarraySum(nums, k):
 #
 # no = getNthUglyNo(int(input("Enter the no: ")))
 # print("150th ugly no. is ", no)
-
-
 
 
 # Linked List

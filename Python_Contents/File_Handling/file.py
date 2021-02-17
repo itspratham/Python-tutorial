@@ -9,7 +9,7 @@
 # f = open("hen.txt", "a")
 # f.write("Now the file has more content!")
 # f.close()
-#Assignment- Do it through loop
+# Assignment- Do it through loop
 
 #
 # f = open("hen.txt", "r")
@@ -26,17 +26,14 @@
 # f.write("hello How are you")
 
 
-
 # import os
 # os.remove("E:\Python\python programs\Python\FirstProject\dog.txt")
 
 
-
-
-f = open("hen.txt","r")
+f = open("hen.txt", "r")
 filee = f.read()
 
-fdf = filee.replace("'",'""')
+fdf = filee.replace("'", '""')
 
-g = open("hen.txt","w")
+g = open("hen.txt", "w")
 g.write(fdf)
