@@ -12,26 +12,26 @@
 # return [0, 1].
 
 
-# def twoSum(nums, target):
-#     seen = {}
-#     for i, value in enumerate(nums):  # 1
-#         remaining = target - nums[i]  # 2
-#         if remaining in seen:  # 3
-#             return [seen[remaining], i]  # 4
-#         else:
-#             seen[value] = i  # 5
+def twoSum(nums, target):
+    seen = {}
+    for i, value in enumerate(nums):  # 1
+        remaining = target - nums[i]  # 2
+        if remaining in seen:  # 3
+            return [seen[remaining], i]  # 4
+        else:
+            seen[value] = i  # 5
+
+
+print(twoSum([3, 2, 7, 11, 7, 15], 26))
+
+
+# def removeDuplicates(nums):
+#     l = []
+#     for i in nums:
+#         if i not in l:
+#             l.append(i)
 #
-# print(twoSum([3,2,7,11,7,15],26)
-#       )
-
-
-def removeDuplicates(nums):
-    l = []
-    for i in nums:
-        if i not in l:
-            l.append(i)
-
-    return l
-
-
-print(removeDuplicates(nums=[0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
+#     return l
+#
+#
+# print(removeDuplicates(nums=[0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
