@@ -4,11 +4,18 @@
 3 7 10
 4 8 11 13
 5 9 12 14 15
+<<<<<<< Updated upstream
 """
 
 n = 7
 for i in range(1, n):
     l = n - 2
+=======
+'''
+n = 9
+for i in range(1, n) :
+    l = n-2
+>>>>>>> Stashed changes
     j = i
     for k in range(i):
         print(j, end=' ')

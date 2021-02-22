@@ -192,10 +192,10 @@ class LinkedList:
 ll = LinkedList()
 ll.append(1)
 ll.append(2)
-ll.prepend(3)
+#ll.prepend(3)
 ll.append(5)
 ll.append(87)
-ll.prepend(89)
-ll.sortList()
+#ll.prepend(89)
+#ll.sortList()
 ll.print_list()
 
