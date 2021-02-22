@@ -12,8 +12,6 @@
 #     h = h - 2
 #     r=r-1
 #     print(" ")
-<<<<<<< Updated upstream
-=======
 
 
 
@@ -55,4 +53,3 @@ for i in range(0,6):
     print()
     a = a-3*d
     d = d+1
->>>>>>> Stashed changes
