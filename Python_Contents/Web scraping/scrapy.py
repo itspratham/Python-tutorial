@@ -15,7 +15,7 @@ import requests
 page = requests.get("https://www.ndtv.com/topic/top-stories").text
 soup = BeautifulSoup(page, 'html.parser')
 
-s= soup.find(id="news_list")
-for i in s.findAll(class_ = "header fbld"):
+s = soup.find(id="news_list")
+for i in s.findAll(class_="header fbld"):
     for j in i:
         print(j.get_text())

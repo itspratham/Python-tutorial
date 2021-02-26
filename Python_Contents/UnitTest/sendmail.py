@@ -13,7 +13,7 @@ try:
     smtpobj = smtplib.SMTP('smtp.gmail.com:587')
     smtpobj.ehlo()
     smtpobj.starttls()
-    smtpobj.login(fromaddr,"put your password")
+    smtpobj.login(fromaddr, "put your password")
     smtpobj.sendmail(fromaddr, to, message)
     smtpobj.close()
     print("Email sent successfully")

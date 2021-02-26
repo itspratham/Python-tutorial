@@ -1,56 +1,64 @@
 # 1. Fibonacci series
 
 # def Fibonacci(n):
-#     if n<0:
+#     if n < 0:
 #         print("Incorrect input")
 #     # First Fibonacci number is 0
-#     elif n==1:
+#
+#     elif n == 1:
 #         return 0
 #     # Second Fibonacci number is 1
-#     elif n==2:
+#     elif n == 2:
 #         return 1
 #     else:
-#         return Fibonacci(n-1)+Fibonacci(n-2)
+#         return Fibonacci(n - 1) + Fibonacci(n - 2)
+#
 #
 # print(Fibonacci(9))
 
 # 2. A prime number
 
-#
+
 # num = int(input("Enter a number: "))
 #
 # if num > 1:
-# 	for i in range(2, num):
-# 		if (num % i) == 0:
-# 			print(num, "is not a prime number")
-# 			print(i, "times", num // i, "is", num)
-# 			break
-# 	else:
-# 		print(num, "is a prime number")
+#     for i in range(2, num):
+#         if (num % i) == 0:
+#             print(num, "is not a prime number")
+#             print(i, "times", num // i, "is", num)
+#             break
+#     else:
+#         print(num, "is a prime number")
 #
 # else:
-# 	print(num, "is not a prime number")
-
+#     print(num, "is not a prime number")
 
 # 3. String Palindrome
 
 # def palindrome(n):
 #     for i in range(len(n)):
-#         if n[i] != n[len(n)-i-1]:
+#         # if n[i] != n[len(n) - i - 1]:
+#         #     return False
+#         if n[i] != n[-(i+1)]:
 #             return False
 #     return True
+#
+#
 # print(palindrome("racecar"))
 
 # 4. Integer Palindrome
 
 # num = input("Enter the number: ")
 # num = int(num)
+#
+#
 # def reverse(num):
-#   rev = 0
-#   while num > 0:
-#     rev = (10*rev) + num%10
-#     num //= 10
-#   return rev
+#     rev = 0
+#     while num > 0:
+#         rev = (10 * rev) + num % 10
+#         num //= 10
+#     return rev
+#
 #
 # print(num)
 # if num == reverse(num):
@@ -82,21 +90,21 @@
 
 # Function to calculate x raised to the power y
 # def power(x, y):
-# 	if y==0:
-# 		return 1
-# 	if y%2==0:
-# 		return power(x, y/2)*power(x, y/2)
-# 	return x*power(x, y/2)*power(x, y/2)
-#
-# # Function to calculate order of the number
+#     if y == 0:
+#         return 1
+#     if y % 2 == 0:
+#         return power(x, y / 2) * power(x, y / 2)
+#     return x * power(x, y / 2) * power(x, y / 2)
+
+
+# Function to calculate order of the number
 # def order(x):
-#
-# 	# variable to store of the number
-# 	n = 0
-# 	while (x!=0):
-# 		n = n+1
-# 		x = x/10
-# 	return n
+#     # variable to store of the number
+#     n = 0
+#     while x != 0:
+#         n = n + 1
+#         x = x / 10
+#     return n
 #
 # # Function to check whether the given number is
 # # Armstrong number or not
@@ -113,7 +121,7 @@
 # 	# If condition satisfies
 # 	return (sum1 == x)
 #
-#0
+# 0
 # # Driver Program
 # x = 153
 # print(isArmstrong(x))
@@ -127,27 +135,30 @@
 #     if n == 0 and 1:
 #         return 1
 #     else:
-#         return fact(n-1) * n
+#         return fact(n - 1) * n
+#
 #
 # print(fact(6))
 
 # 8. Reverse a String
 
 # def reversed_string(string):
-#     temp =[]
+#     temp = []
 #     for i in range(len(string)):
-#         temp.append(string[len(string)-i-1])
+#         # temp.append(string[len(string) - i - 1])
+#         temp.append(string[- i - 1])
 #
 #     return ''.join(temp)
+#
+#
 # print(reversed_string("jack"))
-
 
 # 9. Remove duplicates from an array
 
 # myList = [1, 2, 3, 1, 2, 5, 6, 7, 8]
-# cleanlist = []
-# [cleanlist.append(x) for x in myList if x not in cleanlist]
-# print(cleanlist)
+# clean_list = []
+# [clean_list.append(x) for x in myList if x not in clean_list]
+# print(clean_list)
 
 # 10. Printing patterns (solutions)
 #
@@ -159,12 +170,13 @@
 # for i in range(0, len(string)):
 #     count = 1
 #     for j in range(i + 1, len(string)):
-#         if (string[i] == string[j] and string[i] != ' '):
+#         if string[i] == string[j] and string[i] != ' ':
 #             count = count + 1
 #
 #             string = string[:j] + '0' + string[j + 1:]
-#
-#     if (count > 1 and string[i] != '0'):
+#     print(string)
+#     print(i)
+#     if count > 1 and string[i] != '0':
 #         print(string[i])
 # print(string)
 
@@ -172,19 +184,19 @@
 #
 # Python Program to find GCD of Two Numbers
 #
-# num1 = float(input(" Please Enter the First Value  Num1 : "))
-# num2 = float(input(" Please Enter the Second Value Num2 : "))
+# num1 = float(input("Please Enter the First Value  Num1 : "))
+# num2 = float(input("Please Enter the Second Value Num2 : "))
 #
 # a = num1
 # b = num2
 #
-# while(num2 != 0):
+# while num2 != 0:
 #     temp = num2
 #     num2 = num1 % num2
 #     num1 = temp
 #
 # gcd = num1
-# print("\n HCF of {0} and {1} = {2}".format(a, b, gcd))
+# print("HCF of {0} and {1} = {2}".format(a, b, gcd))
 
 # 13. The square root of a number
 
@@ -213,67 +225,70 @@
 
 # def reverse_array(n):
 #     array = []
-#     for i in range((len(n)-1),-1,-1):
+#     for i in range((len(n) - 1), -1, -1):
 #         array.append(n[i])
 #     return array
 #
-# print(reverse_array([323,24,2,32,42,3,23,24,4,2]))
-
-
+#
+# print(reverse_array([323, 24, 2, 32, 42, 3, 23, 24, 4, 2]))
 
 # 15. Reverse words of a sentence
 
 # def reversed_sentence(s):
 #     t = []
-#     for i in range(len(s)-1,-1,-1):
+#     for i in range(len(s) - 1, -1, -1):
 #         t.append(s[i])
 #     return ''.join(t)
 #
-# print(reversed_sentence("hmfkdmf mdfm"))
+#
+# print(reversed_sentence("hmfkdmf mdfm").strip())
 
 
 # 16. Leap year
 #
 # 17. Binary search
-# def binary_search(lists,x):
+# def binary_search(lists, x):
 #     lists.sort()
-#     mid = (len(lists) - 1)//2
-#     if len(lists)>=1:
+#     mid = (len(lists) - 1) // 2
+#     if len(lists) >= 1:
 #         if x == lists[mid]:
 #             return True
 #
 #         elif x < lists[mid]:
 #             lists = lists[0:mid]
-#             return binary_search(lists,x)
+#             return binary_search(lists, x)
 #
 #         else:
-#             lists = lists[mid+1:]
-#             return binary_search(lists,x)
+#             lists = lists[mid + 1:]
+#             return binary_search(lists, x)
 #     else:
 #         return False
-# a = list(map(int,input('enter list :').strip().split()))
-# x = int(input('enter number for binary search : '))
 #
-# print(binary_search(a,x))
+#
+# a = list(map(int, input('enter list: ').strip().split()))
+# x = int(input('enter number for binary search: '))
+#
+# print(binary_search(a, x))
 
 # 18. String Anagram
-# str1="abcd"
-# str2="bcad"
-# word1=[]
-# word2=[]
+# str1 = "abcd"
+# str2 = "bcad"
+# word1 = []
+# word2 = []
 # for x in range(len(str1)):
 #     word1.append(str1[x])
 # for x in range(len(str2)):
 #     word2.append(str2[x])
-# if(len(word1)==len(word2)):
+# if len(word1) == len(word2):
 #     for letter in word1:
 #         if letter in word2:
 #             word2.remove(letter)
 #
-# if len(word2)==0:
+# if len(word2) == 0:
 #     print("anagram")
 # else:
-#     print ("not anagram")
+#     print("not anagram")
+
 # 19. Design a Vending Machine
 #
 # 20. Reverse a number
@@ -417,10 +432,7 @@
 #     print("Strings are not rotations of each other")
 
 
-
-
 # 50. Merge sort
-
 
 
 # def merge_sort(x):
@@ -578,7 +590,7 @@
 # print(l.length())
 
 
-#Find the max element in the array
+# Find the max element in the array
 # def max_array(arr):
 #     max = arr[0]
 #     for i in range(len(arr)):
@@ -589,9 +601,7 @@
 # print(max_array([4,76,2,4,6,7]))
 
 
-
-
-#Find the closest number
+# Find the closest number
 # def closest(arr,number):
 #     some =[]
 #     for i in range(len(arr)):
@@ -620,7 +630,6 @@
 #     print("The third element is {}".format(third))
 #
 # afunc([12, 12.5, 1, 10, 11, 34, 16])
-
 
 
 # def afunc(arr):
@@ -663,5 +672,3 @@
 # print(next(c))
 # print(next(c))
 # print(next(c))
-
-
