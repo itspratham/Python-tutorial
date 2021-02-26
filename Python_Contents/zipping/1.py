@@ -1,8 +1,7 @@
 from zipfile import ZipFile
-
+import tempfile
 # specifying the zip file name
 file_name = "my_python_files.zip"
-
 
 # opening the zip file in READ mode
 with ZipFile("hello.zip", 'w') as zip:
@@ -14,17 +13,8 @@ with ZipFile("hello.zip", 'w') as zip:
     zip.extractall()
     print('Done!')
 
-
-import tempfile
-
-#
-#
-#
-
-
-
-first_name = ['Joe','Earnst','Thomas','Martin','Charles']
-last_name = ['Schmoe','Ehlmann','Fischer','Walter','Rogan','Green']
+first_name = ['Joe', 'Earnst', 'Thomas', 'Martin', 'Charles']
+last_name = ['Schmoe', 'Ehlmann', 'Fischer', 'Walter', 'Rogan', 'Green']
 
 # f = []
 # for i in range(len(first_name)):
@@ -36,8 +26,6 @@ last_name = ['Schmoe','Ehlmann','Fischer','Walter','Rogan','Green']
 
 
 print(tempfile.gettempdir())  # prints the current temporary directory
-
-
 
 # import tempfile
 #
