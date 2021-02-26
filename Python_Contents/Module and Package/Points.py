@@ -10,7 +10,7 @@ class Point(object):
     def __add__(self, other):
         a = self.a + other.a
         b = self.b + other.b
-        return Point(a,b)
+        return Point(a, b)
 
     def __mul__(self, other):
         a = self.a * other.a
@@ -22,23 +22,25 @@ class Point(object):
             print("{} is greater".format(self))
         else:
             print("{} is greater".format(other))
+
     def __gt__(self, other):
         pass
 
-    def __le__(self,other):
+    def __le__(self, other):
         pass
 
     def __eq__(self, other):
         pass
 
-p1 = Point(10,20)
-p2 = Point(30,60)
+
+p1 = Point(10, 20)
+p2 = Point(30, 60)
 print(p1)
 print(p2)
 
-#(40,80)
+# (40,80)
 p3 = p1 + p2
 p4 = p1 * p2
-p1 >= p2
+var = p1 >= p2
 print(p3)
 print(p4)

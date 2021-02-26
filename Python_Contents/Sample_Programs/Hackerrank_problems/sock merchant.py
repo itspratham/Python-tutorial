@@ -9,7 +9,8 @@
 #
 # Function Description
 #
-# Complete the sockMerchant function in the editor below. It must return an integer representing the number of matching pairs of socks that are available.
+# Complete the sockMerchant function in the editor below. It must return an integer representing the number of
+# matching pairs of socks that are available.
 #
 # sockMerchant has the following parameter(s):
 #
@@ -36,27 +37,21 @@
 # 3
 
 
+# Solution
 
 
-#Solution
-
-
-
-
-# n=int(input())
-# l=[int(x) for x in input().split()]
-# q=[0 for x in range(101)]
+# n = int(input())
+# l = [int(x) for x in input().split()]
+# q = [0 for x in range(101)]
 #
 # for i in l:
-#     q[i]+=1
+#     q[i] += 1
 # print(q)
-# ans=0
+# ans = 0
 # for i in q:
-#     if i>1:
-#         ans+=int(i/2)
+#     if i > 1:
+#         ans += int(i / 2)
 # print(ans)
-
-
 
 # n = int(input())
 # temp = input().split(' ')
@@ -71,21 +66,22 @@
 # print(count)
 
 
-# n=int(input())
-# c=list(int(i) for i in input().split())
-# cou=0
-# for i in set(c):
-#     if(c.count(i)>=2):
-#         cou+=c.count(i)//2
-# print(cou)
-
 # n = int(input())
 # c = list(int(i) for i in input().split())
-# cout = 0
-# for  i in set(c):
-#     if c.count(i)>=2:
-#         cout += c.count(i)//2
-# print(cout)
+# cou = 0
+# for i in set(c):
+#     if (c.count(i) >= 2):
+#         cou += c.count(i) // 2
+# print(cou)
+
+n = int(input())
+c = list(int(i) for i in input().split())
+cout = 0
+for i in set(c):
+    if c.count(i) >= 2:
+        cout += c.count(i) // 2
+print(cout)
+
 
 def rotLeft(a, d):
     for i in range(d):
@@ -93,4 +89,6 @@ def rotLeft(a, d):
         a.remove(f)
         a.append(f)
     return a
-print(rotLeft([5,6,8,3,4],2))
+
+
+print(rotLeft([5, 6, 8, 3, 4], 2))

@@ -1,4 +1,4 @@
-#Write a Python program to find the first duplicate element
+# Write a Python program to find the first duplicate element
 # in a given array of integers.
 # Return -1 If there are no such elements.
 #
@@ -28,7 +28,7 @@
 # print(find_first_duplicate([1, 1, 2, 3, 3, 2, 2]))
 
 
-#Write a Python program to find whether a given array
+# Write a Python program to find whether a given array
 # of integers contains any duplicate element.
 # Return true if any value appears at least twice in the said array
 # and return false if every element is distinct.
@@ -58,8 +58,8 @@
 # print("Convert the said array to an ordinary list with the same items:")
 # print(num_list)
 
-#Write a Python program to remove the first occurrence of a specified element from an array.
-#l = [1,3,4,5,3,5]
+# Write a Python program to remove the first occurrence of a specified element from an array.
+# l = [1,3,4,5,3,5]
 # l.remove(5)
 # print(l)
 
@@ -80,11 +80,7 @@
 # print("New array: "+str(array_num))
 
 
-
-
-
-
-# 1. Write a python program to sort a numeric array and a string array. 
+# 1. Write a python program to sort a numeric array and a string array.
 # 
 
 # 
@@ -114,8 +110,7 @@
 #     print()
 
 
-
-# 4. Write a python program to calculate the average value of array elements. 
+# 4. Write a python program to calculate the average value of array elements.
 
 # def arrayy(Arr):
 #     n =len(Arr)
@@ -141,10 +136,7 @@
 # print(index([3,1,2,5,7,10],10))
 
 
-
-
-
-# 7. Write a python program to remove a specific element from an array. 
+# 7. Write a python program to remove a specific element from an array.
 
 # def specific_pgm(array,specific):
 #     for i in range(len(array)):
@@ -174,9 +166,7 @@
 # print(arary([2,4,2,1,5,6,7],4,9))
 
 
-
-
-# 10. Write a python program to find the maximum and minimum value of an array. 
+# 10. Write a python program to find the maximum and minimum value of an array.
 
 # def max_min(arr):
 #     min =arr[0]
@@ -203,11 +193,7 @@
 # print(reve([2,34,4,5,6,7,54,3,2,2,4,4]))
 
 
-
-
-
-
-# 12. Write a python program to find the duplicate values of an array of integer values. 
+# 12. Write a python program to find the duplicate values of an array of integer values.
 
 # def duplicate(arr):
 #     new = []
@@ -219,9 +205,7 @@
 # print(duplicate([2,6,4,3,2,8,4,6]))
 
 
-
-
-# 13. Write a python program to find the duplicate values of an array of string values. 
+# 13. Write a python program to find the duplicate values of an array of string values.
 # def duplicate(arr):
 #     new = []
 #     for i in range(len(arr)):
@@ -232,8 +216,7 @@
 # print(duplicate(["hello","humpty","Dumpty","hello"]))
 
 
-
-# 14. Write a python program to find the common elements between two arrays (string values). 
+# 14. Write a python program to find the common elements between two arrays (string values).
 
 # def common_elements(arr1,arr2):
 #     common = []
@@ -245,8 +228,7 @@
 # print(common_elements([2,34,5,6,7,2,6,8],[1,2,3,4,5,6,7]))
 
 
-
-# 15. Write a python program to find the common elements between two arrays of integers. 
+# 15. Write a python program to find the common elements between two arrays of integers.
 # 
 # 
 # 
@@ -267,9 +249,7 @@
 # 17. Write a python program to find the second largest element in an array.
 
 
-
-
-# 18. Write a python program to find the second smallest element in an array. 
+# 18. Write a python program to find the second smallest element in an array.
 
 # def second(arr):
 #     for i in range(0,len(arr)):
@@ -282,8 +262,7 @@
 # print(second([2,5,4,8,97,3,56]))
 
 
-
-# 19. Write a python program to add two matrices of the same size. 
+# 19. Write a python program to add two matrices of the same size.
 # l = [[1,2],
 #      [3,4]]
 # l1 = [[1,2],
@@ -296,9 +275,7 @@
 # print(copy)
 
 
-
-
-# 20. Write a python program to convert an array to ArrayList. 
+# 20. Write a python program to convert an array to ArrayList.
 # no need
 # 
 # 
@@ -309,29 +286,29 @@
 # 22. Write a python program to find all pairs of elements in an array
 # whose sum is equal to a specified number.
 
-# arr= [2,3,-5,5,2,7,8,6,16]
+# arr = [2, 3, -5, 5, 2, 7, 8, 6, 16]
 # f = 11
 # for i in range(len(arr)):
-#     for j in range(i+1):
+#     for j in range(i + 1):
 #         if arr[i] + arr[j] == f:
 #             print(f"{arr[i]} + ({arr[j]}) = {f}")
 
+# 23. Write a python program to test the equality of two arrays.
 
-# 23. Write a python program to test the equality of two arrays. 
-
-# def equality(arr1,arr2):
+# def equality(arr1, arr2):
 #     f = True
 #     for i in range(len(arr1)):
 #         for j in range(len(arr2)):
 #             if arr1[i] != arr2[j]:
 #                 f = False
 #             else:
-#                 f=  True
+#                 f = True
 #     return f
-# print(equality([1,2,3,4,5],[1,2,3,4,5]))
+#
+#
+# print(equality([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]))
 
-
-# 24. Write a python program to find a missing number in an array. 
+# 24. Write a python program to find a missing number in an array.
 # 
 # 
 # 
@@ -348,7 +325,7 @@
 # 27. Write a python program to find the number of even and odd integers in a given array
 # of integers.
 
-#can be dne
+# can be dne
 
 # 28. Write a python program to get the difference between the largest and smallest
 # values in an array of integers. The length of the array must be 1 and above.
@@ -357,14 +334,14 @@
 #     maxx = arr[0]
 #     minn = arr[1]
 #     for i in range(len(arr)):
-#         if minn> arr[i]:
+#         if minn > arr[i]:
 #             minn = arr[i]
 #         else:
 #             maxx = arr[i]
-#     return maxx-minn
-# print(largest_smallest([2,4,1,3,4,5,9,88]))
-
-
+#     return maxx - minn
+#
+#
+# print(largest_smallest([2, 4, 1, 3, 4, 5, 9, 88]))
 
 # 29. Write a python program to compute the average value of an array of integers
 # except the largest and smallest values.
@@ -373,16 +350,15 @@
 #     maxx = arr[0]
 #     minn = arr[1]
 #     for i in range(len(arr)):
-#         for j in range(i+1,len(arr)):
+#         for j in range(i + 1, len(arr)):
 #             temp = arr[i]
 #             arr[i] = arr[j]
 #             arr[j] = temp
-# print(largest_smallest([2,4,1,3,4,5,9,88]))
+#
+#
+# print(largest_smallest([2, 4, 1, 3, 4, 5, 9, 88]))
 
-
-
-
-# 30. Write a python program to check if an array of integers without 0 and -1. 
+# 30. Write a python program to check if an array of integers without 0 and -1.
 # 
 # can be done
 # 
@@ -390,23 +366,22 @@
 # Return false if the condition does not satisfy, otherwise true.
 
 # def tens(arr):
-#     count =0
+#     count = 0
 #     for i in range(len(arr)):
-#         if arr[i]==10:
-#             count +=1
-#     if count!=3:
+#         if arr[i] == 10:
+#             count += 1
+#     if count != 3:
 #         print("False")
 #     else:
 #         print("True")
 #
-# tens([4,5,6,10,7,10,8,10,10])
-
-
+#
+# tens([4, 5, 6, 10, 7, 10, 8, 10, 10])
 
 # 32. Write a python program to check if an array of integers contains
 # two specified elements 65 and 77.
 
-#can be done
+# can be done
 
 
 # 33. Write a python program to remove the duplicate elements of a given array and
@@ -422,19 +397,15 @@
 #             new.append(arr[i])
 #
 #     return len(new)
+#
+#
 # print(duplicates([20, 20, 30, 40, 50, 50, 50]))
-
-
 
 # 34. Write a python program to find the length of the longest consecutive elements
 # sequence from a given unsorted array of integers.
 # Sample array: [49, 1, 3, 200, 2, 4, 70, 5]
 # The longest consecutive elements sequence is [1, 2, 3, 4, 5],
 # therefore the program will return its length 5.
-
-
-
-
 
 
 # 35. Write a python program to find the sum of the two elements of a given array
@@ -444,9 +415,8 @@
 # 
 # 
 # 
-# 36. Write a python program to find all the unique triplets such that sum of all the three elements [x, y, z (x ≤ y ≤ z)] equal to a specified number.
-# Sample array: [1, -2, 0, 5, -1, -4]
-# Target value: 2.  
+# 36. Write a python program to find all the unique triplets such that sum of all the three elements [x, y,
+# z (x ≤ y ≤ z)] equal to a specified number. Sample array: [1, -2, 0, 5, -1, -4] Target value: 2.
 # 
 # 
 # 
@@ -463,17 +433,20 @@
 # [4]
 # ]
 
-# l =  [[1,2],
-#       [3,4],[5,6]]
+# l = [[1, 2],
+#      [3, 4], [5, 6]]
+#
+#
 # def anti_diagmnoal(l):
-#     copy =[]
+#     copy = []
 #     for i in range(len(l)):
-#         for j in range(i+1):
+#         for j in range(i + 1):
 #             copy.append([l[i][j:]])
-#             copy.append([l[i][len(l)-i-1]])
+#             copy.append([l[i][len(l) - j - 1]])
 #     return copy
+#
+#
 # print(anti_diagmnoal(l))
-
 
 # 38. Write a python program to get the majority element from a given array of integers
 # containing duplicates.
@@ -498,8 +471,8 @@
 # of positive and negative numbers such that their sum is closest to zero.
 
 
-def zero(arr):
-    pass
+# def zero(arr):
+#     pass
 
 # 41. Write a python program to find smallest and second smallest elements of a given array.   
 
@@ -514,10 +487,6 @@ def zero(arr):
 # print(second([2,5,4,8,97,3,56]))
 
 
-
-
-
-
 # 42. Write a python program to segregate all 0s on left side and
 # all 1s on right side of a given array of 0s and 1s.
 # 
@@ -530,7 +499,6 @@ def zero(arr):
 # 
 # 44. Write a python program to count the number of possible triangles
 # from a given unsorted array of positive integers.
-
 
 
 # def possible_triangles(arr):
@@ -563,14 +531,14 @@ def zero(arr):
 # def rotated(arr):
 #     min_value = arr[0]
 #     min_index = -1
-#     for i in range(1,len(arr)):
+#     for i in range(1, len(arr)):
 #         if min_value > arr[i]:
 #             min_value = arr[i]
 #             min_index = i
 #     return min_index, arr
+#
+#
 # print(rotated([35, 32, 30, 14, 18, 21, 27]))
-
-
 
 # 48. Write a python program to arrange the elements of a given array of integers
 # where all negative integers appear before all the positive integers.
@@ -581,9 +549,7 @@ def zero(arr):
 # where all positive integers appear before all the negative integers.
 
 
-#can be done
-
-
+# can be done
 
 
 # 50. Write a python program to sort an array of positive integers of a given array,
@@ -592,32 +558,33 @@ def zero(arr):
 # fourth second be second minimum and so on.
 
 # def rearrange(arr, n):
-# 	# Auxiliary array to hold modified array
-# 	temp = n*[None]
+#     # Auxiliary array to hold modified array
+#     temp = n * [None]
 #
-# 	# Indexes of smallest and largest elements
-# 	# from remaining array.
-# 	small,large =0,n-1
+#     # Indexes of smallest and largest elements
+#     # from remaining array.
+#     small, large = 0, n - 1
 #
-# 	# To indicate whether we need to copy rmaining
-# 	# largest or remaining smallest at next position
-# 	flag = True
+#     # To indicate whether we need to copy rmaining
+#     # largest or remaining smallest at next position
+#     flag = True
 #
-# 	# Store result in temp[]
-# 	for i in range(n):
-# 		if flag is True:
-# 			temp[i] = arr[large]
-# 			large -= 1
-# 		else:
-# 			temp[i] = arr[small]
-# 			small += 1
+#     # Store result in temp[]
+#     for i in range(n):
+#         if flag is True:
+#             temp[i] = arr[large]
+#             large -= 1
+#         else:
+#             temp[i] = arr[small]
+#             small += 1
 #
-# 		flag = bool(1-flag)
+#         flag = bool(1 - flag)
 #
-# 	# Copy temp[] to arr[]
-# 	for i in range(n):
-# 		arr[i] = temp[i]
-# 	return arr
+#     # Copy temp[] to arr[]
+#     for i in range(n):
+#         arr[i] = temp[i]
+#     return arr
+#
 #
 # # Driver program to test above function
 # arr = [1, 2, 3, 4, 5, 6]
@@ -627,62 +594,62 @@ def zero(arr):
 # print("Modified Array")
 # print(rearrange(arr, n))
 
-
-
-
 # 51. Write a python program to separate 0s on left side
 # and 1s on right side of an array of 0s and 1s in random order.
 
 # def even_odd(a):
-#    l = []
-#     for  i in range(len(a)):
-#         if a[i] ==0:
+#     l = []
+#     for i in range(len(a)):
+#         if a[i] == 0:
 #             l.append(a[i])
-#     for  i in range(len(a)):
-#         if a[i] !=0:
+#     for i in range(len(a)):
+#         if a[i] != 0:
 #             l.append(a[i])
 #     return l
 #
-# print(even_odd([1,0,1,0,1,0,0,0,1,0]))
-
+#
+# print(even_odd([1, 0, 1, 0, 1, 0, 0, 0, 1, 0]))
 
 # 52. Write a python program to separate even and odd numbers of a given array of integers.
 # Put all even numbers first, and then odd numbers.
 
 # def even_odd(a):
 #     l = []
-#     for  i in range(len(a)):
-#         if a[i] % 2 ==0:
+#     for i in range(len(a)):
+#         if a[i] % 2 == 0:
 #             l.append(a[i])
-#     for  i in range(len(a)):
-#         if a[i] % 2 !=0:
+#     for i in range(len(a)):
+#         if a[i] % 2 != 0:
 #             l.append(a[i])
 #     return l
 #
-# print(even_odd([3,6,7,4,5,6,7,0]))
-
-
+#
+# print(even_odd([3, 6, 7, 4, 5, 6, 7, 0]))
 
 # 53. Write a python program to replace every element with the next greatest
 # element (from right side) in a given array of integers.
 
 # def greatest(arr):
 #     dup = []
-#     for i in range(len(arr)-1):
-#         dup.append(max(arr[i+1:]))
-#     return dup+[-1]
+#     for i in range(len(arr) - 1):
+#         dup.append(max(arr[i + 1:]))
+#     return dup + [-1]
+#
+#
 # print(greatest([45, 20, 100, 23, -5, 2, -6]))
 
+
 # def sortt(arr):
-#     for i in range(0,len(arr)-1):
-#         minindex = i
-#         for j in range(i+1,len(arr)):
-#             if arr[minindex]>arr[j]:
-#                 minindex =j
-#         arr[i],arr[minindex] = arr[minindex],arr[i]
+#     for i in range(0, len(arr) - 1):
+#         index = i
+#         for j in range(i + 1, len(arr)):
+#             if arr[index] > arr[j]:
+#                 index = j
+#         arr[i], arr[index] = arr[index], arr[i]
 #     return arr
 #
-# print(sortt([4,2,6,3,9,5,3,8,6]))
+#
+# print(sortt([4, 2, 6, 3, 9, 5, 3, 8, 6]))
 
 # def sort(a):
 #     for i in range(len(a)-1):
@@ -696,20 +663,19 @@ def zero(arr):
 # print(sort([8,4,6,10,6,9]))
 
 
-
 # Triplet problems
 
-# limit=int(input("Enter upper limit:"))
-# c=0
-# m=2
-# while(c<limit):
-#     for n in range(1,m+1):
-#         a=m*m-n*n
-#         b=2*m*n
-#         c=m*m+n*n
-#         if(c>limit):
+# limit = int(input("Enter upper limit:"))
+# c = 0
+# m = 2
+# while c < limit:
+#     for n in range(1, m + 1):
+#         a = m * m - n * n
+#         b = 2 * m * n
+#         c = m * m + n * n
+#         if c > limit:
 #             break
-#         if(a==0 or b==0 or c==0):
+#         if a == 0 or b == 0 or c == 0:
 #             break
-#         print(a,b,c)
-#     m = m+1
+#         print(a, b, c)
+#     m = m + 1

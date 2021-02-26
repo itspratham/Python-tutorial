@@ -1,6 +1,4 @@
-from xml.dom.minidom import parse
 import xml.dom.minidom
-import xml.etree.ElementTree as ET
 
 # Open the xml file using minidom parser
 

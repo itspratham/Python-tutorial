@@ -1,9 +1,9 @@
-'''
+"""
 for i in range(0,5):
     for j in range(0,i+1):
         print("*",end=" ")
     print()
-'''
+"""
 '''
 num=1
 for i in range(0,5):
@@ -39,7 +39,7 @@ for i in range(n,0,-1):
 
 '''
 for i in range(0,5):
-	print("*",end="\n")
+    print("*",end="\n")
 for j in range(0,5)  :
     print("*",end=" ")
 '''
@@ -62,17 +62,9 @@ for row in range(0,7):
     result_str=result_str+"\n"
 print(result_str)
 '''
-'''
-result=""
-for row in range(6):
-    for column in range(6):
-        if(column==0 or row==0 or row==5 and ((column>0 and column<3)) or (column==2 and (row>2 and row<5 ) or row==3 and(column>=3 and column<6 ) or column==5 and(row>3 and column<6))  ):
-            result=result+"*"
-        else:
-            result=result+" "
-    result=result+"\n"
-print(result)
-'''
+'''result="" for row in range(6): for column in range(6): if(column==0 or row==0 or row==5 and ((column>0 and 
+column<3)) or (column==2 and (row>2 and row<5 ) or row==3 and(column>=3 and column<6 ) or column==5 and(row>3 and 
+column<6))  ): result=result+"*" else: result=result+" " result=result+"\n" print(result) '''
 '''
 for i in range(1,10):
     for j in range(i):
@@ -110,7 +102,6 @@ for i in range(1, lastNumber):
         print(format(2**j, "4d"), end=' ')
     print("")
 '''
-
 
 # inc=1
 # ch = 65

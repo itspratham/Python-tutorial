@@ -1,12 +1,17 @@
 # For more information on TKinter
-#https://pythonprogramming.net/tkinter-adding-text-images/?completed=/tkinter-menu-bar-tutorial/
+# https://pythonprogramming.net/tkinter-adding-text-images/?completed=/tkinter-menu-bar-tutorial/
 # http://www.tkdocs.com/tutorial/
 # Simple enough, just import everything from tkinter.
 from tkinter import *
 import PIL
 
+
 # Here, we are creating our class, Window, and inheriting from the Frame
 # class. Frame is a class from the tkinter module. (see Lib/tkinter/__init__)
+def client_exit():
+    exit()
+
+
 class Window(Frame):
     # Define settings upon initialization. Here you can specify
 
@@ -37,7 +42,7 @@ class Window(Frame):
 
         # adds a command to the menu option, calling it exit, and the
         # command it runs on event is client_exit
-        file.add_command(label="Exit", command=self.client_exit)
+        file.add_command(label="Exit", command=client_exit)
 
         # added "file" to our menu
         menu.add_cascade(label="File", menu=file)
@@ -51,9 +56,6 @@ class Window(Frame):
 
         # added "file" to our menu
         menu.add_cascade(label="Edit", menu=edit)
-
-    def client_exit(self):
-        exit()
 
 
 # root window created. Here, that would be the only window, but

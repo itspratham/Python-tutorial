@@ -33,7 +33,7 @@
 # print(d(6,7))
 #
 
-#Write a Python program to create a function that takes one argument,
+# Write a Python program to create a function that takes one argument,
 # and that argument will be multiplied with an unknown given number.
 
 # def fun(n):
@@ -41,7 +41,6 @@
 #
 # x = fun(3)
 # print(x(4))
-
 
 
 # Write a Python program to sort a list of tuples using Lambda.
@@ -53,7 +52,7 @@
 # print(subject_marks)
 
 
-#Write a Python program to sort a list of dictionaries using Lambda.
+# Write a Python program to sort a list of dictionaries using Lambda.
 # models = [{'make':'Nokia', 'model':216, 'color':'Black'},
 #           {'make':'Mi Max', 'model':2, 'color':'Gold'},
 #           {'make':'Samsung', 'model': 7, 'color':'Blue'}]
@@ -64,7 +63,7 @@
 # print(sorted_models)
 
 
-#Write a Python program to filter a list of integers using Lambda.
+# Write a Python program to filter a list of integers using Lambda.
 # nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # print("Original list of integers:")
 # print(nums)
@@ -76,17 +75,17 @@
 # print(odd_nums)
 
 
-#Write a Python program to square and cube every number in a given list of integers using Lambda.
+# Write a Python program to square and cube every number in a given list of integers using Lambda.
 
 # f = list(map(lambda x:(x**2,x**3),range(0,10)))
 # print(f)
 
-#Write a Python program to find if a given string starts with a given character using Lambda.
+# Write a Python program to find if a given string starts with a given character using Lambda.
 # starts_with = lambda x: True if x.startswith('P') else False
 # print(starts_with("pen"))
 
 
-#Write a Python program to extract year, month, date and time using Lambda.
+# Write a Python program to extract year, month, date and time using Lambda.
 # import datetime
 # now = datetime.datetime.now()
 # year = lambda x: x.year
@@ -102,7 +101,7 @@
 # c = lambda x: False if type(x) is "int" else True
 # print(c("123"))
 
-#Write a Python program to create Fibonacci series upto n using Lambda.
+# Write a Python program to create Fibonacci series upto n using Lambda.
 
 # from functools import reduce
 #

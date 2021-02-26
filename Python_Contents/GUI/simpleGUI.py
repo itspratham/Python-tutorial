@@ -1,5 +1,11 @@
 from tkinter import *
+
+
 # import Tkinter
+
+
+def event_close():
+    exit()
 
 
 class Windows(Frame):
@@ -12,14 +18,11 @@ class Windows(Frame):
         self.master.title("My GUI")
         self.pack(fill=BOTH, expand=1)
 
-        quit_btn = Button(self, text="Quit", command=self.event_close)
-        quit_btn.place(x=100,y=200)
+        quit_btn = Button(self, text="Quit", command=event_close)
+        quit_btn.place(x=100, y=200)
 
         # Instance of menu bar
 
-
-    def event_close(self):
-        exit()
 
 tk = Tk()
 tk.geometry("800x600")

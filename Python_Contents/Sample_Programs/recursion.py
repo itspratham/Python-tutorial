@@ -69,6 +69,18 @@
 # 48
 # 49
 # 50
+
+
+# def natural_bo(n):
+#     print(n)
+#     if n == 50:
+#         return ""
+#     return natural_bo(n + 1)
+#
+#
+# print(natural_bo(1))
+
+
 # Click
 # me
 # to
@@ -129,6 +141,16 @@
 # the
 # solution
 #
+
+# def range_sum(start, end, summation):
+#
+#     if start - 1 == end:
+#         return summation
+#     return range_sum(start+1, end, (summation + start))
+#
+#
+# print(range_sum(1, 1000, 0))
+
 # 3.
 # Write
 # a

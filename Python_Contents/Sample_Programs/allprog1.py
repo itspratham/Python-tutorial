@@ -27,17 +27,17 @@
 
 # 3. String Palindrome
 
-def palindrome(n):
-    l=[]
-    for i in range(len(n)):
-        l.append(n[len(n)-i-1])
-    if n ==''.join(l):
-        print("It is a palindrome")
-    else:
-        print("It is not")
-
-palindrome("racecar")
-
+# def palindrome(n):
+#     l = []
+#     for i in range(len(n)):
+#         l.append(n[len(n) - i - 1])
+#     if n == ''.join(l):
+#         print("It is a palindrome")
+#     else:
+#         print("It is not")
+#
+#
+# palindrome("racecar")
 
 # 4. Integer Palindrome
 
@@ -80,11 +80,13 @@ palindrome("racecar")
 
 # Function to calculate x raised to the power y
 # def power(x, y):
-# 	if y==0:
-# 		return 1
-# 	if y%2==0:
-# 		return power(x, y/2)*power(x, y/2)
-# 	return x*power(x, y/2)*power(x, y/2)
+#     if y == 0:
+#         return 1
+#     if y % 2 == 0:
+#         return power(x, y / 2) * power(x, y / 2)
+#     return x * power(x, y / 2) * power(x, y / 2)
+
+
 #
 # # Function to calculate order of the number
 # def order(x):
@@ -294,7 +296,7 @@ palindrome("racecar")
 #
 # 29. Print all leaves of a binary tree
 #
-#30. Sort array using quicksort
+# 30. Sort array using quicksort
 
 
 # def qsort(inlist):
@@ -425,7 +427,6 @@ palindrome("racecar")
 # 50. Merge sort
 
 
-
 # def merge_sort(x):
 #
 #     if len(x) < 2:
@@ -446,7 +447,8 @@ palindrome("racecar")
 #     return result
 #
 # print(merge_sort([4,32,4,5,6,4,334,43]))
-''']'
+'''
+
 def pattern_match(string1,string2):
     for i in range(len(string1)):
         for j in range(len(string2)):
@@ -455,8 +457,8 @@ def pattern_match(string1,string2):
 
     return
 pattern_match("funcuncle","funcun")
-'''
 
+'''
 
 # class Node:
 #     def __init__(self,data):

@@ -34,37 +34,37 @@ def excel():
 
 
 # Function to set focus (cursor)
-def focus1(event):
+def focus1():
     # set focus on the course_field box
     course_field.focus_set()
 
 
 # Function to set focus
-def focus2(event):
+def focus2():
     # set focus on the sem_field box
     sem_field.focus_set()
 
 
 # Function to set focus
-def focus3(event):
+def focus3():
     # set focus on the form_no_field box
     form_no_field.focus_set()
 
 
 # Function to set focus
-def focus4(event):
+def focus4():
     # set focus on the contact_no_field box
     contact_no_field.focus_set()
 
 
 # Function to set focus
-def focus5(event):
+def focus5():
     # set focus on the email_id_field box
     email_id_field.focus_set()
 
 
 # Function to set focus
-def focus6(event):
+def focus6():
     # set focus on the address_field box
     address_field.focus_set()
 
@@ -103,7 +103,7 @@ def insert():
         # value upto which data is written
         # in an excel sheet to the variable
         current_row = sheet.max_row
-        current_column = sheet.max_column
+        var = sheet.max_column
 
         # get method returns current text
         # as string which we write into
