@@ -9,7 +9,7 @@
 #
 # LinearSearch([3,2,6,2,2,5,4],4)
 
-#Binary Search
+# Binary Search
 
 # def BinarySearch(arr,item):
 #     arr = sorted(arr)
@@ -26,8 +26,6 @@
 #             low = mid + 1
 #
 # print(BinarySearch([3,2,4,6,3,2,1,4],1))
-
-
 
 
 # def BinarySearch(n,item):
