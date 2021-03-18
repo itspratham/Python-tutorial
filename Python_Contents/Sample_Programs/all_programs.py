@@ -467,7 +467,7 @@
 
 
 # class Node:
-#     def __init__(self,data):
+#     def __init__(self, data):
 #         self.data = data
 #         self.next = None
 #
@@ -475,33 +475,32 @@
 # class LinkedList:
 #     def __init__(self):
 #         self.head = None
-#     def append(self,data):
+#
+#     def append(self, data):
 #         new_node = Node(data)
 #         if self.head is None:
 #             self.head = new_node
 #             return
-#         last_node= self.head
+#         last_node = self.head
 #         while last_node.next:
 #             last_node = last_node.next
 #         last_node.next = new_node
 #
-#
-#     def insert_at_pos(self,pos,data):
+#     def insert_at_pos(self, pos, data):
 #         new_node = Node(data)
-#         if self.head is None and pos<=0:
+#         if self.head is None and pos <= 0:
 #             self.append(data)
 #             return
-#         if self.head.next is None and pos==1:
+#         if self.head.next is None and pos == 1:
 #             new_node.next = self.head
 #             self.head = new_node
 #         prev = self.head
 #         count = 2
 #         while pos != count:
-#            count += 1
-#            prev = prev.next
+#             count += 1
+#             prev = prev.next
 #         new_node.next = prev.next
 #         prev.next = new_node
-#
 #
 #     def print_list(self):
 #         last_node = self.head
@@ -509,40 +508,40 @@
 #             print(last_node.data)
 #             last_node = last_node.next
 #
-#     def delete_node(self,key):
+#     def delete_node(self, key):
 #         if self.head.data is None:
 #             print("No scope to delete the node")
 #             return
 #         curr_node = self.head
-#         if curr_node and curr_node.data==key:
+#         if curr_node and curr_node.data == key:
 #             self.head = curr_node.next
 #             curr_node = None
 #             return
 #
 #         prev = None
-#         while curr_node.data and curr_node.data !=key:
-#              prev = curr_node
-#              curr_node = curr_node.next
+#         while curr_node.data and curr_node.data != key:
+#             prev = curr_node
+#             curr_node = curr_node.next
 #
 #         prev.next = curr_node.next
 #         curr_node = None
 #
-#     def delete_at_position(self,pos):
+#     def delete_at_position(self, pos):
 #         cur_node = self.head
-#         if self.head.data is None or pos<=0:
+#         if self.head.data is None or pos <= 0:
 #             print("List is empty or invalid position given")
 #             return
-#         if pos==1:
+#         if pos == 1:
 #             self.head = self.head.next
 #             return
 #         count = 1
 #         prev = None
-#         while count!=pos:
-#             prev= cur_node
+#         while count != pos:
+#             prev = cur_node
 #             cur_node = cur_node.next
-#             count = count+1
+#             count = count + 1
 #         prev.next = cur_node.next
-#         cur_node =None
+#         cur_node = None
 #
 #     def prepend(self, data):
 #         new_node = Node(data)
@@ -551,17 +550,16 @@
 #
 #     def reverse_string(self):
 #         prev = None
-#         headd =self.head
-#         currnode = self.head
-#         while currnode:
-#             #make a temporary next node
-#             nxt = currnode.next
-#             currnode.next = prev
-#             prev = currnode
-#             currnode = nxt
+#         headd = self.head
+#         cur_node = self.head
+#         while cur_node:
+#             # make a temporary next node
+#             nxt = cur_node.next
+#             cur_node.next = prev
+#             prev = cur_node
+#             cur_node = nxt
 #         self.head = prev
 #         headd.next = None
-#
 #
 #     def ispalindrome(self):
 #         pass
@@ -569,14 +567,13 @@
 #     def length(self):
 #         if self.head is None:
 #             return 0
-#         curnode = self.head
+#         cur_node = self.head
 #         count = 1
-#         while curnode.next:
-#             curnode = curnode.next
-#             count =count + 1
+#         while cur_node.next:
+#             cur_node = cur_node.next
+#             count = count + 1
 #
 #         return count
-#
 #
 #
 # l = LinkedList()
@@ -588,7 +585,6 @@
 # l.reverse_string()
 # l.print_list()
 # print(l.length())
-
 
 # Find the max element in the array
 # def max_array(arr):
@@ -672,3 +668,75 @@
 # print(next(c))
 # print(next(c))
 # print(next(c))
+
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def append(self, data):
+        cur_node = self.head
+        if self.head is None:
+            self.head = Node(data)
+            return self.head
+        while cur_node.next is not None:
+            cur_node = cur_node.next
+        cur_node.next = Node(data)
+
+    def prepend(self, data):
+        headd = self.head
+        self.head = Node(data)
+        self.head.next = headd
+
+    def print_list(self):
+        cur_node = self.head
+        while cur_node is not None:
+            print(cur_node.data)
+            cur_node = cur_node.next
+
+    def __len__(self):
+        count = 0
+        headd = self.head
+        while headd is not None:
+            count = count + 1
+            headd = headd.next
+        return count
+
+    def delete_particular_data(self, target):
+        cur_node = self.head
+        while cur_node.next is not None:
+            prev = cur_node
+            cur_node = cur_node.next
+            if cur_node.data == target:
+                break
+        prev.next = cur_node.next
+
+    def reverse_string(self):
+        prev = None
+        headd = self.head
+        cur_node = self.head
+        while cur_node:
+            # make a temporary next node
+            nxt = cur_node.next
+            cur_node.next = prev
+            prev = cur_node
+            cur_node = nxt
+        self.head = prev
+        headd.next = None
+
+
+
+f = LinkedList()
+f.append("A")
+f.append("B")
+f.append("C")
+f.append("D")
+f.reverse_string()
+f.print_list()
+print(len(f))

@@ -1,14 +1,15 @@
 class Node:
-    def __init__(self,data):
+    def __init__(self, data):
         self.data = data
         self.next = None
         self.prev = None
+
 
 class DoublyLinkedList:
     def __init__(self):
         self.head = None
 
-    def append(self,data):
+    def append(self, data):
         if self.head is None:
             newnode = Node(data)
             self.head = newnode
@@ -22,7 +23,7 @@ class DoublyLinkedList:
             newnode.prev = currnode
             newnode.next = None
 
-    def prepend(self,data):
+    def prepend(self, data):
         if self.head is None:
             return
         else:
@@ -31,7 +32,6 @@ class DoublyLinkedList:
             newnode.next = self.head
             self.head = newnode
             curnode.prev = newnode
-
 
     def print_list(self):
         currnode = self.head
@@ -46,40 +46,40 @@ class DoublyLinkedList:
         count = 1
         while curnode.next:
             curnode = curnode.next
-            count =count + 1
+            count = count + 1
 
         return count
 
-    def insert_at_index(self,position,data):
+    def insert_at_index(self, position, data):
         if self.head is None:
             return
-        newnode =Node(data)
+        newnode = Node(data)
         cur_node = self.head
         count = 1
         while cur_node and count < position:
             prev = cur_node
             cur_node.prev = prev
-            cur_node  = cur_node.next
-            count = count +1
+            cur_node = cur_node.next
+            count = count + 1
         prev.next = newnode
         newnode.next = cur_node
         newnode.prev = prev
         cur_node.prev = newnode
 
-    def rotate_left(self,position):
+    def rotate_left(self, position):
         if self.head is None:
             return
         prev = None
         p = self.head
         q = self.head
         count = 0
-        while p and count<position:
+        while p and count < position:
             prev = p
             p.prev = prev
             p = p.next
             q.prev = prev
-            q= q.next
-            count = count +1
+            q = q.next
+            count = count + 1
         p = prev
 
         while q:
@@ -92,30 +92,30 @@ class DoublyLinkedList:
         self.head.prev = q
         p.next = None
 
-    def delete_node(self,node_to_deleted):
+    def delete_node(self, node_to_deleted):
         if self.head is None:
             return
-        prev= None
+        prev = None
         curr_node = self.head
-        if self.head.next is None and self.head.data==node_to_deleted:
+        if self.head.next is None and self.head.data == node_to_deleted:
             self.head = self.head.next
             self.head = None
             return
 
-        while curr_node and curr_node.data !=node_to_deleted:
+        while curr_node and curr_node.data != node_to_deleted:
             prev = curr_node
             curr_node.prev = prev
             curr_node = curr_node.next
         prev.next = curr_node.next
-        curr_node.next =prev
-        curr_node=None
+        curr_node.next = prev
+        curr_node = None
 
-    def delete_at_an_index(self,index):
+    def delete_at_an_index(self, index):
         if self.head is None:
             return
-        prev= None
+        prev = None
         curr_node = self.head
-        if self.head.next is None and index==1:
+        if self.head.next is None and index == 1:
             self.head = self.head.next
             self.head = None
             return
@@ -124,17 +124,17 @@ class DoublyLinkedList:
             prev = curr_node
             curr_node.prev = prev
             curr_node = curr_node.next
-            count +=1
+            count += 1
         prev.next = curr_node.next
-        curr_node.next =prev
+        curr_node.next = prev
         curr_node = None
 
     def remove_duplicates(self):
         cur_node = self.head
         l = dict()
         while cur_node:
-            if cur_node not  in l:
-                l[cur_node.data]=1
+            if cur_node not in l:
+                l[cur_node.data] = 1
                 cur_node = cur_node.next
             else:
                 nxt = cur_node.next

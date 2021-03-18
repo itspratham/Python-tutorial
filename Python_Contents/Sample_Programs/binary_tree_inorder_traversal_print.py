@@ -1,16 +1,16 @@
 class Queue:
     def __init__(self):
-        self.items =[]
+        self.items = []
 
-    def enqueue(self,item):
-        self.items.insert(0,item)
+    def enqueue(self, item):
+        self.items.insert(0, item)
 
     def dequeue(self):
         if not self.is_empty():
             self.items.pop()
 
     def is_empty(self):
-        return len(self.items)==0
+        return len(self.items) == 0
 
     def peek(self):
         return self.items[-1]
@@ -24,18 +24,19 @@ class Queue:
     def print_queue(self):
         return self.items
 
+
 class Stack:
     def __init__(self):
         self.items = []
 
-    def push(self,item):
+    def push(self, item):
         self.items.append(item)
 
     def pop(self):
         self.items.pop()
 
     def isempty(self):
-        return len(self.items) ==0
+        return len(self.items) == 0
 
     def peek(self):
         return self.items[-1]
@@ -51,8 +52,6 @@ class Stack:
 
     def size(self):
         return len(self.items)
-
-
 
 # class Node(object):
 #     def __init__(self,value):
@@ -90,4 +89,3 @@ class Stack:
 # print(tree.print_tree_traversal("preorder"))
 # print(tree.print_tree_traversal("inorder"))
 # print(tree.print_tree_traversal("postorder"))
-

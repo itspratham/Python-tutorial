@@ -142,14 +142,15 @@
 def maximumToys(prices, k):
     a = prices
     l = []
-    a =sorted(a)
+    a = sorted(a)
     for i in range(0, len(a)):
         for j in range(1, len(a)):
-               if sum([a[i]] + a[i+1:j+1])<=k:
-                   l.append([a[i]]+a[i+1:j+1])
+            if sum([a[i]] + a[i + 1:j + 1]) <= k:
+                l.append([a[i]] + a[i + 1:j + 1])
     a = []
     for i in l:
         a.append(len(i))
     print(max(a))
+
 
 maximumToys([1, 3, 4, 2, 5], 7)

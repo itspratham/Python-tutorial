@@ -107,17 +107,17 @@
 # l.print_list()
 
 
-
 class Node:
-    def __init__(self,data):
+    def __init__(self, data):
         self.data = data
         self.next = None
+
 
 class LinkedList:
     def __init__(self):
         self.head = None
 
-    def append(self,data):
+    def append(self, data):
         if self.head is None:
             self.head = Node(data)
             return
@@ -128,16 +128,16 @@ class LinkedList:
         cur_node.next = newnode
 
     def print_list(self):
-        curnode =self.head
+        curnode = self.head
         while curnode:
             print(curnode.data)
-            curnode= curnode.next
+            curnode = curnode.next
 
-    def prepend(self,data):
+    def prepend(self, data):
         if self.head is None:
             self.head = Node(data)
             return
-        newnode= Node(data)
+        newnode = Node(data)
         curnode = self.head
         self.head = newnode
         newnode.next = curnode
@@ -146,7 +146,7 @@ class LinkedList:
         if self.head is None:
             return 0
         curnode = self.head
-        count =1
+        count = 1
         while curnode.next:
             count = count + 1
             curnode = curnode.next
@@ -154,12 +154,12 @@ class LinkedList:
 
     def middle_ele(self):
         count = self.length()
-        position = count//2
-        curnode =self.head
-        countt=1
-        while countt<position:
+        position = count // 2
+        curnode = self.head
+        countt = 1
+        while countt < position:
             curnode = curnode.next
-            countt+=1
+            countt += 1
         return curnode.next.data
 
     def sortList(self):
@@ -189,13 +189,13 @@ class LinkedList:
         else:
             return self.head
 
+
 ll = LinkedList()
 ll.append(1)
 ll.append(2)
-#ll.prepend(3)
+# ll.prepend(3)
 ll.append(5)
 ll.append(87)
-#ll.prepend(89)
-#ll.sortList()
+# ll.prepend(89)
+# ll.sortList()
 ll.print_list()
-

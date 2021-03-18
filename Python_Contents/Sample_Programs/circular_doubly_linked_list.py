@@ -1,14 +1,15 @@
 class Node:
-    def __init__(self,data):
-        self.data =data
+    def __init__(self, data):
+        self.data = data
         self.prev = None
         self.next = None
+
 
 class Circular_Doubly_Linked_List:
     def __init__(self):
         self.head = None
 
-    def append(self,data):
+    def append(self, data):
         new_node = Node(data)
         if self.head is None:
             self.head = new_node
@@ -25,12 +26,12 @@ class Circular_Doubly_Linked_List:
     def print_list(self):
         curnode = self.head
         while curnode:
-            print(curnode.data,end="-> ")
+            print(curnode.data, end="-> ")
             curnode = curnode.next
             if curnode == self.head:
                 break
 
-    def prepend(self,data):
+    def prepend(self, data):
         if self.head is None:
             self.append(data)
             return
@@ -47,14 +48,14 @@ class Circular_Doubly_Linked_List:
 
         cur_node.next = new_node
 
-    def rotation_of_linked_list(self,pos):
+    def rotation_of_linked_list(self, pos):
         if self.head.next == self.head:
             return
         cur_node = self.head
         head_node = self.head
         count = 0
-        while count<pos:
-            prev =cur_node
+        while count < pos:
+            prev = cur_node
             cur_node = cur_node.next
             count = count + 1
         self.head = cur_node
@@ -64,6 +65,7 @@ class Circular_Doubly_Linked_List:
             cur_node = cur_node.next
         cur_node.next = head_node
         head_node.prev = cur_node
+
 
 dl = Circular_Doubly_Linked_List()
 dl.append(1)

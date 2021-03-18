@@ -18,12 +18,8 @@
 # output.close()
 
 
-
-
-
-
-
-import pprint, pickle
+import pickle
+import pprint
 
 pkl_file = open('data.pkl', 'rb')
 

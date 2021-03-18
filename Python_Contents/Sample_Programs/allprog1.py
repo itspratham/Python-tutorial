@@ -1,20 +1,21 @@
 # 1. Fibonacci series
 
 # def fib(n):
-#     if n==0:
+#     if n == 0:
 #         return 0
-#     if n==1:
+#     if n == 1:
 #         return 1
-#     return fib(n-1)+fib(n-2)
+#     return fib(n - 1) + fib(n - 2)
+#
 #
 # print(fib(3))
 
 # 2. A prime number
 
 # def prime(n):
-#     if n>1:
-#         for i in range(2,n):
-#             if n%i == 0:
+#     if n > 1:
+#         for i in range(2, n):
+#             if n % i == 0:
 #                 print(f"{n} is not a prime number")
 #                 break
 #         else:
@@ -22,8 +23,8 @@
 #     else:
 #         print(f"{n} is not a prime no")
 #
+#
 # prime(5)
-
 
 # 3. String Palindrome
 
@@ -225,12 +226,12 @@
 
 # def reversed_sentence(s):
 #     t = []
-#     for i in range(len(s)-1,-1,-1):
+#     for i in range(len(s) - 1, -1, -1):
 #         t.append(s[i])
 #     return ''.join(t)
 #
+#
 # print(reversed_sentence("hmfkdmf mdfm"))
-
 
 # 16. Leap year
 #
@@ -300,19 +301,16 @@
 
 
 # def qsort(inlist):
-#     if inlist==[]:
+#     if not inlist:
 #         return []
 #     else:
 #         pivot = inlist[0]
 #         lesser = qsort([x for x in inlist[1:] if x < pivot])
 #         greater = qsort([x for x in inlist[1:] if x >= pivot])
-#         print(lesser,"lesser")
-#         print(pivot,"pivot")
-#         print(greater,"greater")
-#         return (lesser + [pivot] + greater)
+#         return lesser + [pivot] + greater
+# 
 #
-# (qsort([3,2,8,5,7,9]))
-
+# print(qsort([3, 2, 8, 5, 7, 9]))
 
 # 31. Insertion sort
 #
@@ -370,7 +368,7 @@
 
 # def counting_sort(l):
 #     nums = l
-#     highest = max(nums)+1
+#     highest = max(nums) + 1
 #     helper_list = [0] * highest
 #     s_list = []
 #     for i in range(len(nums)):
@@ -381,7 +379,9 @@
 #         s_list.append([j] * helper_list[j])
 #
 #     return s_list
-# print(counting_sort([5,4,32,2,4,4,5,6,6,3,3,0]))
+#
+#
+# print(counting_sort([5, 4, 32, 2, 4, 4, 5, 6, 6, 3, 3, 0]))
 #
 # 48. Check if two string rotation of each other
 
@@ -427,27 +427,27 @@
 # 50. Merge sort
 
 
-# def merge_sort(x):
-#
-#     if len(x) < 2:
-#         return x
-#
-#     result,mid = [],int(len(x)/2)
-#
-#     y = merge_sort(x[:mid])
-#     z = merge_sort(x[mid:])
-#
-#     while (len(y) > 0) and (len(z) > 0):
-#             if y[0] > z[0]:
-#                 result.append(z.pop(0))
-#             else:
-#                 result.append(y.pop(0))
-#
-#     result.extend(y+z)
-#     return result
-#
-# print(merge_sort([4,32,4,5,6,4,334,43]))
-'''
+def merge_sort(x):
+    if len(x) < 2:
+        return x
+
+    result, mid = [], int(len(x) / 2)
+
+    y = merge_sort(x[:mid])
+    z = merge_sort(x[mid:])
+
+    while (len(y) > 0) and (len(z) > 0):
+        if y[0] > z[0]:
+            result.append(z.pop(0))
+        else:
+            result.append(y.pop(0))
+
+    result.extend(y + z)
+    return result
+
+
+print(merge_sort([4, 32, 4, 5, 6, 4, 334, 43]))
+"""
 
 def pattern_match(string1,string2):
     for i in range(len(string1)):
@@ -458,7 +458,7 @@ def pattern_match(string1,string2):
     return
 pattern_match("funcuncle","funcun")
 
-'''
+"""
 
 # class Node:
 #     def __init__(self,data):

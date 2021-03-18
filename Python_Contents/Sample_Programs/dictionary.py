@@ -9,7 +9,6 @@
 # print('Dictionary in descending order by value : ',sorted_d)
 
 
-
 # 2. Write a Python program to add a key to a dictionary.
 #
 # Sample Dictionary : {0: 10, 1: 20}
@@ -18,7 +17,6 @@
 # d = {0: 10, 1: 20}
 # d[2] = 30
 # print(d)
-
 
 
 # 3. Write a Python program to concatenate following dictionaries to create a new one.
@@ -35,9 +33,6 @@
 # dic4 = {}
 # for d in (dic1, dic2, dic3): dic4.update(d)
 # print(dic4)
-
-
-
 
 
 # 4. Write a Python program to check whether a given key already exists in a dictionary.
@@ -59,7 +54,6 @@
 #     print(dict_key,':',dict_value)
 
 
-
 # 6. Write a Python program to generate and print a dictionary
 # that contains a number (between 1 and n) in the form (x, x*x).
 # Sample Dictionary ( n = 5) :
@@ -72,7 +66,6 @@
 #     return d
 #
 # print(square(5))
-
 
 
 # 7. Write a Python program to print a dictionary
@@ -91,8 +84,6 @@
 # print(square(15))
 
 
-
-
 # 8. Write a Python program to merge two Python dictionaries.
 
 # d1 = {1:1,2:2}
@@ -103,13 +94,11 @@
 # print(d3)
 
 
-
 # 9. Write a Python program to iterate over dictionaries using for loops.
 
 # d = {'Red': 1, 'Green': 2, 'Blue': 3}
 # for color_key, value in d.items():
 #      print(color_key, 'corresponds to ', d[color_key])
-
 
 
 # 10. Write a Python program to sum all the items in a dictionary.
@@ -133,8 +122,6 @@
 # print(prod)
 
 
-
-
 # 12. Write a Python program to remove a key from a dictionary.
 
 # d = {0:1,1:2,3:4}
@@ -150,7 +137,6 @@
 # print(color_dictionary)
 
 
-
 # 14. Write a Python program to sort a dictionary by key.
 
 # import operator
@@ -159,14 +145,10 @@
 # print(d)
 
 
-
 # 15. Write a Python program to get the maximum and minimum value in a dictionary.
 # d= {3:4,1:0,2:8,0:5}
 # print("Max value:",max(d.values()))
 # print("Min value:",min(d.values()))
-
-
-
 
 
 # 16. Write a Python program to get a dictionary from an object's fields.
@@ -217,7 +199,6 @@
 # print(result)
 
 
-
 # 18. Write a Python program to check a dictionary is empty or not.
 
 # d = {}
@@ -225,7 +206,6 @@
 #     return len(d) == 0
 #
 # print(dictt(d))
-
 
 
 # 19. Write a Python program to combine two dictionary adding values for common keys.
@@ -241,7 +221,6 @@
 # print(d)
 
 
-
 # 20. Write a Python program to print all unique values in a dictionary.
 # Sample Data : [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"},
 # {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
@@ -255,8 +234,6 @@
 #         print(val,end=" ")
 # u_value = set( val for dic in L for val in dic.values())
 # print("Unique Values: ",u_value)
-
-
 
 
 # 21. Write a Python program to create and display
@@ -300,7 +277,6 @@
 # print(result)
 
 
-
 # 24. Write a Python program to create a dictionary from a string. program
 # Note: Track the count of the letters from the string.
 # Sample string : 'w3resource'
@@ -328,8 +304,6 @@
 
 # 28. Write a Python program to sort a list alphabetically in a dictionary. program
 # program
-
-
 
 
 # 29. Write a Python program to remove spaces from dictionary keys. program
@@ -419,10 +393,6 @@
 # program
 
 
-
-
-
-
 # 40. Write a Python program to create a dictionary of
 # keys x, y, and z where each key has as value a list from 11-20, 21-30,
 # and 31-40 respectively. Access the fifth value of each key from the dictionary. program
@@ -445,8 +415,10 @@
 #    print(d[key][4])
 
 
-#perm.py
+# perm.py
 import time
+
+
 def perm1(lst):
     if len(lst) == 0:
         return []
@@ -454,16 +426,17 @@ def perm1(lst):
         return [lst]
     else:
         l = []
-        #import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         for i in range(len(lst)):
             x = lst[i]
-            xs = lst[:i] + lst[i+1:]
-            print(x,"x")
+            xs = lst[:i] + lst[i + 1:]
+            print(x, "x")
             print(xs, "xs")
             for p in perm1(xs):
                 # print(p,"p")
                 l.append([x] + p)
-            print(l,"l")
+            print(l, "l")
         return l
 
-print(perm1(["a","b","c"]))
+
+print(perm1(["a", "b", "c"]))

@@ -1,10 +1,10 @@
-g=1
-r=3
-for i in range(1,6):
-    if i<=6:
-        print(i,end=" ")
-        i=i+1
-    for j in range(i+r)  :
-       print("*",end=" ")
-       r=r-1
-    print( )
+n = 100
+for i in range(1, n + 1):
+    for j in range(1, n + 1):
+        if i == 1 or i == n:
+            print(j, end=" ")
+        elif j == n - i + 1:
+            print(n - i + 1, end=" ")
+        else:
+            print(" ", end=" ")
+    print()
