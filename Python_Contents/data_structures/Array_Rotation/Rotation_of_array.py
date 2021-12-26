@@ -1,13 +1,14 @@
-def LeftRotate(array,position):
-   for i in range(position):
-       temp= array[0]
-       for j in range(len(array)-1):
-           array[j]=array[j+1]
-       array[len(array)-1]=temp
+def LeftRotate(array, position):
+    for i in range(position):
+        temp = array[0]
+        for j in range(len(array) - 1):
+            array[j] = array[j + 1]
+        array[len(array) - 1] = temp
 
-   return array
+    return array
 
-def RightRotate(array,position):
+
+def RightRotate(array, position):
     for i in range(0, position):
         # Stores the last element of array
         last = array[len(array) - 1]
@@ -20,23 +21,23 @@ def RightRotate(array,position):
     return array
 
 
-
-def Rotate_no_of_times(array,position,Rotate_no_of_times):
+def Rotate_no_of_times(array, position, Rotate_no_of_times):
     rotation_type = int(input("Enter the rotation type 1:Left 2:Right "))
-    if rotation_type==2:
+    if rotation_type == 2:
         for i in range(Rotate_no_of_times):
-            arr = print(RightRotate(array,position))
-    elif rotation_type ==1:
+            arr = print(RightRotate(array, position))
+    elif rotation_type == 1:
         for i in range(Rotate_no_of_times):
-            arr = print(LeftRotate(array,position))
+            arr = print(LeftRotate(array, position))
     else:
         print("Enter the correct option")
     return arr
 
+
 # Rotate_no_of_times([6,4,9,76,8],2,3)
 
 
-#Find maximum value of Sum(i*arr[i]) with only rotations on given array allowed
+# Find maximum value of Sum(i*arr[i]) with only rotations on given array allowed
 # Input: arr[] = {1, 20, 2, 10}
 # Output: 72
 # We can 72 by rotating array twice.
@@ -45,28 +46,29 @@ def Rotate_no_of_times(array,position,Rotate_no_of_times):
 
 
 def MaxSum(array):
-    n=len(array)
-    list1=[]
+    n = len(array)
+    list1 = []
     for i in range(n):
-        sum1= int(array[i])*i
+        sum1 = int(array[i]) * i
         list1.append(sum1)
     return sum(list1)
 
+
 def Rotate():
-    array= input("Enter the array elements: ").split(' ')
-    rotation_orientation= int(input("""Choose the option 1: Left Rotation 2: Right Rotation 3: Display Array
+    array = input("Enter the array elements: ").split(' ')
+    rotation_orientation = int(input("""Choose the option 1: Left Rotation 2: Right Rotation 3: Display Array
                   4: Find maximum value of Sum(i*arr[i]) with only rotations on given array allowed: """))
     position = int(input("Enter the position of the array you want to rotatate from: "))
     Rotate_no_of_time = int(input("Enter the number of times to be rotated: "))
 
-    if rotation_orientation==1:
-        print(LeftRotate(array,position))
-    elif rotation_orientation ==2:
-        print(RightRotate(array,position))
+    if rotation_orientation == 1:
+        print(LeftRotate(array, position))
+    elif rotation_orientation == 2:
+        print(RightRotate(array, position))
     elif rotation_orientation == 3:
-        print( array)
+        print(array)
     elif rotation_orientation == 4:
-        #sum1 = Rotate_no_of_times(array,position,Rotate_no_of_times=Rotate_no_of_time)
+        # sum1 = Rotate_no_of_times(array,position,Rotate_no_of_times=Rotate_no_of_time)
         print(MaxSum(array))
     else:
         print("Enter the right option")
@@ -74,8 +76,7 @@ def Rotate():
 
 Rotate()
 
-
-#Reverse algorithms for rotation of array
+# Reverse algorithms for rotation of array
 # Let the array be arr[] = [1, 2, 3, 4, 5, 6, 7], d =2 and n = 7
 # A = [1, 2] and B = [3, 4, 5, 6, 7]
 #
@@ -115,4 +116,3 @@ Rotate()
 # y= ExecuteProgram(array, d=2, n=7)
 #
 # pairInSortedRotated(array=y,x=13,n=7)
-

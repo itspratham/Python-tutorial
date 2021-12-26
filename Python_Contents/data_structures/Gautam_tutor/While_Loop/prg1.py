@@ -1,9 +1,9 @@
-#Start
-#End
-#end_check
-#inc/dec
-#person(loop variable)
-#work
+# Start
+# End
+# end_check
+# inc/dec
+# person(loop variable)
+# work
 
 # g= 1
 # while  g<=4:

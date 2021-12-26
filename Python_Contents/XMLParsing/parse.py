@@ -39,7 +39,7 @@ class MovieHandler(xml.sax.ContentHandler):
 
         elif self.CurrentData == "description":
             print("Stars:", self.stars)
-            "Description:", self.description
+            var = "Description:", self.description
         self.CurrentData = ""
 
     # Call when a character is read

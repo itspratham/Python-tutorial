@@ -57,5 +57,3 @@
 
 # def windows(arr):
 #
-
-

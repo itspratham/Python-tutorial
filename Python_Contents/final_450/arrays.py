@@ -1,4 +1,16 @@
 # Reverse the array
+# def reverse_arr(A, start, end):
+#     while start < end:
+#         A[start], A[end] = A[end], A[start]
+#         start += 1
+#         end -= 1
+#     return A
+#
+#
+# arr = [2, 4, 5, 8, 9, 1]
+# print(reverse_arr(arr, 0, 5))
+
+
 # def reverseList(A, start, end):
 #     while start < end:
 #         A[start], A[end] = A[end], A[start]
@@ -22,8 +34,8 @@
 #             min = arr[i]
 #     print("the max is: ", max)
 #     print("the min is: ", min)
-
-
+#
+#
 # max_min([4, 5, 6, 22, 556, 66])
 
 # Find the "Kth" max and min element of an array
@@ -94,7 +106,7 @@ array = [1, 2, 3, 4]
 # O(2 ^ (number of elements inside array))
 # because at every step we have two choices
 # either include or ignore.
-subsets(array)
+# subsets(array)
 
 # Find the triplet that sum to a given value
 # Trapping Rain water problem

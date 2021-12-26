@@ -11,8 +11,7 @@
 # print(gcd(60, 200))
 
 
-
-#Iterative approach
+# Iterative approach
 # def gcd(m,n):
 #     if n==0:
 #         return m
@@ -20,7 +19,6 @@
 #
 # x = gcd(60,200)
 # print(x)
-
 
 
 # def gcd(m,n):
@@ -35,7 +33,7 @@
 # print(gcd(60, 200))
 
 
-#to compute gcd using consecutive integer checking
+# to compute gcd using consecutive integer checking
 # def gcd(m,n):
 #     small = min(m, n)
 #     while 1:
@@ -47,7 +45,7 @@
 # print(gcd(60,200))
 
 
-#PRogram for finding the largest number of an array
+# Program for finding the largest number of an array
 # l = [1,4,5,62,3,2,10,56]
 # def largest(l):
 #     big = l[0]
@@ -59,7 +57,7 @@
 # print(largest(l))
 
 
-#Linear Search
+# Linear Search
 
 # l= [83,3,4,5,434,3123,23133,442213]
 #
@@ -76,22 +74,24 @@
 # linear_search(l)
 
 
-#Element uniqueness problem
-l= [4,6,7,78,3,3,2,7,6]
-l1= [4,6,78,3,2,7]
-def Element_uniqueness_problem(l):
-    for i in range(0,len(l)-2):
-        for j in range(i+1,len(l)-1):
-            if l[i]==l[j]:
-                print( f"{l[i]} is  present both at {i} and {j} position ")
+# Element uniqueness problem
+# l = [4, 6, 7, 78, 3, 3, 2, 7, 6]
+# l1 = [4, 6, 78, 3, 2, 7]
+#
+#
+# def Element_uniqueness_problem(l):
+#     for i in range(0, len(l) - 2):
+#         for j in range(i + 1, len(l) - 1):
+#             if l[i] == l[j]:
+#                 print(f"{l[i]} is  present both at {i} and {j} position ")
+#
+#     return f"The list is distinct"
 
-    return f"The list is distinct"
 
+# print(Element_uniqueness_problem(l))
+# Element_uniqueness_problem(l1)
 
-print(Element_uniqueness_problem(l))
-#Element_uniqueness_problem(l1)
-
-#Factorial Problem
+# Factorial Problem
 # def factorial(n):
 #     if  n==0:
 #         return 1
@@ -103,12 +103,11 @@ print(Element_uniqueness_problem(l))
 # print(factorial(8))
 
 
-#Multiplication of two matrices
+# Multiplication of two matrices
 # def Multiplication_of_two_matrices():
-    
 
 
-#Tower OF hanoi
+# Tower OF hanoi
 # def towers(n, source, destination, spare):
 #     #count = 0
 #     if n == 1:
@@ -125,8 +124,7 @@ print(Element_uniqueness_problem(l))
 # print(towers(3, 'A', 'C', 'B'))
 
 
-
-#Fibonacci Numbers
+# Fibonacci Numbers
 # def fibonacci(n):
 #     if n == 0:
 #         return 0
@@ -136,6 +134,3 @@ print(Element_uniqueness_problem(l))
 #         return fibonacci(n-1) + fibonacci(n-2)
 #
 # print(fibonacci(5))
-
-
-

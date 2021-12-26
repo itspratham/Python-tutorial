@@ -42,8 +42,9 @@
 #         if i > maximum_no:
 #             second_max = maximum_no
 #             maximum_no = i
-#         elif (i>second_max and i!=maximum_no):
-#             second_max =i
+#         elif i > second_max and i != maximum_no:
+#             second_max = i
 #     return second_max
 #
-# print(find_the_largest([3,4,2,6,7,0,1,9,10,11]))
+#
+# print(find_the_largest([3, 4, 2, 6, 7, 0, 1, 9, 10, 11]))

@@ -2,7 +2,8 @@ def print_matrix(matt):
     for i in matt:
         print(i)
 
-def matrixx(matrix,clockwise):
+
+def matrixx(matrix, clockwise):
     mat = matrix
     if len(mat) <= 1:
         return "Matrix is empty"
@@ -12,7 +13,7 @@ def matrixx(matrix,clockwise):
             left = 0
             bottom = len(mat) - 1
             right = len(mat) - 1
-            #import ipdb;ipdb.set_trace()
+            # import ipdb;ipdb.set_trace()
             while left < right and top < bottom:
 
                 # Store the first element of next row,
@@ -28,7 +29,7 @@ def matrixx(matrix,clockwise):
 
                 top += 1
 
-                #Move elements of rightmost column one step downwards
+                # Move elements of rightmost column one step downwards
                 for i in range(top, bottom + 1):
                     curr = mat[i][right]
                     mat[i][right] = prev
@@ -60,26 +61,26 @@ def matrixx(matrix,clockwise):
             bottom = len(mat) - 1
             right = len(mat) - 1
             while left < right and top < bottom:
-                prev = matrix[top][right-1]
-                for i in range(top, bottom+1):
+                prev = matrix[top][right - 1]
+                for i in range(top, bottom + 1):
                     curr = matrix[i][left]
                     matrix[i][left] = prev
                     prev = curr
                 left = left + 1
 
-                for i in range(left, right+1):
+                for i in range(left, right + 1):
                     curr = matrix[bottom][i]
-                    matrix[bottom][i]=prev
+                    matrix[bottom][i] = prev
                     prev = curr
                 bottom = bottom - 1
 
-                for i in range(bottom, top-1,-1):
+                for i in range(bottom, top - 1, -1):
                     curr = matrix[i][right]
-                    matrix[i][right]= prev
+                    matrix[i][right] = prev
                     prev = curr
                 right = right - 1
 
-                for i in range(right, left-1,-1):
+                for i in range(right, left - 1, -1):
                     curr = matrix[top][i]
                     matrix[top][i] = prev
                     prev = curr
@@ -89,21 +90,22 @@ def matrixx(matrix,clockwise):
 
         else:
             try:
-                matrixx(matrix,clockwise=1)
+                matrixx(matrix, clockwise=1)
             except:
                 break
 
-m=3
+
+m = 3
 print("Enter the matrix: ")
 matrix = []
 
 for _ in range(m):
     matrix.append(list(map(int, input().rstrip().split())))
 while True:
-        rotation = int(input("Enter the no of elements it has to be rotated by: "))
-        clockwise = int(input("Enter the direction 1:Clockwise 2:Anti-Clockwise: "))
-        i = 1
-        while i <= rotation:
-            matt = matrixx(matrix=matrix, clockwise=clockwise)
-            i = i + 1
-        print_matrix(matt)
+    rotation = int(input("Enter the no of elements it has to be rotated by: "))
+    clockwise = int(input("Enter the direction 1:Clockwise 2:Anti-Clockwise: "))
+    i = 1
+    while i <= rotation:
+        matt = matrixx(matrix=matrix, clockwise=clockwise)
+        i = i + 1
+    print_matrix(matt)

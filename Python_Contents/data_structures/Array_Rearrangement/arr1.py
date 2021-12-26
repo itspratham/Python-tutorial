@@ -1,5 +1,5 @@
-#uncomplete
-#Rearrange an array such that arr[i] = i
+# un-complete
+# Rearrange an array such that arr[i] = i
 # Input : arr = {-1, -1, 6, 1, 9, 3, 2, -1, 4, -1}
 # Output : [-1, 1, 2, 3, 4, -1, 6, -1, -1, 9]
 #
@@ -10,7 +10,7 @@
 
 def array_re(arr):
     n = len(arr)
-    l = [-1]*n
+    l = [-1] * n
     for i in range(n):
         if -1 in arr:
             arr.remove(-1)

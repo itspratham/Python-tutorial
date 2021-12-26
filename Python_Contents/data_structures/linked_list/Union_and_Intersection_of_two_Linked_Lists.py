@@ -38,17 +38,17 @@
 # ll.print_list()
 
 
-
 class Node:
-    def __init__(self,data):
+    def __init__(self, data):
         self.data = data
         self.next = None
+
 
 class LinkedList:
     def __init__(self):
         self.head = None
 
-    def append(self,data):
+    def append(self, data):
         if self.head is None:
             self.head = Node(data)
             return
@@ -61,12 +61,13 @@ class LinkedList:
     def print_list(self):
         curnode = self.head
         while curnode:
-            print(curnode.data,"-->", end="")
+            print(curnode.data, "-->", end="")
             curnode = curnode.next
 
     # def union_of_two_list(self, l1,l2):
     #     head_node1 = self.head
     #     head_node2 = se
+
 
 ll = LinkedList()
 ll.append("A")

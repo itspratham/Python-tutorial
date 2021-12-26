@@ -1,4 +1,4 @@
-# # Spiral traversal on a Matrix
+# Spiral traversal on a Matrix
 # def spiral_traversal(max_row, max_col, matrix):
 #     k = 0
 #     l = 0
@@ -21,7 +21,10 @@
 #             l = l + 1
 #
 #
-# spiral_traversal(4, 4, [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]])
+# spiral_traversal(4, 4, [[1, 2, 3, 4],
+#                         [5, 6, 7, 8],
+#                         [9, 10, 11, 12],
+#                         [13, 14, 15, 16]])
 #
 #
 # # Search an element in a matrix
@@ -29,22 +32,22 @@
 #     for i in range(len(matrix)):
 #         for j in range(len(matrix)):
 #             if matrix[i][j] == target:
-#                 return True
+#                 return i, matrix[i].index(target)
 #     return False
 #
 #
-# print(search([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]], 55))
+# print(search([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]], 9))
 
 # Find median in a row wise sorted matrix
 # Find row with maximum no. of 1's
-matrix = [[1, 5, 1, 0, 1], [1, 3, 4, 5, 6], [1, 1, 1, 1, 1]]
-M = 3
-N = 5
-map_dict = dict()
-for i in range(M):
-    for j in range(N):
-        if matrix[i][j] == 1:
-            pass
+# matrix = [[1, 5, 1, 0, 1], [1, 3, 4, 5, 6], [1, 1, 1, 1, 1]]
+# M = 3
+# N = 5
+# map_dict = dict()
+# for i in range(M):
+#     for j in range(N):
+#         if matrix[i][j] == 1:
+#             pass
 
 
 # Print elements in sorted order using row-column wise sorted matrix
@@ -127,40 +130,40 @@ N = 5
 
 # prints common element in all
 # rows of matrix
-def printCommonElements(mat):
-    mp = dict()
-
-    # initialize 1st row elements
-    # with value 1
-    for j in range(N):
-        mp[mat[0][j]] = 1
-
-    # traverse the matrix
-    for i in range(1, M):
-        for j in range(N):
-
-            # If element is present in the
-            # map and is not duplicated in
-            # current row.
-            if (mat[i][j] in mp.keys() and
-                    mp[mat[i][j]] == i):
-
-                # we increment count of the
-                # element in map by 1
-                mp[mat[i][j]] = i + 1
-
-                # If this is last row
-                if i == M - 1:
-                    print(mat[i][j], end=" ")
-                # Driver Code
-
-
-mat = [[1, 2, 1, 4, 8],
-       [3, 7, 8, 5, 1],
-       [8, 7, 7, 3, 1],
-       [8, 1, 2, 7, 9]]
-
-printCommonElements(mat)
-
-# This code is contributed
-# by Mohit kumar 29
+# def printCommonElements(mat):
+#     mp = dict()
+#
+#     # initialize 1st row elements
+#     # with value 1
+#     for j in range(N):
+#         mp[mat[0][j]] = 1
+#
+#     # traverse the matrix
+#     for i in range(1, M):
+#         for j in range(N):
+#
+#             # If element is present in the
+#             # map and is not duplicated in
+#             # current row.
+#             if (mat[i][j] in mp.keys() and
+#                     mp[mat[i][j]] == i):
+#
+#                 # we increment count of the
+#                 # element in map by 1
+#                 mp[mat[i][j]] = i + 1
+#
+#                 # If this is last row
+#                 if i == M - 1:
+#                     print(mat[i][j], end=" ")
+#                 # Driver Code
+#
+#
+# mat = [[1, 2, 1, 4, 8],
+#        [3, 7, 8, 5, 1],
+#        [8, 7, 7, 3, 1],
+#        [8, 1, 2, 7, 9]]
+#
+# printCommonElements(mat)
+#
+# # This code is contributed
+# # by Mohit kumar 29

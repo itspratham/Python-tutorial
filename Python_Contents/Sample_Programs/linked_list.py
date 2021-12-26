@@ -169,7 +169,7 @@ class LinkedList:
 
                 swap = 0
                 tmp = self.head
-                while (tmp.next != None):
+                while tmp.next != None:
                     if tmp.data > tmp.next.data:
                         # swap them
                         swap += 1

@@ -4,6 +4,10 @@ from Python_Contents.WithOpen.Student import Student
 class Professor(object):
 
     def __init__(self, name, dept, desi):
+        self.total = None
+        self.m3 = None
+        self.m2 = None
+        self.m1 = None
         self.details = name
         self.name = name
         self.dept = dept
@@ -32,6 +36,9 @@ class Professor(object):
 
         print("{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(self.name, self.m1, self.m2, self.m3, self.total, self.avg,
                                                     self.result()))
+
+    def cal_total(self):
+        pass
 
 
 with open("Professor") as fo:
