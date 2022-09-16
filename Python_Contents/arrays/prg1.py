@@ -48,3 +48,22 @@
 #
 #
 # print(find_the_largest([3, 4, 2, 6, 7, 0, 1, 9, 10, 11]))
+
+
+def perm1(lst):
+    if len(lst) == 0:
+        return []
+    elif len(lst) == 1:
+        return [lst]
+
+    else:
+        l = []
+        for i in range(len(lst)):
+            x = lst[i]
+            xs = lst[:i] + lst[i + 1:]
+            for p in perm1(xs):
+                l.append([x] + p)
+        return l
+
+
+print(perm1(["a", "b", "c"]))
