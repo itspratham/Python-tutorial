@@ -1,89 +1,133 @@
-# Given a string S. For each index i(1<=i<=N-1),
-# erase it if s[i] is equal to s[i-1] in the string.
-
-# Input:
-# S = aabb
-# Output:  ab
-# Explanation: 'a' at 2nd position is
-# appearing 2nd time consecutively.
-# Similiar explanation for b at
-# 4th position.
-
-# class Solution:
-#     def removeConsecutiveCharacter(self, S):
-#         s=""
-#         for i in range(len(S)-1):
-#             if(S[i]!=S[i+1]):
-#                 s+=S[i]
-#         s+=S[-1]
-#         return(s)
-#         # code here
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.left = None
+#         self.right = None
 #
 #
-# #{
-#  # Driver Code Starts
-# #Initial Template for Python 3
+# class Tree:
+#     def __init__(self):
+#         pass
 #
-# if __name__ == '__main__':
-#     T = int(input())
-#
-#     for tcs in range(T):
-#         s = input()
-#         ob = Solution()
-#         print(ob.removeConsecutiveCharacter(s))
-
-# } Driver Code Ends
-
-# 5 4 3 2 1
-# 1 2
-
-def a_func(target):
-
-    if target > 0:
-        a_func(target-1)
-        print(target)
-        a_func(target-1)
-a_func(5)
-
-
-# Write a program in C to print first 50 natural numbers using recursion.
-
-# def func(n):
-#     if n <= 5:
-#         func(n + 1)
-#         print(n)
-#         func(n + 2)
+#     def pre_order(self, root, traversal):
+#         if root:
+#             traversal = self.pre_order(root.left, traversal)
+#             traversal += str(root.data) + "->"
+#             print(traversal)
+#             traversal = self.pre_order(root.right, traversal)
+#         return traversal
 #
 #
-# func(1)
+# obj = Tree()
+# root = Node(1)
+# root.left = Node(2)
+# root.right = Node(3)
+# root.left.left = Node(4)
+# root.left.right = Node(5)
+# root.right.left = Node(6)
+# root.right.right = Node(7)
+# print(obj.pre_order(root, ""))
 
-# Write a program in C to reverse a string using recursion
-# input = "w3resource"
 
-# def recur(string, length):
-#     if
+from sys import setrecursionlimit
 
 
-# def TowerOfHanoi(n, from_rod, to_rod, aux_rod):
-#     if n == 0:
-#         return
-#     TowerOfHanoi(n - 1, from_rod, aux_rod, to_rod)
-#     print("Move disk", n, "from rod", from_rod, "to rod", to_rod)
-#     TowerOfHanoi(n - 1, aux_rod, to_rod, from_rod)
+# def add_the_Number(n):
+#     str_n = str(n)
+#     result = 0
+#     for i in range(len(str_n)):
+#         result = result + (int(str_n[i]) * int(str_n[i]))
+#     return result
 #
 #
-# # Driver code
-# N = 3
-#
-# # A, C, B are the name of rods
-# TowerOfHanoi(N, 'A', 'C', 'B')
-
-
-# def recurse(n, s):
-#     if n == 0:
-#         print(s)
+# def isHappy(n):
+#     if len(str(n)) == 1 and n != 1:
+#         print(False)
+#         return False
+#     elif n == 1:
+#         print(True)
+#         return True
 #     else:
-#         recurse(n - 1, n + s)
-#         recurse(n - 1, n + 2*s)
+#         number = add_the_Number(n)
+#         isHappy(number)
 #
-# recurse(2, 0)
+#
+#
+# isHappy(101)
+
+
+# def binary_search(arr, target):
+#     if len(arr) == 0:
+#         raise "Empty array provided"
+#     low = 0
+#     high = len(arr) - 1
+#
+#     while low <= high:
+#         mid = (low + high) // 2
+#         if arr[mid] == target:
+#             return mid
+#         elif arr[mid] > target:
+#             high = mid - 1
+#         else:
+#             low = mid + 1
+#     return "It's not Found"
+#
+#
+# print(binary_search([2], 4))
+
+
+# class B:
+#     def method1(self):
+#         pass
+#
+#     def __method2(self):
+#         print("hello")
+#
+# class A(B):
+#
+#     def method3(self):
+#         self.__method2()
+#
+#
+# obj = A()
+# obj.method3()
+
+
+# def fib(n, f=None):
+#     if f is None:
+#         f = {}
+#     if n == 0:
+#         return 0
+#     elif n == 1:
+#         return 1
+#     if n in f:
+#         print(f)
+#         return f[n]
+#     else:
+#         f1 = fib(n - 1) + fib(n - 2)
+#         f[n] = f1
+#     return f1
+#
+#
+# fib(7)
+
+
+# def fastFib(n, memo):
+#     global numCalls
+#     numCalls += 1
+#     # print('fib1 called with', n)
+#     print(memo)
+#     if n not in memo:
+#         memo[n] = fastFib(n - 1, memo) + fastFib(n - 2, memo)
+#     return memo[n]
+#
+#
+# def fib1(n):
+#     memo = {0: 1, 1: 1}
+#     return fastFib(n, memo)
+
+#
+# numCalls = 0
+# n = 6
+# res = fib1(n)
+# print('fib of', n, '=', res, 'numCalls = ', numCalls)

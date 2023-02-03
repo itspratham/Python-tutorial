@@ -25,13 +25,13 @@ def Rotate_no_of_times(array, position, Rotate_no_of_times):
     rotation_type = int(input("Enter the rotation type 1:Left 2:Right "))
     if rotation_type == 2:
         for i in range(Rotate_no_of_times):
-            arr = print(RightRotate(array, position))
+            print(RightRotate(array, position))
     elif rotation_type == 1:
         for i in range(Rotate_no_of_times):
-            arr = print(LeftRotate(array, position))
+            print(LeftRotate(array, position))
     else:
         print("Enter the correct option")
-    return arr
+    return
 
 
 # Rotate_no_of_times([6,4,9,76,8],2,3)

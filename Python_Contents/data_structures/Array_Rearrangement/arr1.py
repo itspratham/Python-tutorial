@@ -14,6 +14,7 @@ def array_re(arr):
     for i in range(n):
         if -1 in arr:
             arr.remove(-1)
+    # print(arr)
     for i in range(len(arr)):
         l[arr[i]] = arr[i]
     print(l)

@@ -5,7 +5,7 @@ number = int(input("Enter the number: "))
 def sequential_search(search, number):
     for i in range(len(search)):
         if search[i] == number:
-            print("The number is found at index {}".format(i + 1))
+            print("The number is found at index: {}".format(i + 1))
     return
 
 

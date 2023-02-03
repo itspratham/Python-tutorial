@@ -2,17 +2,16 @@ import json
 from decimal import Decimal
 
 # json string
-json_string  = '{"drink":["coffee","tea","cold drinks"]}'
-#json_string = '{"eatable":["Dosa","Idli","Puri"]}'
+json_string = '{"drink":["coffee","tea","cold drinks"]}'
+# json_string = '{"eatable":["Dosa","Idli","Puri"]}'
 print(json_string[0])
 obj = json.loads(json_string)
 
 print(obj)
 
-
 print(type(obj))
 
-#for eat in obj['eatable']:
+# for eat in obj['eatable']:
 #   print(eat)
 
 '''

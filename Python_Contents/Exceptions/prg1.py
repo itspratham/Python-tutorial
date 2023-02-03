@@ -3,10 +3,12 @@ def prog1_method():
     number = 100
     print(number / denom)
 
+
 def list_element():
-    l = [1,2,3]
+    l = [1, 2, 3]
     print(l[98])
 
+
 if __name__ == "__main__":
-    #prog1_method()
+    # prog1_method()
     list_element()

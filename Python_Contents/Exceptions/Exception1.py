@@ -1,16 +1,16 @@
 """
 try:
-    statemensts
-    statemensts
-    statemensts
+    statements
+    statements
+    statements
 except Exception1 :
-    stements
+    statements
 except Exception2 :
     statements
 except Exception3 :
     statements
 else:
-    statments
+    statements
 finally:
     statments
 """
@@ -21,7 +21,7 @@ finally:
 #     number = 100
 #     print(number/denom)
 # except ZeroDivisionError as e:
-#     print("You cannot devide any number by 0")
+#     print("You cannot divide any number by 0")
 # # else:
 # #     print("No exceptions are occured")
 # finally:

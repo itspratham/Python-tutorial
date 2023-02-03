@@ -53,15 +53,15 @@ fun2()
 def my_decorator(func):
     def wrapper():
         print("Something is happening before the function is called.")
-        func()
+        func("kkk")
         print("Something is happening after the function is called.")
 
     return wrapper
 
 
 @my_decorator
-def func1():
-    print("Whee!")
+def func1(hhh):
+    print("Whee!", hhh)
 
 
 func1()

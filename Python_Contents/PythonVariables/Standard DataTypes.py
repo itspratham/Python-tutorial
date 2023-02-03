@@ -22,4 +22,4 @@ print(mStr)
 import os
 
 print(os.system.__doc__)
-os.system("DIR")
+os.system("help")

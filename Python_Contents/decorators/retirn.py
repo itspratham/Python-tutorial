@@ -1,18 +1,19 @@
-# def my_decorator(func):
-#     def wrapper():
-#         print("Something is happening before the function is called.")
-#         func()
-#         print("Something is happening after the function is called.")
-#     return wrapper
-#
-# def say_whee():
-#     print("Whee!")
-#
-# say_whe = my_decorator(say_whee)
-#
-#
-# say_whe()
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
 
+    return wrapper
+
+
+def say_whee():
+    print("Whee!")
+
+
+say_whe = my_decorator(say_whee)
+
+say_whe()
 
 # def employee(x):
 #     print("employee name is radha")
@@ -34,17 +35,17 @@
 # employee2()
 
 
-def func(afun):
-    def wrapper(*args, **kwargs):
-        afun()
-        print(args, kwargs)
-
-    return wrapper
-
-
-@func
-def bbb():
-    print("inside bobby")
-
-
-bbb()
+# def func(afun):
+#     def wrapper(*args, **kwargs):
+#         afun()
+#         print(args, kwargs)
+#
+#     return wrapper
+#
+#
+# @func
+# def bbb():
+#     print("inside bobby")
+#
+#
+# bbb()

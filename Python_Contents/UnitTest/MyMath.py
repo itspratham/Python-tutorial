@@ -9,4 +9,4 @@ if __name__ == "__main__":
     print(multiply(23, 34))
     print(multiply(-23, 34))
     print(multiply("a", 4))
-    print(multiply("a", "b"))
+    multiply("a", "b")

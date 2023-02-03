@@ -26,9 +26,4 @@ def convert(s, numRows):
     return rstr
 
 
-class Solution(object):
-    pass
-
-
-c = Solution()
-print(convert("fnvfkevnjnjn", 3))
+print(convert("abcdefg", 2))

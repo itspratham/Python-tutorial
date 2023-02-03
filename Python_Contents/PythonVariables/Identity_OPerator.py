@@ -10,5 +10,4 @@ print(c)
 c = a is not b
 print(c)
 
-print(int() is 10)
 print(int)

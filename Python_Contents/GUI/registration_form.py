@@ -4,7 +4,7 @@ from functools import *
 
 # globally declare wb and sheet variable
 
-# opening the existing excel file
+# opening the existing Excel file
 wb = load_workbook('C:/Users/Admin/Desktop/excel.xlsx')
 
 # create the sheet object

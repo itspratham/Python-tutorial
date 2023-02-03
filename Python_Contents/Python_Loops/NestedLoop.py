@@ -4,7 +4,6 @@ While Condition:
         Statement
     else:
         statement
-    statement
 else:
     Statements
 """

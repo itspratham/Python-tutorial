@@ -50,20 +50,69 @@
 # print(find_the_largest([3, 4, 2, 6, 7, 0, 1, 9, 10, 11]))
 
 
-def perm1(lst):
-    if len(lst) == 0:
-        return []
-    elif len(lst) == 1:
-        return [lst]
+# def perm1(lst):
+#     if len(lst) == 0:
+#         return []
+#     elif len(lst) == 1:
+#         return [lst]
+#     else:
+#         l = []
+#         for i in range(len(lst)):
+#             x = lst[i]
+#             # print(x)
+#             xs = lst[:i] + lst[i + 1:]
+#             # print(xs)
+#             for p in perm1(xs):
+#                 l.append([x] + p)
+#         return l
+#
+#
+# print(perm1(["a", "b", "c"]))
 
-    else:
-        l = []
-        for i in range(len(lst)):
-            x = lst[i]
-            xs = lst[:i] + lst[i + 1:]
-            for p in perm1(xs):
-                l.append([x] + p)
-        return l
+# def get_permutation(string, i=0):
+#     if i == len(string):
+#         print("".join(string))
+#
+#     for j in range(i, len(string)):
+#         words = [c for c in string]
+#
+#         # swap
+#         words[i], words[j] = words[j], words[i]
+#
+#         get_permutation(words, i + 1)
+#
+#     return ""
+#
+#
+# print(get_permutation('abc'))
+
+# Function to swap two characters in a character array
+def swap(ch, i, j):
+    temp = ch[i]
+    ch[i] = ch[j]
+    ch[j] = temp
 
 
-print(perm1(["a", "b", "c"]))
+# Recursive function to generate all permutations of a string
+# def permutations(ch, curr_index=0):
+#     if curr_index == len(ch) - 1:
+#         print(''.join(ch))
+#
+#     for i in range(curr_index, len(ch)):
+#         swap(ch, curr_index, i)
+#         permutations(ch, curr_index + 1)
+#         swap(ch, curr_index, i)
+#
+#
+# if __name__ == '__main__':
+#     s = 'ABC'
+#     permutations(list(s))
+
+
+
+
+
+# def get_per(string, i):
+#     if i == len(string):
+#         print(string)
+

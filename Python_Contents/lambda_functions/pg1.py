@@ -37,11 +37,11 @@
 # and that argument will be multiplied with an unknown given number.
 
 # def fun(n):
-#      return lambda x:x*n
+#     return lambda x: x * n
+#
 #
 # x = fun(3)
 # print(x(4))
-
 
 # Write a Python program to sort a list of tuples using Lambda.
 # subject_marks = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
@@ -77,7 +77,7 @@
 
 # Write a Python program to square and cube every number in a given list of integers using Lambda.
 
-# f = list(map(lambda x:(x**2,x**3),range(0,10)))
+# f = list(map(lambda x: (x ** 2, x ** 3), range(0, 10)))
 # print(f)
 
 # Write a Python program to find if a given string starts with a given character using Lambda.
@@ -98,7 +98,7 @@
 # print("time",t(now))
 
 # Write a Python program to check whether a given string is number or not using Lambda.
-# c = lambda x: False if type(x) is "int" else True
+# c = lambda x: False if type(x) == "int" else True
 # print(c("123"))
 
 # Write a Python program to create Fibonacci series upto n using Lambda.

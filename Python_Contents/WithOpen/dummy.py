@@ -41,8 +41,8 @@ class Professor(object):
         pass
 
 
-with open("Professor") as fo:
-    for line in fo.readlines():
-        lst = line.split(",")
-        stu = Student(lst[0], [int(x) for x in lst[1:4]])
-        stu.display()
+# with open("Professor") as fo:
+#     for line in fo.readlines():
+#         lst = line.split(",")
+#         stu = Student(lst[0], [int(x) for x in lst[1:4]])
+#         stu.display()

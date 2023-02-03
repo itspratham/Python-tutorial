@@ -59,7 +59,7 @@
 # Find if there is any SubArray with sum equal to 0
 # Find factorial of a large number
 # find maximum product SubArray 
-# Find longest consecutive subsequence
+# Find the longest consecutive subsequence
 # Given an array of size n and a number k, fin all elements that appear more than " n/k " times.
 # Maximum profit by buying and selling a share utmost twice
 

@@ -6,7 +6,7 @@ try:
 except FileNotFoundError as ex:
     os.system('copy data.txt data3.txt')
     print("File not found!")
-    print("Data.txt coppied to data3.txt")
+    print("Data.txt copied to data3.txt")
 except Exception as ex:
     print(ex)
 else:

@@ -3,7 +3,9 @@ class A:
     def who_am_i(self):
         print("I am a A")
 
-class B(A):
+class G:
+    pass
+class B(G):
     pass
     #def who_am_i(self):
     #    print("I am a B")

@@ -131,9 +131,8 @@
 # Prime number program
 def prime(n):
     for i in range(1, n):
-        if n % (i) == 0:
+        if n % i == 0:
             print("{} is a prime number".format(n))
-            break
         else:
             print("{} is not a prime number".format(n))
             break

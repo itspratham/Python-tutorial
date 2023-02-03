@@ -93,6 +93,7 @@ class Node1:
         self.data = data
         self.next = None
 
+
 class LinkedList1:
     def __init__(self):
         self.head = None
@@ -126,14 +127,9 @@ class LinkedList1:
             print(cur_node.data, end="-->")
             cur_node = cur_node.next
 
+
 l1 = LinkedList1()
 l1.append("A")
 l1.append("B")
 l1.prepend("C")
 l1.print_linked_list()
-
-
-
-
-
-

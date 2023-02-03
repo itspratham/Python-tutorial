@@ -14,7 +14,7 @@ def arrae(arr):
     #     l1.append(arr[n-i-1])
     #     n = n-1
     for i in range(n):
-        l1.append(arr[~i])
+        l1.append(arr[-i-1])
     return l1
 
 

@@ -25,7 +25,7 @@ print(not (a < 2))  # Not(True) =  True
 if condition:
     value /statement if pass
 else:
-    value / statement if faile
+    value / statement if failed
     
  """
 

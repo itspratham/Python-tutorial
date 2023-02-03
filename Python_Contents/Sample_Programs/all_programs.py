@@ -247,28 +247,23 @@
 # 16. Leap year
 #
 # 17. Binary search
-# def binary_search(lists, x):
-#     lists.sort()
-#     mid = (len(lists) - 1) // 2
-#     if len(lists) >= 1:
-#         if x == lists[mid]:
-#             return True
-#
-#         elif x < lists[mid]:
-#             lists = lists[0:mid]
-#             return binary_search(lists, x)
-#
-#         else:
-#             lists = lists[mid + 1:]
-#             return binary_search(lists, x)
-#     else:
-#         return False
-#
-#
-# a = list(map(int, input('enter list: ').strip().split()))
-# x = int(input('enter number for binary search: '))
-#
-# print(binary_search(a, x))
+
+def binary_search(arr, target):
+    sorted_list = sorted(arr)
+    low = 0
+    high = len(sorted_list) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] > target:
+            high = mid - 1
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            return mid + 1
+    return -1
+
+
+print(binary_search([5, 2, 4, 6, 9], 9))
 
 # 18. String Anagram
 # str1 = "abcd"
@@ -311,18 +306,75 @@
 #
 # 29. Print all leaves of a binary tree
 #
+
+# Binary tree node
+# class Node:
+#
+#     def __init__(self, data):
+#         self.data = data
+#         self.left = None
+#         self.right = None
+#
+#
+# # Function to print leaf
+# # nodes from left to right
+# def printLeafNodes(root: Node) -> None:
+#     # If node is null, return
+#     if not root:
+#         return
+#
+#     # If node is leaf node,
+#     # print its data
+#     if (not root.left and
+#             not root.right):
+#         print(root.data,
+#               end=" ")
+#         return
+#
+#     # If left child exists,
+#     # check for leaf recursively
+#     if root.left:
+#         printLeafNodes(root.left)
+#
+#     # If right child exists,
+#     # check for leaf recursively
+#     if root.right:
+#         printLeafNodes(root.right)
+#
+#
+# # Driver Code
+# if __name__ == "__main__":
+#     # Let us create binary tree shown in
+#     # above diagram
+#     root = Node(1)
+#     root.left = Node(2)
+#     root.right = Node(3)
+#     root.left.left = Node(4)
+#     root.right.left = Node(5)
+#     root.right.right = Node(8)
+#     root.right.left.left = Node(6)
+#     root.right.left.right = Node(7)
+#     root.right.right.left = Node(9)
+#     root.right.right.right = Node(10)
+#
+#     # print leaf nodes of the given tree
+#     printLeafNodes(root)
+
+# This code is contributed by sanjeev2552
+
+
 # 30. Sort array using quicksort
 # def qsort(inlist):
-#     if inlist==[]:
+#     if inlist == []:
 #         return []
 #     else:
 #         pivot = inlist[0]
 #         lesser = qsort([x for x in inlist[1:] if x < pivot])
 #         greater = qsort([x for x in inlist[1:] if x >= pivot])
-#         return (lesser + [pivot] + greater)
+#         return lesser + [pivot] + greater
 #
-# print(qsort([5,3,3,2,2,4,6,3]))
-
+#
+# print(qsort([5, 3, 3, 2, 2, 4, 6, 3]))
 
 # 31. Insertion sort
 #
@@ -670,73 +722,188 @@
 # print(next(c))
 
 
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.next = None
+#
+#
+# class LinkedList:
+#     def __init__(self):
+#         self.head = None
+#
+#     def append(self, data):
+#         cur_node = self.head
+#         if self.head is None:
+#             self.head = Node(data)
+#             return self.head
+#         while cur_node.next is not None:
+#             cur_node = cur_node.next
+#         cur_node.next = Node(data)
+#
+#     def prepend(self, data):
+#         headd = self.head
+#         self.head = Node(data)
+#         self.head.next = headd
+#
+#     def print_list(self):
+#         cur_node = self.head
+#         while cur_node is not None:
+#             print(cur_node.data)
+#             cur_node = cur_node.next
+#
+#     def __len__(self):
+#         count = 0
+#         headd = self.head
+#         while headd is not None:
+#             count = count + 1
+#             headd = headd.next
+#         return count
+#
+#     def delete_particular_data(self, target):
+#         cur_node = self.head
+#         while cur_node.next is not None:
+#             prev = cur_node
+#             cur_node = cur_node.next
+#             if cur_node.data == target:
+#                 break
+#         prev.next = cur_node.next
+#
+#     def reverse_string(self):
+#         prev = None
+#         headd = self.head
+#         cur_node = self.head
+#         while cur_node:
+#             # make a temporary next node
+#             nxt = cur_node.next
+#             cur_node.next = prev
+#             prev = cur_node
+#             cur_node = nxt
+#         self.head = prev
+#         headd.next = None
+#
+#
+#
+# f = LinkedList()
+# f.append("A")
+# f.append("B")
+# f.append("C")
+# f.append("D")
+# f.reverse_string()
+# f.print_list()
+# print(len(f))
 
 
-class LinkedList:
-    def __init__(self):
-        self.head = None
+# Print subset
+# input = {1,2,3}
+# output = {1,2,3,{1,2},{2,3},{1,2,3}}
 
-    def append(self, data):
-        cur_node = self.head
-        if self.head is None:
-            self.head = Node(data)
-            return self.head
-        while cur_node.next is not None:
-            cur_node = cur_node.next
-        cur_node.next = Node(data)
-
-    def prepend(self, data):
-        headd = self.head
-        self.head = Node(data)
-        self.head.next = headd
-
-    def print_list(self):
-        cur_node = self.head
-        while cur_node is not None:
-            print(cur_node.data)
-            cur_node = cur_node.next
-
-    def __len__(self):
-        count = 0
-        headd = self.head
-        while headd is not None:
-            count = count + 1
-            headd = headd.next
-        return count
-
-    def delete_particular_data(self, target):
-        cur_node = self.head
-        while cur_node.next is not None:
-            prev = cur_node
-            cur_node = cur_node.next
-            if cur_node.data == target:
-                break
-        prev.next = cur_node.next
-
-    def reverse_string(self):
-        prev = None
-        headd = self.head
-        cur_node = self.head
-        while cur_node:
-            # make a temporary next node
-            nxt = cur_node.next
-            cur_node.next = prev
-            prev = cur_node
-            cur_node = nxt
-        self.head = prev
-        headd.next = None
+# 1st instance
+# apply loop over the array --> iterate -- > (i,n) range_length=1, print(n)
 
 
+# 2nd instance
+# apply loop over the array --> iterate -- >i, n, range_length = 2,
+# array = {1,2,3}
+# {1,2},{2,3}
+# 2
+# [array[i,]]
+#
+# []
+# # print(array[])
 
-f = LinkedList()
-f.append("A")
-f.append("B")
-f.append("C")
-f.append("D")
-f.reverse_string()
-f.print_list()
-print(len(f))
+
+# def subset(arr):
+#     first_Range_length = 0
+#     last_range_length = len(arr)
+#     while first_Range_length <= last_range_length:
+#         for i in range(first_Range_length):
+#             print(arr[i:first_Range_length])
+#         first_Range_length = first_Range_length + 1
+#
+# subset([1,2,3,4])
+
+
+# Python program to print all
+# sublist from a given list
+
+# function to generate all the sub lists
+
+
+# def sub_lists (l):
+# 	lists = [[]]
+# 	for i in range(len(l) + 1):
+# 		for j in range(i):
+# 			lists.append(l[j: i])
+# 	return lists
+#
+#
+#
+# # driver code
+# l1 = [1, 2, 3]
+# print(sub_lists(l1))
+
+
+# Python3 program to print
+# given matrix in spiral form
+
+
+# def spiralPrint(m, n, a):
+#     k = 0
+#     l = 0
+#
+#     """
+# 		k - starting row index
+# 		m - ending row index
+# 		l - starting column index
+# 		n - ending column index
+# 		i - iterator
+#     """
+#
+#     while (k < m and l < n):
+#
+#         # Print the first row from
+#         # the remaining rows
+#         for i in range(l, n):
+#             print(a[k][i], end=" ")
+#
+#         k += 1
+#
+#         # Print the last column from
+#         # the remaining columns
+#         for i in range(k, m):
+#             print(a[i][n - 1], end=" ")
+#
+#         n -= 1
+#
+#         # Print the last row from
+#         # the remaining rows
+#         if (k < m):
+#
+#             for i in range(n - 1, (l - 1), -1):
+#                 print(a[m - 1][i], end=" ")
+#
+#             m -= 1
+#
+#         # Print the first column from
+#         # the remaining columns
+#         if (l < n):
+#             for i in range(m - 1, k - 1, -1):
+#                 print(a[i][l], end=" ")
+#
+#             l += 1
+#
+#
+# # Driver Code
+# a = [[1, 2, 3, 4],
+#      [5, 6, 7, 8],
+#      [9, 10, 11, 12],
+#      [13, 14, 15, 16]]
+#
+# R = 4
+# C = 4
+#
+# # Function Call
+# spiralPrint(R, C, a)
+#
+# # This code is contributed by Nikita Tiwari.

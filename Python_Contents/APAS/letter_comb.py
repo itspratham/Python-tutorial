@@ -9,7 +9,7 @@ def permute(data, i, length):
             data[i], data[j] = data[j], data[i]
 
 
-string = "ABCD"
+string = "ABC"
 n = len(string)
 data = list(string)
 permute(data, 0, n)

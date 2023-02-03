@@ -310,7 +310,7 @@ import operator
 # print(nonrepeat([9 ,4, 9, 6 ,7 ,4]))
 
 
-# Find the smallest and second smallest element in an array
+# Find the smallest and second-smallest element in an array
 # Input :
 # 3
 # 5
@@ -342,7 +342,7 @@ import operator
 #
 #     return first,second
 #
-# print(smallest([-1,2,3, 12, 13, 1, 10, 34, 1]))
+# print(smallest([-1, 2, 3, 12, 13, 1, 10, 34, 1]))
 
 
 # ugly numbers

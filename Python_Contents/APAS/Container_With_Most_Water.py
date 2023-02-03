@@ -7,5 +7,18 @@
 # Note: You may not slant the container and n is at least 2.
 
 
-Input: [1, 8, 6, 2, 5, 4, 8, 3, 7]
-Output: 49
+# Input: [1, 8, 6, 2, 5, 4, 8, 3, 7]
+# Output: 49
+
+
+num = 12221
+temp = num
+reverse = 0
+while temp > 0:
+    remainder = temp % 10
+    reverse = (reverse * 10) + remainder
+    temp = temp // 10
+if num == reverse:
+  print('Palindrome')
+else:
+  print("Not Palindrome")

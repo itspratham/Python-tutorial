@@ -1,5 +1,5 @@
 from mypackage.fun import add
 
-print(add(56,89))
+print(add(56, 89))
 
 

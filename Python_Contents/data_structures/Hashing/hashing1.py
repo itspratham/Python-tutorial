@@ -31,9 +31,6 @@
 # sum__([3, 4, 7, 1, 2, 9, 8])
 
 
-
-
-
 # Count distinct elements in every window of size k
 
 # Input: arr[] = {1, 2, 1, 3, 4, 2, 3};

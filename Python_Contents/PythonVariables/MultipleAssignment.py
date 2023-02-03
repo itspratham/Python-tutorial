@@ -1,4 +1,4 @@
-# Muyltiple Assignment
+# Multiple Assignment
 
 # Assigning the same type
 a, b, c = 100, 200, 300

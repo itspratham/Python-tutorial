@@ -26,7 +26,6 @@ def Simple_Merge(C):
             C[k] = B[j]
             j = j + 1
             k = k + 1
-
     return C
 
 

@@ -474,7 +474,7 @@
 # def zero(arr):
 #     pass
 
-# 41. Write a python program to find smallest and second smallest elements of a given array.   
+# 41. Write a python program to find smallest and second-smallest elements of a given array.
 
 # def second(arr):
 #     for i in range(0,len(arr)):
@@ -503,14 +503,16 @@
 
 # def possible_triangles(arr):
 #     count = 0
-#     for i in range(0,len(arr)):
-#         for j in range(i+1,len(arr)):
-#             for k in range(i+1,len(arr)):
-#                 if (arr[i] + arr[j] > arr[k]  & arr[i] + arr[k] > arr[j]
+#     for i in range(0, len(arr)):
+#         for j in range(i + 1, len(arr)):
+#             for k in range(i + 1, len(arr)):
+#                 if (arr[i] + arr[j] > arr[k] & arr[i] + arr[k] > arr[j]
 #                         & arr[k] + arr[j] > arr[i]):
-#                     count +=1
+#                     count += 1
 #
 #     return count
+#
+#
 # print(possible_triangles([2, 3, 4, 5, 6, 7]))
 
 # 45. Write a python program to cyclically rotate a given array clockwise by one.
@@ -610,7 +612,8 @@
 #
 # print(even_odd([1, 0, 1, 0, 1, 0, 0, 0, 1, 0]))
 
-# 52. Write a python program to separate even and odd numbers of a given array of integers.
+# 52. Write a python program to separate even and
+# odd numbers of a given array of integers.
 # Put all even numbers first, and then odd numbers.
 
 # def even_odd(a):
@@ -633,7 +636,7 @@
 #     dup = []
 #     for i in range(len(arr) - 1):
 #         dup.append(max(arr[i + 1:]))
-#     return dup + [-1]
+#     return dup
 #
 #
 # print(greatest([45, 20, 100, 23, -5, 2, -6]))
@@ -652,19 +655,20 @@
 # print(sortt([4, 2, 6, 3, 9, 5, 3, 8, 6]))
 
 # def sort(a):
-#     for i in range(len(a)-1):
-#         for j in range( i + 1,len(a)  ):
-#             if (a[i] > a[j]):
+#     for i in range(len(a) - 1):
+#         for j in range(i + 1, len(a)):
+#             if a[i] > a[j]:
 #                 temp = a[i]
 #                 a[i] = a[j]
 #                 a[j] = temp
 #
 #     return a
-# print(sort([8,4,6,10,6,9]))
-
+#
+#
+# print(sort([8, 4, 6, 10, 6, 9]))
 
 # Triplet problems
-
+#
 # limit = int(input("Enter upper limit:"))
 # c = 0
 # m = 2

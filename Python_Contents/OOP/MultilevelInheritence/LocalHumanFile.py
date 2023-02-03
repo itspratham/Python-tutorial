@@ -1,4 +1,4 @@
-from OOP.MultilevelInheritence import IndianHuman
+from Python_Contents.OOP.MultilevelInheritence import IndianHuman
 
 class LocalHuman:
 

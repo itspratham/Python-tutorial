@@ -5,11 +5,11 @@ a = 10
 
 def foo():
     global a
-    print(a)
+    print(a, "hello")
     a = a + 10
-    print(a)
+    print(a, "hello1")
 
-
+print(a, "a")
 print("Value of a is {}".format(a))
 print("Calling the function foo ")
 foo()

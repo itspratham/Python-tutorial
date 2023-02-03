@@ -74,21 +74,111 @@
 #         cou += c.count(i) // 2
 # print(cou)
 
-n = int(input())
-c = list(int(i) for i in input().split())
-cout = 0
-for i in set(c):
-    if c.count(i) >= 2:
-        cout += c.count(i) // 2
-print(cout)
+# n = int(input())
+# c = list(int(i) for i in input().split())
+# cout = 0
+# for i in set(c):
+#     if c.count(i) >= 2:
+#         cout += c.count(i) // 2
+# print(cout)
+#
+#
+# def rotLeft(a, d):
+#     for i in range(d):
+#         f = a[0]
+#         a.remove(f)
+#         a.append(f)
+#     return a
+#
+#
+# print(rotLeft([5, 6, 8, 3, 4], 2))
 
 
-def rotLeft(a, d):
-    for i in range(d):
-        f = a[0]
-        a.remove(f)
-        a.append(f)
-    return a
+# Python3 program to find the maximum depth of tree
+
+# A binary tree node
 
 
-print(rotLeft([5, 6, 8, 3, 4], 2))
+class Node:
+
+    # Constructor to create a new node
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+
+# Compute the "maxDepth" of a tree -- the number of nodes
+# along the longest path from the root node down to the
+# farthest leaf node
+
+
+# def maxDepth(node):
+#     if node is None:
+#         return 0
+#
+#     else:
+#
+#         # Compute the depth of each subtree
+#         lDepth = maxDepth(node.left)
+#         rDepth = maxDepth(node.right)
+#
+#         # # Use the larger one
+#         # if lDepth > rDepth:
+#         #     return lDepth + 1
+#         # else:
+#         #     return rDepth + 1
+#         return 1+max(lDepth,rDepth)
+#
+#
+# # Driver program to test above function
+# root = Node(1)
+# root.left = Node(2)
+# root.right = Node(3)
+# root.left.left = Node(4)
+# root.left.right = Node(5)
+#
+# print("Height of tree is %d" % (maxDepth(root)))
+
+# This code is contributed by Amit Srivastav
+
+
+# Recursive Python program for insertion sort
+# Recursive function to sort an array using insertion sort
+
+def insertionSortRecursive(arr, n):
+    # base case
+    if n <= 1:
+        return
+
+    # Sort first n-1 elements
+    insertionSortRecursive(arr, n - 1)
+    '''Insert last element at its correct position
+        in sorted array.'''
+    last = arr[n - 1]
+    j = n - 2
+
+    # Move elements of arr[0..i-1], that are
+    # greater than key, to one position ahead
+    # of their current position
+    while j >= 0 and arr[j] > last:
+        arr[j + 1] = arr[j]
+        j = j - 1
+
+    arr[j + 1] = last
+
+
+# A utility function to print an array of size n
+def printArray(arr, n):
+    for i in range(n):
+        print(arr[i], end=" ")
+
+
+# Driver program to test insertion sort
+arr = [12, 11, 13, 5, 6]
+n = len(arr)
+insertionSortRecursive(arr, n)
+printArray(arr, n)
+
+# Contributed by Harsh Valecha
+

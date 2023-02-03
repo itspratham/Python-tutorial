@@ -1,5 +1,5 @@
 Str = "this is string example....wow!!!"
-Str = Str.encode('base64','strict')
+Stre = Str.encode()
 
 print("Encoded String: " + Str)
-print("Decoded String: " + Str.decode('base64','strict'))
+print("Decoded String: " + Stre.decode())

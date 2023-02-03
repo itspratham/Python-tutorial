@@ -1,6 +1,6 @@
-# Input: s = "leEeetcode"
-# Output: "leetcode"
-# Explanation: In the first step, either you choose i = 1 or i = 2, both will result "leEeetcode" to be reduced to "leetcode".
+# Input: s = "leEeetcode" Output: "leetcode"
+# Explanation: In the first step, either you choose i = 1 or i = 2,
+# both will result "leEeetcode" to be reduced to "leetcode".
 
 # Input: s = "abBAcC"
 # Output: ""
@@ -14,23 +14,17 @@
 # gg.rep
 
 
-def check_the_String(stringg, i):
-    if len(stringg) == 0:
-        return ""
-    elif len(stringg) == 1:
-        return stringg
-    else:
-        while i < len(stringg) - 1:
-            if stringg[i].isupper() or stringg[i + 1].isupper():
-                if len(stringg) == 0 or len(stringg) == 1:
-                    return stringg
-                stringg = stringg[:i] + stringg[i + 2:]
-                check_the_String(stringg, 0)
-            else:
-                pass
-            i = i + 1
+def check_the_String(stringg):
+    extra_string = ''
+    count = 0
+    while len(stringg)+1 > count:
+        if ord(stringg[count]) == ord(stringg[count + 1]) - 26:
+            pass
         else:
-            return stringg
+            extra_string = extra_string + stringg[count]
+
+        count = count + 1
+    return extra_string
 
 
-print(check_the_String("leeEtCode", 0))
+print(check_the_String("leeEtCode"))
