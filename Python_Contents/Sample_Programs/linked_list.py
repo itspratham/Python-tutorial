@@ -7,15 +7,15 @@
 #     def __init__(self):
 #         self.head = None
 #
-#     def append(self,data):
-#         if self.head is None:
-#             self.head = Node(data)
-#             return
-#         cur_node = self.head
-#         new_node = Node(data)
-#         while cur_node.next:
-#             cur_node = cur_node.next
-#         cur_node.next =new_node
+    # def append(self,data):
+    #     if self.head is None:
+    #         self.head = Node(data)
+    #         return
+    #     cur_node = self.head
+    #     new_node = Node(data)
+    #     while cur_node.next:
+    #         cur_node = cur_node.next
+    #     cur_node.next =new_node
 #
 #
 #     def print_list(self):

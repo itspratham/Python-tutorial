@@ -82,3 +82,14 @@
 #
 # # This line will call the second product method
 # product(4, 5)
+
+def func():
+    try:
+        g = 1 / 0
+    except:
+        return 0
+    finally:
+        return 1
+
+
+print(func())

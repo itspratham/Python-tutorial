@@ -1,7 +1,7 @@
-from collections import defaultdict
-
 class Stack:
-    def __init__(self, a_list=[]):
+    def __init__(self, a_list=None):
+        if a_list is None:
+            a_list = []
         self.a_list = a_list
 
     def insert_an_element(self, value):
@@ -10,7 +10,7 @@ class Stack:
 
     def pop_an_element(self):
         if len(self.a_list) > 0:
-            return self.a_list.pop()
+            return self.a_list.pop(0)
         return
 
 
@@ -18,7 +18,7 @@ class Graph:
     def __init__(self, graph):
         self.graf = graph
 
-    def dfs_traversal(self, element, visited_list=[]):
+    def dfs_traversal(self, element, visited_list):
         for item in self.graf[element]:
             if item not in visited_list:
                 visited_list.append(item)
@@ -32,8 +32,9 @@ class Graph:
 graph = {'A': ['B', 'Z'],
          'B': ['Z', 'D'],
          'Z': ['D', 'C'],
+         'C': ["Z"],
          'D': ['Z'],
          'E': ['F'],
          'F': ['Z']}
 g = Graph(graph)
-print(*g.dfs_traversal('A'))
+print(*g.dfs_traversal('Z', []))

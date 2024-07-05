@@ -17,7 +17,7 @@
 def check_the_String(stringg):
     extra_string = ''
     count = 0
-    while len(stringg)+1 > count:
+    while len(stringg) + 1 > count:
         if ord(stringg[count]) == ord(stringg[count + 1]) - 26:
             pass
         else:

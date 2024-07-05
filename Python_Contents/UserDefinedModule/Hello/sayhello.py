@@ -9,3 +9,4 @@ def greet():
         print("Good Afternoon")
     else:
         print("Good evening")
+greet()

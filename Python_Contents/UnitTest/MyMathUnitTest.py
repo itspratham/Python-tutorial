@@ -21,3 +21,5 @@ class MyMathTestCase2(unittest.TestCase):
     def test_both_str(self):
         self.assertEqual(math.prod([12, 5]), 60)
 
+    def test_both_str1(self):
+        self.assertEqual(ZeroDivisionError, math.prod, (12, 5))

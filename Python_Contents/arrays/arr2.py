@@ -40,7 +40,8 @@ def pushZerosToEnd(arr, n):
             # here count is incremented
             arr[count] = arr[i]
             count += 1
-    print(arr)
+    print(arr, "ddd")
+    print(count,"jjj")
     # Now all non-zero elements have been
     # shifted to front and 'count' is set
     # as index of first 0. Make all
@@ -48,6 +49,8 @@ def pushZerosToEnd(arr, n):
     while count < n:
         arr[count] = 0
         count += 1
+
+    print(arr)
 
 
 # Driver code

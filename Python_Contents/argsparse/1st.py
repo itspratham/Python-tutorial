@@ -8,17 +8,16 @@
 
 
 def function(*args, **kwargs):
-    # print("a
     print(args[0])
     print(args)
     print(kwargs)
 
 
-# args = ("ram", "laxman", "Sita", "vdfjn", "nhn")
+args = ("ram", "laxman", "Sita", "vdfjn", "nhn")
 
 function(*("ram", "laxman", "Sita", "vdfjn", "nhn"))
-#
-# kwargs = {"ram": "1", "laxman": "2", "Sita": "3", "vdfjn": "4"}
+
+# kwargs = {"ram": "1", "laxman": "2", "Sita": "3", "": "4"}
 #
 #
 # def function(ram, laxman, Sita, vdfjn):

@@ -26,4 +26,4 @@ def convert(s, numRows):
     return rstr
 
 
-print(convert("abcdefg", 2))
+print(convert("abcdegf", 2))

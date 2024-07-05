@@ -55,7 +55,6 @@ def my_decorator(func):
         print("Something is happening before the function is called.")
         func("kkk")
         print("Something is happening after the function is called.")
-
     return wrapper
 
 

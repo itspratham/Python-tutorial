@@ -20,6 +20,7 @@ class Node:
         self.data = data
         self.next = None
 
+
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -33,6 +34,7 @@ class LinkedList:
         while cur_node.next:
             cur_node = cur_node.next
         cur_node.next = new_Data
+        return
 
     def print_Data(self):
         if self.head is None:
@@ -52,13 +54,20 @@ class LinkedList:
             second_node = cur_node.next
             second_node.next = first_node
             first_node.next = second_node
+        return
 
+    def __del__(self):
+        print("i am automatically destroyed")
+        return
 
-ll = LinkedList()
-ll.append("A")
-ll.append("B")
-ll.append("C")
-ll.append("D")
-ll.print_Data()
-ll.Swap_Nodes_in_Pairs()
-ll.print_Data()
+def func():
+    ll = LinkedList()
+    ll.append("A")
+    ll.append("B")
+    ll.append("C")
+    ll.append("D")
+    ll.print_Data()
+    ll.Swap_Nodes_in_Pairs()
+    ll.print_Data()
+    return
+func()

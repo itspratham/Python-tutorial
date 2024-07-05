@@ -3,12 +3,14 @@
 # Return -1 If there are no such elements.
 #
 # def prog(arr):
-#     for  i in range(len(arr)-1):
-#         for j in range(1,len(arr)):
+#     for i in range(len(arr) - 1):
+#         for j in range(i + 1, len(arr)):
 #             if arr[i] == arr[j]:
 #                 return arr[i]
+
+
 #
-# print(prog([4,3,4,5,2,4,3]))
+# print(prog([4, 3, 4, 5, 2, 4, 3]))
 
 # def find_first_duplicate(nums):
 #     num_set = set()
@@ -677,6 +679,7 @@
 #         a = m * m - n * n
 #         b = 2 * m * n
 #         c = m * m + n * n
+#         print("a",a, "b",b, "c",c)
 #         if c > limit:
 #             break
 #         if a == 0 or b == 0 or c == 0:

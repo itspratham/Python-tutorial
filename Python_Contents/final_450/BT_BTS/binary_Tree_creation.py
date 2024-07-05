@@ -20,7 +20,6 @@ class BT:
 
         print("Enter the left data for {}: ".format(data))
         root.left = self.createTree()
-
         print("Enter the right data for {}: ".format(data))
         root.right = self.createTree()
         return root

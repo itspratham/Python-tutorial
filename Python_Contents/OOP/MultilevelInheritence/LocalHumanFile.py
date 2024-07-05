@@ -3,7 +3,7 @@ from Python_Contents.OOP.MultilevelInheritence import IndianHuman
 class LocalHuman:
 
     def __init__(self, name, age, nl, ll):
-            IndianHuman.IndianHuman.__init__(self, name, age, nl)
+            super().__init__(self, name, age, nl)
             self.local_lang = ll
 
     def disply_human(self):

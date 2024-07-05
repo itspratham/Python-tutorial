@@ -13,9 +13,9 @@ def arrae(arr):
     # while i<n:
     #     l1.append(arr[n-i-1])
     #     n = n-1
-    for i in range(n):
-        l1.append(arr[-i-1])
-    return l1
+    for i in range(len(arr)//2):
+        arr[i] , arr[~i] = arr[~i], arr[i]
+    return arr
 
 
 arr = [1, 4, 7, 8, 6, 4, 5, 6]

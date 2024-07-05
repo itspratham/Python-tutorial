@@ -263,7 +263,7 @@ def binary_search(arr, target):
     return -1
 
 
-print(binary_search([5, 2, 4, 6, 9], 9))
+print(binary_search([5, 2, 4, 6, 9], 2))
 
 # 18. String Anagram
 # str1 = "abcd"

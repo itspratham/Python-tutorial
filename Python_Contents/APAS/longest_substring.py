@@ -1,17 +1,33 @@
-def longest_substring(stringg):
-    funn_string = ""
-    i = 0
-    while i < len(stringg):
-        if stringg[i] not in funn_string:
-            funn_string = funn_string + stringg[i]
-        i = i + 1
-    return funn_string
+# def longest_substring(stringg):
+#     funn_string = ""
+#     i = 0
+#     while i < len(stringg):
+#         if stringg[i] not in funn_string:
+#             funn_string = funn_string + stringg[i]
+#         i = i + 1
+#     return funn_string
+#
+#
+# print(longest_substring("GEEKSFORGEEKS"))
+# print(longest_substring("bbbbb"))
+# print(longest_substring("pwwkew"))
+from collections import defaultdict
 
 
-print(longest_substring("GEEKSFORGEEKS"))
-print(longest_substring("bbbbb"))
-print(longest_substring("pwwkew"))
+def longest_substring(string):
+    present_String = " "
+    a_list = defaultdict(list)
+    for i in range(len(string)):
+        if string[i] not in present_String:
+            present_String = present_String + string[i]
+            a_list[len(present_String)].append(present_String)
+        else:
+            present_String = string[i]
+    ff = max(a_list.keys())
+    return ''.join(a_list[ff]).strip()
 
+
+print(longest_substring("aFTHdyrgtrog"))
 """
 # Python3 program to find and print longest
 # substring without repeating characters.

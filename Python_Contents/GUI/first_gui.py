@@ -10,14 +10,44 @@ window.mainloop()
 """
 
 
-from tkinter import *
+# from tkinter import *
+#
+# window = Tk()
+#
+# window.title("Welcome to LikeGeeks app")
+#
+# lbl = Label(window, text="Hello")
+#
+# lbl.grid(column=1, row=1)
+#
+# window.mainloop()
 
-window = Tk()
 
-window.title("Welcome to LikeGeeks app")
+# Python program showing the use of
+# @property
 
-lbl = Label(window, text="Hello")
+class Geeks:
+    def __init__(self):
+        self._age = 0
 
-lbl.grid(column=1, row=1)
+    # using property decorator
+    # a getter function
+    @property
+    def age(self):
+        print("getter method called")
+        return self._age
 
-window.mainloop()
+    # a setter function
+    @age.setter
+    def age(self, a):
+        if a < 18:
+            raise ValueError("Sorry you age is below eligibility criteria")
+        print("setter method called")
+        self._age = a
+
+
+mark = Geeks()
+
+mark.age = 19
+
+print(mark.age)

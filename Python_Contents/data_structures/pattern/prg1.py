@@ -133,3 +133,23 @@
 # *      *
 # *      *
 # ********
+
+
+
+# ****
+# ***@
+# **@@
+# *@@@
+
+
+# n = 4
+# g = 0
+# for i in range(4):
+#     for i in range(n):
+#         print("*", end="")
+#     for j in range(g):
+#         print("@", end="")
+#     print("")
+#     n = n-1
+#     g = g+1
+

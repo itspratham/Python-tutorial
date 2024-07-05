@@ -74,8 +74,9 @@
 #         print("".join(string))
 #
 #     for j in range(i, len(string)):
-#         words = [c for c in string]
 #
+#         words = [c for c in string]
+#         print(words)
 #         # swap
 #         words[i], words[j] = words[j], words[i]
 #
@@ -85,12 +86,12 @@
 #
 #
 # print(get_permutation('abc'))
-
-# Function to swap two characters in a character array
-def swap(ch, i, j):
-    temp = ch[i]
-    ch[i] = ch[j]
-    ch[j] = temp
+#
+# # Function to swap two characters in a character array
+# def swap(ch, i, j):
+#     temp = ch[i]
+#     ch[i] = ch[j]
+#     ch[j] = temp
 
 
 # Recursive function to generate all permutations of a string
@@ -109,10 +110,63 @@ def swap(ch, i, j):
 #     permutations(list(s))
 
 
-
-
-
 # def get_per(string, i):
 #     if i == len(string):
 #         print(string)
 
+
+# def binary_search(arr, target):
+#     low = 0
+#     high = len(arr) - 1
+#     while low <= high:
+#         mid = (low + high) // 2
+#         if arr[mid] == target:
+#             return "Found"
+#         elif arr[mid] > target:
+#             high = mid - 1
+#         else:
+#             low = mid + 1
+#     return
+#
+#
+# print(binary_search([1, 2, 3, 4, 5, 6, 7, 8], 1))
+
+# def transform(a = 2):
+#     if a == 1:
+#         return a +- 2
+#     return a
+#
+# total = 1
+#
+# for x in [3,5,1]:
+#     total = total + transform(x)
+#
+# print(total)
+
+# class Square:
+#
+#     def Area(self, side):  # definiting method with 1 argument
+#
+#         return side * side
+#
+#
+# class Rectangle(Square):
+#
+#     def Area(self, length, bredth):  # overriding method with 2 arguments
+#
+#         return length * bredth
+#
+#
+# f = Rectangle()
+# print(f.Area(3, 4))
+
+# Given an integer array,
+# find the contiguous subarray
+# (containing at least one number) which has the largest
+# sum and return its sum? (solution)
+f = [-2, -3, 4, -1, -2, 1, 5, -3]
+
+# iterate over the array if sum <0, consider the sum from the current element
+#
+
+# def find_sum(arr):
