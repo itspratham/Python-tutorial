@@ -37,14 +37,37 @@ def preOrder(root):
     preOrder(root.right)
 
 
+def inorder(root):
+    if root is None:
+        return root
+    inorder(root.left)
+    print(root.data)
+    inorder(root.right)
+
+
+def level_order(root):
+    a_Queue = [root]
+    while len(a_Queue) > 0:
+        popped_item = a_Queue.pop(0)
+        print(popped_item.data, end=" ->")
+        if popped_item.left:
+            a_Queue.append(popped_item.left)
+        if popped_item.right:
+            a_Queue.append(popped_item.right)
+    print("")
+
+
 root = Node(5)
 root.left = Node(3)
 root.right = Node(6)
 root.left.left = Node(2)
 root.left.right = Node(4)
-root.left.right.left = Node(7)
+root.left.right.left = Node(1)
 print("Original node:")
-preOrder(root)
+level_order(root)
 result = delete_the_node(root, 3)
 print("After deleting specified node:")
-preOrder(result)
+level_order(root)
+preOrder(root)
+print("")
+inorder(root)
